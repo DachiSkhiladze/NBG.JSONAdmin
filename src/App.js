@@ -1,21 +1,23 @@
-import logo from './logo.svg';
 import './App.scss';
+import Table from './components/AppTable.js'
 import { useDispatch, useSelector } from 'react-redux';
-import { INCREMENT } from './redux';
-import React, { useState } from 'react';
 import defaultContent from './assets/content.json'
 import { SET_CONTENT } from './redux/actions';
+import { useEffect } from 'react';
 
 function App() {
   const dispatch = useDispatch()
-
-  React.useEffect(() => {
+  var titles = ["Name", "SurName"];
+  var data = [["Dachi", "Skhiladze"],
+  ["Bubu", "Skhiladze"]];
+  useEffect(() => {
     dispatch(SET_CONTENT(defaultContent))
   }, [])
 
   return (
     <div>
-      <div>side bar</div>
+      <Table titles={titles}
+        data={data} />
     </div>
   );
 }
