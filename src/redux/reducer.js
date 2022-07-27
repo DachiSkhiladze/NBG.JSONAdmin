@@ -1,7 +1,7 @@
 const initialState = {
-    content: {
-
-    }
+    content: null,
+    scheme: null,
+    editorState: null
 }
 
 export const actionType = {
@@ -17,9 +17,8 @@ function rootReducer(state = initialState, action) {
         case actionType.REMOVE_STATE: {
             return { ...state, content: null }
         }
+        default: return state
     }
-
-    return state
 }
 
 export default rootReducer
