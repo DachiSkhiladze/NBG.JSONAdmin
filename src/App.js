@@ -16,22 +16,20 @@ function App() {
     dispatch(SET_CONTENT(defaultContent))
   }, [])
 
-  function onAdd(value, id) {
+  function onSave(id, value) {
     const newContent = { ...content }
 
-    newContent[id] = {
-      ...content[id],
-      value
-    }
+    console.log(id,value)
+    newContent[id] = value
 
     dispatch(SET_CONTENT(newContent))
   }
 
   return (
     <div className='container'>
-      <AppSiderbar list={scheme.data.map(x => ({ title: x.id }))} />
+      <AppSiderbar list={scheme.data} />
       {content &&
-        <AppEditor scheme={scheme.data[1]} state={content} onAdd={onAdd} />
+        <AppEditor scheme={scheme.data[0]} state={content} onSave={onSave} />
       }
     </div>
   );

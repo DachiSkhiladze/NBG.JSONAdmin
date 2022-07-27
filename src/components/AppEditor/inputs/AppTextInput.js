@@ -5,12 +5,12 @@ function AppTextInput({ scheme, path }) {
     const { setState, state } = useController(path);
 
     function onChange({ target }) {
-        setState(target.value)
+        setState({ 'En': target.value })
     }
 
     return (
         <AppLabelCont label={scheme.id}>
-            <input type={'text'} onChange={onChange} value={state} />
+            <input type={'text'} onChange={onChange} value={state['En']} />
         </AppLabelCont>
     )
 }

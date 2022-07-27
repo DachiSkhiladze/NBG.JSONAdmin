@@ -24,7 +24,8 @@ const functions = {
     'text': text
 }
 
-function AppTable({ onAdd, scheme, path, state }) {
+function AppTable({ onAdd, scheme, path, onSave, state }) {
+
 
     const data = state.map((x, i) => scheme.table.map(y =>
         y.function ?
@@ -40,9 +41,11 @@ function AppTable({ onAdd, scheme, path, state }) {
     function onAddClick() {
         onAdd({
             scheme: {
-                ...scheme, type: 'form', onSave: (x) => {
-                    
-                }
+                ...scheme,
+                type: 'form',
+            },
+            onSave: (x) => {
+                onSave(scheme.id, [...state, x])
             },
             path: path
         })

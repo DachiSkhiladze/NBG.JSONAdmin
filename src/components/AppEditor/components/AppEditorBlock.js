@@ -10,13 +10,13 @@ function AppEditorBlock({ scheme, state: currentState, onSave, onCancel }) {
 
     function onSaveClick() {
         onSave(state);
-        onCancel();
+        onCancel?.();
     }
 
     return (
         <editorContext.Provider value={{ state: [state, setState], }}>
             <div>
-                <button onClick={onCancel}>cancel</button>
+                {onCancel && <button onClick={onCancel}>cancel</button>}
                 <button onClick={onSaveClick}>save</button>
                 <div>
                     {scheme.fields.map(x =>

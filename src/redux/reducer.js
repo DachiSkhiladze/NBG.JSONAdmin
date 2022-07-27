@@ -6,12 +6,16 @@ const initialState = {
 
 export const actionType = {
     SET_CONTENT: 'SET_CONTENT',
+    SET_SCHEME: 'SET_SCHEME'
 }
 
 
 function rootReducer(state = initialState, action) {
     switch (action.type) {
         case actionType.SET_CONTENT: {
+            return { ...state, content: action.data }
+        }
+        case actionType.SET_SCHEME: {
             return { ...state, content: action.data }
         }
         case actionType.REMOVE_STATE: {
