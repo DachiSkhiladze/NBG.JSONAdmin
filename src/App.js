@@ -11,15 +11,17 @@ import { useEffect } from 'react';
 function App() {
   const dispatch = useDispatch()
   const content = useSelector(x => x.content)
-
+  const currentScheme = useSelector(x => x.currentScheme)
+  
+  
   useEffect(() => {
     dispatch(SET_CONTENT(defaultContent))
   }, [])
-
+  
   function onSave(id, value) {
     const newContent = { ...content }
 
-    console.log(id,value)
+    console.log(id, value)
     newContent[id] = value
 
     dispatch(SET_CONTENT(newContent))
@@ -28,8 +30,8 @@ function App() {
   return (
     <div className='container'>
       <AppSiderbar list={scheme.data} />
-      {content &&
-        <AppEditor scheme={scheme.data[1]} state={content} onSave={onSave} />
+      {content && currentScheme && 
+        <AppEditor scheme={currentScheme} state={content} onSave={onSave} />
       }
     </div>
   );
