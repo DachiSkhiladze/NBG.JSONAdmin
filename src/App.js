@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className='container'>
-      <AppSiderbar list={scheme.data.map(x => ({ title: x.id }))} />
+      <AppSiderbar list={scheme.data} />
       {content &&
         <AppEditor scheme={scheme.data[1]} state={content} onAdd={onAdd} />
       }
