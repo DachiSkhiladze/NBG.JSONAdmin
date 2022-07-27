@@ -29,7 +29,7 @@ function App() {
     <div className='container'>
       <AppSiderbar list={scheme.data} />
       {content &&
-        <AppEditor scheme={scheme.data[0]} state={content} onSave={onSave} />
+        <AppEditor scheme={scheme.data[1]} state={content} onSave={onSave} />
       }
     </div>
   );
