@@ -10,24 +10,29 @@ import { useEffect } from 'react';
 
 function App() {
   const dispatch = useDispatch()
-  
-  var titles = ["Name", "SurName"];
-
-  var data = [
-    ["Dachi", "Skhiladze"],
-  ["Bubu", "Skhiladze"],
-  ["Bubu", "Skhiladze"],
-  ["Bubu", "Skhiladze"],
-];
+  const content = useSelector(x => x.content)
 
   useEffect(() => {
     dispatch(SET_CONTENT(defaultContent))
   }, [])
 
+  function onAdd(value, id) {
+    const newContent = { ...content }
+
+    newContent[id] = {
+      ...content[id],
+      value
+    }
+
+    dispatch(SET_CONTENT(newContent))
+  }
+
   return (
     <div className='container'>
       <AppSiderbar list={scheme.data.map(x => ({ title: x.id }))} />
-      <Table titles={titles}   data={data} />
+      {content &&
+        <AppEditor scheme={scheme.data[1]} state={content} onAdd={onAdd} />
+      }
     </div>
   );
 }

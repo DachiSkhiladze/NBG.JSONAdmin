@@ -1,4 +1,23 @@
 {
+    "constants": {
+        "cities": {
+            "0": "Akhaltsikhe",
+            "1": "Batumi",
+            "2": "Fullani",
+            "3": "Gori",
+            "4": "Kutaisi",
+            "5": "Tbilisi",
+            "6": "Mestia",
+            "7": "Mtskheta",
+            "8": "Oni",
+            "9": "Ozurgeti",
+            "10": "Rustavi",
+            "11": "Sokhumi",
+            "12": "Telavi",
+            "13": "Tskhinvali",
+            "14": "Zugdidi"
+        }
+    },
     "data": [
         {
             "id": "Parameters",
@@ -13,10 +32,36 @@
         {
             "id": "Jobs",
             "type": "list",
+            "table": [
+                {
+                    "label": "Name",
+                    "id": "Name",
+                    "function": "text"
+                },
+                {
+                    "label": "City",
+                    "id": "City",
+                    "function": "selector",
+                    "selector": "cities"
+                },
+                {
+                    "label": "Ranks",
+                    "id": "Ranks",
+                    "function": "count"
+                }
+            ],
             "fields": [
                 {
-                    "id": "Title",
+                    "id": "Name",
                     "type": "text"
+                },
+                {
+                    "id": "Id",
+                    "type": "Guid"
+                },
+                {
+                    "id": "City",
+                    "type": "Selector"
                 },
                 {
                     "id": "Ranks",
@@ -28,6 +73,14 @@
                         },
                         {
                             "id": "RequiredQualification",
+                            "type": "number"
+                        },
+                        {
+                            "id": "Salary",
+                            "type": "number"
+                        },
+                        {
+                            "id": "StepsForNextRank",
                             "type": "number"
                         },
                         {

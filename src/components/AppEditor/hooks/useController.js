@@ -7,13 +7,13 @@ function useController(path) {
     const { pushBlock, popBlock } = useBlocks();
 
     const segments = path.split('.');
-    const value = segments.reduce((a, c) => a[c], ctx.state[0]);
+
+    const value = segments.reduce((a, c) => a[c], ctx.state[0])
 
     function setState(newValue) {
         var stack = path.split('.');
 
         var object = ctx.state[0]
-        console.log(object)
 
         while (stack.length > 1) {
             object = object[stack.shift()];
@@ -21,7 +21,6 @@ function useController(path) {
 
         object[stack.shift()] = newValue;
 
-        console.log(ctx.state[0])
         ctx.state[1]({ ...ctx.state[0] })
     }
 

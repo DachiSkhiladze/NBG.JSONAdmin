@@ -1,11 +1,16 @@
 import { useState } from "react";
 import AppEditorBlock from "./components/AppEditorBlock";
 import { blockContext } from '../AppEditor/config/contexts'
+import AppList from "./inputs/AppList";
+import AppTable from "../AppTable";
+import { useSelector } from "react-redux";
 
-function AppEditor({ scheme }) {
+function AppEditor({ scheme, state, onAdd }) {
     const [blocks, setBlocks] = useState([{
         scheme,
-        onSave: (x) => console.log(x)
+        path: "",
+        state: state[scheme.id],
+        onSave: (x) => onAdd(scheme.id, x)
     }])
 
     function pushBlock(block) {
@@ -22,7 +27,10 @@ function AppEditor({ scheme }) {
         <blockContext.Provider value={{ pushBlock, popBlock }}>
             <div className="editor">
                 {blocks.map(x =>
-                    <AppEditorBlock key={x.scheme.id} {...x} onCancel={popBlock} />
+                    x.scheme.type === 'list' && !!x.scheme.table ?
+                        <AppTable onAdd={pushBlock} key={x.scheme.id} {...x} />
+                        :
+                        <AppEditorBlock key={x.scheme.id} {...x} onCancel={popBlock} />
                 )}
             </div>
         </blockContext.Provider>

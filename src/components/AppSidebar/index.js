@@ -2,7 +2,7 @@ function AppSiderbar({ list }) {
     return (
         <div className="sidebar">
             {list?.map((x, i) =>
-                <button className={i === 0 && "active"}>
+                <button key={x.title} className={i === 0 ? "active" : ""}>
                     <span>{x.title}</span>
                 </button>
             )}
