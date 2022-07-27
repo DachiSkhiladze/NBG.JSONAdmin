@@ -18,7 +18,7 @@ function App() {
 
   function onSave(id, value) {
     const newContent = { ...content }
-
+    
     console.log(id,value)
     newContent[id] = value
 
