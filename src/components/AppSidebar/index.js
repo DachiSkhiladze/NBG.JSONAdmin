@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 
@@ -8,6 +8,9 @@ function AppSiderbar({ list }) {
 
     const dispatch = useDispatch();
     const selector = useSelector(o => o.scheme);
+    useEffect(() => {
+        dispatch({type: 'SET_SCHEME', data: list[0]});
+    }, []);
     console.log(selector);
     const handleClick = (e, id) => {
         console.log('this is:', id);
@@ -17,7 +20,7 @@ function AppSiderbar({ list }) {
     return (
         <div className="sidebar">
             {list?.map((data, i) =>
-                <button onClick={(e) => handleClick(e, data)} key={data.id} className={data.id === selector.id ? "active" : ""}>
+                <button onClick={(e) => handleClick(e, data)} key={data.id} className={data.id === selector?.id ? "active" : ""}>
                     <span>{data.id}</span>
                 </button>
             )}
