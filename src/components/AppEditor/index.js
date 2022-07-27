@@ -10,7 +10,7 @@ function AppEditor({ scheme, state, onSave }) {
         scheme,
         path: "",
         onSave,
-        state
+        state: state[scheme.id]
     }
 
     const [blocks, setBlocks] = useState([])
