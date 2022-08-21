@@ -1,0 +1,63 @@
+.editor{
+    transition: 10s all;
+    display: flex;
+}
+
+.AppTable{
+    min-width: 100%;
+    transition: 1s;
+}
+
+.TableDisplay{
+    width: 40%;
+}
+
+.AppEditorsContainer{
+    width: 40%;
+}
+
+.EditorDisplay{
+    display: flex;
+    right: 0px;
+}
+
+.AppEditorBlock{
+    padding: 0px;
+    margin: 0px;
+    max-width: 240px;
+    min-width: 240px;
+    padding: 10px;
+    float: right;
+    display: block;
+    overflow: hidden;
+    button{
+        width: 100%;
+        background-color: transparent;
+        border-radius: 5px;
+        border: 1px solid black;
+        cursor: pointer;
+        height: 30px;
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    button:hover{
+        border: 1px solid #588df4;
+        background-color: #588df4;
+    }
+
+    input{
+        padding: 0px;
+        margin: 0px;
+        font-size: 15px;
+        height: 30px;
+        display: flex;
+        width: 100%;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;  
+    }
+    input:focus{
+        border: 2px solid #588df4;
+    }
+}

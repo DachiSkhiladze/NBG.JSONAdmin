@@ -1,4 +1,5 @@
 import React from "react";
+import Select from "react-select";
 import AppLabelCont from "../components/AppLabelCont";
 import useController from "../hooks/useController";
 import useMultiSelector from "../hooks/useMultiSelector";
@@ -18,11 +19,7 @@ function AppMultiSelect({ scheme, path }) {
 
   return (
     <AppLabelCont label={scheme.id}>
-      <select multiple value={state} onChange={onChange}>
-        {options.map((x) => (
-          <option value={x.value}>{x.label}</option>
-        ))}
-      </select>
+      <Select options={options} multiple value={state} onChange={onChange} />
     </AppLabelCont>
   );
 }

@@ -16,19 +16,19 @@ function AppEditorBlock({ scheme, state: currentState, onSave, onCancel }) {
   }
 
   return (
-    <editorContext.Provider value={{ state: [state, setState] }}>
-      <div>
-        {onCancel && <button onClick={onCancel}>cancel</button>}
-        <button onClick={onSaveClick}>save</button>
-        <div>
-          {scheme.fields.map((x) => (
-            <div key={x.id}>
-              {inputTypes[x.type]?.({ scheme: x, path: x.id })}
-            </div>
-          ))}
-        </div>
-      </div>
-    </editorContext.Provider>
+    <div className="AppEditorBlock">
+      <editorContext.Provider value={{ state: [state, setState] }}>
+          {onCancel && <button onClick={onCancel}>cancel</button>}
+          <button onClick={onSaveClick}>save</button>
+          <div>
+            {scheme.fields.map((x) => (
+              <div key={x.id}>
+                {inputTypes[x.type]?.({ scheme: x, path: x.id })}
+              </div>
+            ))}
+          </div>
+      </editorContext.Provider>
+    </div>
   );
 }
 

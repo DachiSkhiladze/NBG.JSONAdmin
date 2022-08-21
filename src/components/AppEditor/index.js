@@ -4,6 +4,7 @@ import { blockContext } from "../AppEditor/config/contexts";
 import AppList from "./inputs/AppList";
 import AppTable from "../AppTable";
 import { useSelector } from "react-redux";
+import './index.scss'
 
 function AppEditor({ scheme, state, onSave }) {
   const block = {
@@ -33,13 +34,20 @@ function AppEditor({ scheme, state, onSave }) {
     <blockContext.Provider value={{ pushBlock, popBlock }}>
       <div className="editor">
         {scheme.type === "list" && !!scheme.table ? (
-          <AppTable onAdd={pushBlock} key={scheme.id} {...block} />
+          <div className="TableDisplay">
+            <AppTable onAdd={pushBlock} key={scheme.id} {...block} />
+          </div>
         ) : (
           <AppEditorBlock key={scheme.id} {...block} />
         )}
-        {blocks.map((x) => (
-          <AppEditorBlock key={x.scheme.id} {...x} onCancel={popBlock} />
-        ))}
+        <div className="AppEditorsContainer">
+          <div className="EditorDisplay">
+            {blocks.map((x) => (
+              <AppEditorBlock key={x.scheme.id} {...x} onCancel={popBlock} />
+            ))}
+          </div>
+        </div>
+
       </div>
     </blockContext.Provider>
   );

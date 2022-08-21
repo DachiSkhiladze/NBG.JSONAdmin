@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import "../../App.scss";
 import rootScheme from "../../scheme.json";
@@ -5,6 +6,7 @@ import functions from "./functions";
 
 function AppTable({ onAdd, scheme, path, onSave, state }) {
   const lang = useSelector((x) => x.language);
+  const [isAddActive, setIsAddActive] = useState(false);
   const data = state.map((x, i) =>
     scheme.table.map((y) =>
       y.function
@@ -20,6 +22,8 @@ function AppTable({ onAdd, scheme, path, onSave, state }) {
   const titles = scheme.table.map((x) => x.label);
 
   function onAddClick() {
+    setIsAddActive(true);
+    
     onAdd({
       scheme: {
         ...scheme,
@@ -33,8 +37,8 @@ function AppTable({ onAdd, scheme, path, onSave, state }) {
   }
 
   return (
-    <div className="table-cont">
-      <button onClick={onAddClick}>Add</button>
+    <div className="AppTable table-cont">
+      <button disabled={false} onClick={onAddClick}>Add</button>
       <table>
         <tr>
           <th></th>
