@@ -1,5 +1,5 @@
 const defaultValues = {
-    'text': "",
+    'text': { En: "", Ge: "" },
     'number': 0,
     'multi_selector': [],
     'list': [],

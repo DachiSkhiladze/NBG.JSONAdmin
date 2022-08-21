@@ -10,7 +10,7 @@ function AppTextInput({ scheme, path }) {
 
     return (
         <AppLabelCont label={scheme.id}>
-            <input type={'text'} onChange={onChange} value={state['En']} />
+            <input type={'text'} onChange={onChange} value={state?.['En']} />
         </AppLabelCont>
     )
 }

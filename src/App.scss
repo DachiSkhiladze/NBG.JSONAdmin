@@ -1,12 +1,12 @@
 html,
 body {
-  height: 100%
+  height: 100%;
 }
 
 #root {
   position: absolute;
-  top: 100px;
-  bottom: 100px;
+  top: 50px;
+  bottom: 20px;
   // height: 100%;
   width: 100%;
 }
@@ -14,18 +14,38 @@ body {
 .container {
   display: flex;
   height: 100%;
+  overflow: hidden;
 }
 
 .sidebar {
   width: 250px;
-  border-right: solid 1px;
+  border-right: solid 1px lightgray;
   padding: 30px 15px;
   display: flex;
   flex-direction: column;
+  overflow: auto;
+
+  .language-chooser-cont {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    button:nth-child(1) {
+      margin-left: 5px;
+    }
+    button {
+      margin: 0;
+      margin-left: 5px;
+
+      .active {
+        background-color: #588df4;
+        color: white;
+      }
+    }
+  }
 
   button {
     margin-top: 5px;
-    padding: 12px 20px;
+    padding: 12px 15px;
     border-radius: 10px;
     border: none;
     display: flex;
@@ -33,15 +53,13 @@ body {
     background-color: white;
 
     span {
-      font-size: 20px;
+      font-size: 16px;
       text-align: left;
     }
-
-
   }
 
   .active {
-    background-color: #588DF4;
+    background-color: #588df4;
 
     span {
       color: white;
@@ -49,19 +67,21 @@ body {
   }
 
   button:hover {
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
     cursor: pointer;
   }
 
   .active:hover {
-    background-color: #588DF4;
+    background-color: #588df4;
   }
 }
 
 .editor {
   width: 100%;
+  overflow: auto;
+  margin: 0px 10px;
   input {
-    background-color: 'red';
+    background-color: "red";
   }
 }
 
@@ -73,16 +93,22 @@ body {
     width: 100%;
 
     th {
-      background-color: #588DF4;
+      background-color: #588df4;
+      color: white;
     }
 
-    tr:nth-child(odd){
+    tr:nth-child(odd) {
       background-color: #f7f7f7;
+    }
+
+    td:nth-child(1) {
+      width: 20px;
+      text-align: center;
     }
 
     td,
     th {
-      border-right: 1px solid #dddddd;
+      border-right: 1px solid #dddddd65;
       text-align: left;
       padding: 8px;
     }

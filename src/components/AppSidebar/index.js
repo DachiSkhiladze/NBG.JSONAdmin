@@ -1,31 +1,52 @@
 import { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
-
-
+import { SET_LANGUAGE } from "../../redux/actions";
 
 function AppSiderbar({ list }) {
+  const dispatch = useDispatch();
+  const selector = useSelector((o) => o.scheme);
+  const language = useSelector((o) => o.language);
+  useEffect(() => {
+    const id = window.location.pathname.replace("/", "");
+    dispatch({ type: "SET_SCHEME", data: list.find((x) => x.id === id) });
+  }, []);
 
-    const dispatch = useDispatch();
-    const selector = useSelector(o => o.scheme);
-    useEffect(() => {
-        dispatch({type: 'SET_SCHEME', data: list[0]});
-    }, []);
-    console.log(selector);
-    const handleClick = (e, id) => {
-        console.log('this is:', id);
-        dispatch({ type: 'SET_SCHEME', data: id });
-    };
+  const handleClick = (e, data) => {
+    window.history.replaceState(null, "", data.id);
+    dispatch({ type: "SET_SCHEME", data: data });
+  };
 
-    return (
-        <div className="sidebar">
-            {list?.map((data, i) =>
-                <button onClick={(e) => handleClick(e, data)} key={data.id} className={data.id === selector?.id ? "active" : ""}>
-                    <span>{data.id}</span>
-                </button>
-            )}
-        </div>
-    )
+  function onLanguageClick(lang) {
+    dispatch(SET_LANGUAGE(lang));
+  }
+
+  return (
+    <div className="sidebar">
+      <div className="language-chooser-cont">
+        <button
+          onClick={() => onLanguageClick("En")}
+          className={language === "En" ? "active" : ""}
+        >
+          <span>En</span>
+        </button>
+        <button
+          onClick={() => onLanguageClick("Ge")}
+          className={language === "Ge" ? "active" : ""}
+        >
+          <span>Ge</span>
+        </button>
+      </div>
+      {list?.map((data, i) => (
+        <button
+          onClick={(e) => handleClick(e, data)}
+          key={data.id}
+          className={data.id === selector?.id ? "active" : ""}
+        >
+          <span>{data.id}</span>
+        </button>
+      ))}
+    </div>
+  );
 }
 
-export default AppSiderbar
+export default AppSiderbar;

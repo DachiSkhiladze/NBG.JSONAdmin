@@ -1,119 +1,576 @@
 {
-    "constants": {
-        "cities": {
-            "0": "Akhaltsikhe",
-            "1": "Batumi",
-            "2": "Fullani",
-            "3": "Gori",
-            "4": "Kutaisi",
-            "5": "Tbilisi",
-            "6": "Mestia",
-            "7": "Mtskheta",
-            "8": "Oni",
-            "9": "Ozurgeti",
-            "10": "Rustavi",
-            "11": "Sokhumi",
-            "12": "Telavi",
-            "13": "Tskhinvali",
-            "14": "Zugdidi"
-        }
+  "constants": {
+    "cities": {
+      "0": "Akhaltsikhe",
+      "1": "Batumi",
+      "2": "Fullani",
+      "3": "Gori",
+      "4": "Kutaisi",
+      "5": "Tbilisi",
+      "6": "Mestia",
+      "7": "Mtskheta",
+      "8": "Oni",
+      "9": "Ozurgeti",
+      "10": "Rustavi",
+      "11": "Sokhumi",
+      "12": "Telavi",
+      "13": "Tskhinvali",
+      "14": "Zugdidi"
     },
-    "data": [
+    "houseTypes": {
+      "0": "პატარა ბინა",
+      "1": "საშვალო ბინა",
+      "2": "დიდი ბინა",
+      "3": "პატარა სახლი",
+      "4": "საშვალო სახლი",
+      "5": "დიდი სახლი"
+    }
+  },
+  "data": [
+    {
+      "id": "Houses",
+      "table": [
         {
-            "id": "Parameters",
-            "type": "list",
-            "fields": [
-                {
-                    "id": "SalaryTax",
-                    "type": "number"
-                }
-            ]
+          "label": "Type",
+          "id": "Type",
+          "function": "selector",
+          "selector": "houseTypes"
         },
         {
-            "id": "Jobs",
-            "type": "list",
-            "table": [
-                {
-                    "label": "Name",
-                    "id": "Name",
-                    "function": "text"
-                },
-                {
-                    "label": "City",
-                    "id": "City",
-                    "function": "selector",
-                    "selector": "cities"
-                },
-                {
-                    "label": "Ranks",
-                    "id": "Ranks",
-                    "function": "count"
-                }
-            ],
-            "fields": [
-                {
-                    "id": "Name",
-                    "type": "text"
-                },
-                {
-                    "id": "Id",
-                    "type": "Guid"
-                },
-                {
-                    "id": "City",
-                    "type": "Selector"
-                },
-                {
-                    "id": "Ranks",
-                    "type": "list",
-                    "fields": [
-                        {
-                            "id": "Name",
-                            "type": "text"
-                        },
-                        {
-                            "id": "RequiredQualification",
-                            "type": "number"
-                        },
-                        {
-                            "id": "Salary",
-                            "type": "number"
-                        },
-                        {
-                            "id": "StepsForNextRank",
-                            "type": "number"
-                        },
-                        {
-                            "id": "RequiredItems",
-                            "type": "multi_selector",
-                            "reference": {
-                                "value": "Items.id",
-                                "label": "Items.label"
-                            }
-                        },
-                        {
-                            "id": "QuestionDifficulties",
-                            "type": "list",
-                            "fields": [
-                                {
-                                    "id": "Difficulty",
-                                    "type": "multi_selector",
-                                    "options": [
-                                        {
-                                            "label": "easy",
-                                            "value": 0
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "Value",
-                                    "type": "number"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+          "label": "City",
+          "id": "City",
+          "function": "selector",
+          "selector": "cities"
+        },
+        {
+          "label": "Price",
+          "id": "Price",
+          "function": "price"
+        },
+        {
+          "label": "SellPrice",
+          "id": "SellPrice",
+          "function": "price"
+        },
+        {
+          "label": "RentOutPrice",
+          "id": "RentOutPrice",
+          "function": "price"
+        },
+        {
+          "label": "RentInPrice",
+          "id": "RentInPrice",
+          "function": "price"
         }
-    ]
+      ],
+      "type": "list",
+      "fields": [
+        { "id": "Price", "type": "number", "fields": null },
+        { "id": "RentOutPrice", "type": "number", "fields": null },
+        { "id": "RentInPrice", "type": "number", "fields": null },
+        { "id": "SellPrice", "type": "number", "fields": null },
+        {
+          "id": "Type",
+          "type": "selector",
+          "selector": "houseTypes",
+          "fields": null
+        },
+        { "id": "Id", "type": "guid", "fields": null },
+        {
+          "id": "City",
+          "type": "selector",
+          "selector": "cities",
+          "fields": null
+        }
+      ]
+    },
+    {
+      "id": "Jobs",
+      "table": [
+        {
+          "label": "Name",
+          "id": "Name",
+          "function": "text"
+        },
+        {
+          "label": "City",
+          "id": "City",
+          "function": "selector",
+          "selector": "cities"
+        },
+        {
+          "label": "Ranks",
+          "id": "Ranks",
+          "function": "count"
+        }
+      ],
+      "type": "list",
+      "fields": [
+        { "id": "Name", "type": "text", "fields": null },
+        {
+          "id": "Ranks",
+          "type": "list",
+          "fields": [
+            { "id": "Name", "type": "text", "fields": null },
+            { "id": "RequiredQualification", "type": "number", "fields": null },
+            { "id": "RequiredItemIds", "type": "number", "fields": null },
+            { "id": "Salary", "type": "number", "fields": null },
+            { "id": "Position", "type": "number", "fields": null },
+            { "id": "StepsForNextRank", "type": "number", "fields": null },
+            {
+              "id": "QuestionDifficulties",
+              "type": "form",
+              "fields": [
+                { "id": "easy", "type": "number", "fields": null },
+                { "id": "moderate", "type": "number", "fields": null }
+              ]
+            }
+          ]
+        },
+        { "id": "Id", "type": "guid", "fields": null },
+        {
+          "id": "City",
+          "type": "selector",
+          "selector": "cities",
+          "fields": null
+        }
+      ]
+    },
+    {
+      "id": "Items",
+      "type": "list",
+      "table": [
+        {
+          "label": "Name",
+          "id": "Name",
+          "function": "text"
+        },
+        {
+          "label": "Price",
+          "id": "Price",
+          "function": "price"
+        }
+      ],
+      "fields": [
+        { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Tag", "type": "number", "fields": null },
+        { "id": "Name", "type": "text", "fields": null },
+        { "id": "Description", "type": "number", "fields": null },
+        { "id": "Price", "type": "number", "fields": null }
+      ]
+    },
+    {
+      "id": "Shops",
+      "type": "list",
+      "table": [
+        {
+          "label": "City",
+          "id": "City",
+          "function": "selector",
+          "selector": "cities"
+        },
+        {
+          "label": "Items",
+          "id": "Storage",
+          "function": "count"
+        }
+      ],
+      "fields": [
+        {
+          "id": "Storage",
+          "type": "multi_selector",
+          "selector": "items"
+        },
+        { "id": "Id", "type": "guid", "fields": null },
+        {
+          "id": "City",
+          "type": "selector",
+          "selector": "cities",
+          "fields": null
+        }
+      ]
+    },
+    {
+      "id": "Parameters",
+      "type": "form",
+      "fields": [
+        {
+          "id": "QualificationQuestionRange",
+          "type": "number",
+          "fields": null
+        },
+        {
+          "id": "MoodRange",
+          "type": "form",
+          "fields": [
+            { "id": "Min", "type": "number", "fields": null },
+            { "id": "Max", "type": "number", "fields": null }
+          ]
+        },
+        {
+          "id": "HealthRange",
+          "type": "form",
+          "fields": [
+            { "id": "Min", "type": "number", "fields": null },
+            { "id": "Max", "type": "number", "fields": null }
+          ]
+        },
+        {
+          "id": "QuestionUnlockPrices",
+          "type": "form",
+          "fields": [
+            { "id": "easy", "type": "number", "fields": null },
+            { "id": "moderate", "type": "number", "fields": null },
+            { "id": "hard", "type": "number", "fields": null }
+          ]
+        },
+        {
+          "id": "CityLevelSettings",
+          "type": "form",
+          "fields": [
+            {
+              "id": "1",
+              "type": "form",
+              "fields": [
+                { "id": "Money", "type": "number", "fields": null },
+                { "id": "DevelopmentWeight", "type": "number", "fields": null },
+                { "id": "Polution", "type": "number", "fields": null }
+              ]
+            },
+            {
+              "id": "2",
+              "type": "form",
+              "fields": [
+                { "id": "Money", "type": "number", "fields": null },
+                { "id": "DevelopmentWeight", "type": "number", "fields": null },
+                { "id": "Polution", "type": "number", "fields": null }
+              ]
+            },
+            {
+              "id": "3",
+              "type": "form",
+              "fields": [
+                { "id": "Money", "type": "number", "fields": null },
+                { "id": "DevelopmentWeight", "type": "number", "fields": null },
+                { "id": "Polution", "type": "number", "fields": null }
+              ]
+            },
+            {
+              "id": "4",
+              "type": "form",
+              "fields": [
+                { "id": "Money", "type": "number", "fields": null },
+                { "id": "DevelopmentWeight", "type": "number", "fields": null },
+                { "id": "Polution", "type": "number", "fields": null }
+              ]
+            },
+            {
+              "id": "5",
+              "type": "form",
+              "fields": [
+                { "id": "Money", "type": "number", "fields": null },
+                { "id": "DevelopmentWeight", "type": "number", "fields": null },
+                { "id": "Polution", "type": "number", "fields": null }
+              ]
+            },
+            {
+              "id": "6",
+              "type": "form",
+              "fields": [
+                { "id": "Money", "type": "number", "fields": null },
+                { "id": "DevelopmentWeight", "type": "number", "fields": null },
+                { "id": "Polution", "type": "number", "fields": null }
+              ]
+            },
+            {
+              "id": "7",
+              "type": "form",
+              "fields": [
+                { "id": "Money", "type": "number", "fields": null },
+                { "id": "DevelopmentWeight", "type": "number", "fields": null },
+                { "id": "Polution", "type": "number", "fields": null }
+              ]
+            },
+            {
+              "id": "8",
+              "type": "form",
+              "fields": [
+                { "id": "Money", "type": "number", "fields": null },
+                { "id": "DevelopmentWeight", "type": "number", "fields": null },
+                { "id": "Polution", "type": "number", "fields": null }
+              ]
+            },
+            {
+              "id": "9",
+              "type": "form",
+              "fields": [
+                { "id": "Money", "type": "number", "fields": null },
+                { "id": "DevelopmentWeight", "type": "number", "fields": null },
+                { "id": "Polution", "type": "number", "fields": null }
+              ]
+            },
+            {
+              "id": "10",
+              "type": "form",
+              "fields": [
+                { "id": "Money", "type": "number", "fields": null },
+                { "id": "DevelopmentWeight", "type": "number", "fields": null },
+                { "id": "Polution", "type": "number", "fields": null }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HouseTemplates",
+          "type": "list",
+          "fields": [
+            { "id": "HouseTypes", "type": "list", "fields": [] },
+            { "id": "ItemId", "type": "guid", "fields": null },
+            { "id": "Max", "type": "number", "fields": null },
+            { "id": "MoodEffect", "type": "number", "fields": null }
+          ]
+        },
+        {
+          "id": "DebtRatingSettings",
+          "type": "list",
+          "fields": [
+            { "id": "Name", "type": "text", "fields": null },
+            { "id": "Current", "type": "number", "fields": null },
+            { "id": "Completed", "type": "number", "fields": null },
+            { "id": "MaxRatio", "type": "number", "fields": null },
+            { "id": "InterestRate", "type": "number", "fields": null }
+          ]
+        },
+        { "id": "ActionTimes", "type": "form", "fields": [] },
+        {
+          "id": "MoodScale",
+          "type": "form",
+          "fields": [
+            { "id": "0", "type": "number", "fields": null },
+            { "id": "1", "type": "number", "fields": null },
+            { "id": "2", "type": "number", "fields": null },
+            { "id": "3", "type": "number", "fields": null },
+            { "id": "4", "type": "number", "fields": null },
+            { "id": "5", "type": "number", "fields": null }
+          ]
+        },
+        {
+          "id": "HealthScale",
+          "type": "form",
+          "fields": [
+            { "id": "0", "type": "number", "fields": null },
+            { "id": "10", "type": "number", "fields": null },
+            { "id": "20", "type": "number", "fields": null },
+            { "id": "30", "type": "number", "fields": null },
+            { "id": "40", "type": "number", "fields": null },
+            { "id": "50", "type": "number", "fields": null }
+          ]
+        },
+        {
+          "id": "BalanceScale",
+          "type": "form",
+          "fields": [
+            { "id": "0", "type": "number", "fields": null },
+            { "id": "1", "type": "number", "fields": null },
+            { "id": "2", "type": "number", "fields": null },
+            { "id": "3", "type": "number", "fields": null },
+            { "id": "4", "type": "number", "fields": null },
+            { "id": "5", "type": "number", "fields": null }
+          ]
+        },
+        {
+          "id": "MoodFortuneScale",
+          "type": "list",
+          "fields": [
+            { "id": "Min", "type": "number", "fields": null },
+            { "id": "Max", "type": "number", "fields": null },
+            { "id": "IncludeAll", "type": "number", "fields": null },
+            { "id": "Rate", "type": "number", "fields": null }
+          ]
+        },
+        {
+          "id": "DepositSettings",
+          "type": "list",
+          "fields": [
+            { "id": "Type", "type": "number", "fields": null },
+            { "id": "Time", "type": "list", "fields": [] },
+            { "id": "Rate", "type": "number", "fields": null }
+          ]
+        },
+        { "id": "RandomEventDayRange", "type": "number", "fields": null },
+        { "id": "FoodPrice", "type": "number", "fields": null },
+        { "id": "MaxFoodAmmount", "type": "number", "fields": null },
+        { "id": "MonthlyQuestionCount", "type": "number", "fields": null },
+        { "id": "MinimumCorrectAnswers", "type": "number", "fields": null },
+        {
+          "id": "MinimumDaysWithoutCorrectAnswers",
+          "type": "number",
+          "fields": null
+        },
+        { "id": "MaximumDaysWithoutWork", "type": "number", "fields": null },
+        { "id": "SalaryTax", "type": "number", "fields": null },
+        { "id": "ProfitTax", "type": "number", "fields": null },
+        { "id": "PropertyTax", "type": "number", "fields": null },
+        {
+          "id": "RequiredWorkingMonthesForDepbt",
+          "type": "number",
+          "fields": null
+        },
+        { "id": "AverageSalaryDebtFraction", "type": "number", "fields": null },
+        { "id": "PermamentMoodEffect", "type": "number", "fields": null },
+        { "id": "PermamentHealthEffect", "type": "number", "fields": null },
+        { "id": "HealthMoodEffect", "type": "number", "fields": null },
+        { "id": "MoodHealthEffect", "type": "number", "fields": null },
+        { "id": "LifeInsurancePrice", "type": "number", "fields": null },
+        { "id": "PropertyInsuranceRate", "type": "number", "fields": null },
+        { "id": "BusinessInsuranceRate", "type": "number", "fields": null },
+        { "id": "BusinessSellPriceRatio", "type": "number", "fields": null },
+        { "id": "FineRate", "type": "number", "fields": null }
+      ]
+    },
+    {
+      "id": "Activities",
+      "type": "list",
+      "fields": [
+        { "id": "Health", "type": "number", "fields": null },
+        { "id": "Mood", "type": "number", "fields": null },
+        { "id": "Money", "type": "number", "fields": null },
+        { "id": "Title", "type": "text", "fields": null },
+        { "id": "Description", "type": "text", "fields": null },
+        { "id": "ImageId", "type": "number", "fields": null },
+        { "id": "BuildingId", "type": "number", "fields": null },
+        { "id": "Id", "type": "guid", "fields": null },
+        {
+          "id": "City",
+          "type": "selector",
+          "selector": "cities",
+          "fields": null
+        }
+      ]
+    },
+    {
+      "id": "Questions",
+      "type": "list",
+      "fields": [
+        { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Theme", "type": "number", "fields": null },
+        { "id": "QuestionText", "type": "text", "fields": null },
+        {
+          "id": "Answers",
+          "type": "form",
+          "fields": [
+            { "id": "სწორია", "type": "number", "fields": null },
+            { "id": "არასწორია", "type": "number", "fields": null }
+          ]
+        },
+        { "id": "Difficulty", "type": "number", "fields": null },
+        {
+          "id": "CorrectAnswers",
+          "type": "list",
+          "fields": [
+            { "id": "0", "type": "text", "fields": null },
+            { "id": "1", "type": "text", "fields": null },
+            { "id": "2", "type": "text", "fields": null },
+            { "id": "3", "type": "text", "fields": null },
+            { "id": "4", "type": "text", "fields": null },
+            { "id": "5", "type": "text", "fields": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Missions",
+      "type": "list",
+      "fields": [
+        { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Object", "type": "guid", "fields": null },
+        {
+          "id": "City",
+          "type": "selector",
+          "selector": "cities",
+          "fields": null
+        },
+        { "id": "Type", "type": "number", "fields": null },
+        { "id": "Text", "type": "text", "fields": null },
+        { "id": "Count", "type": "number", "fields": null },
+        { "id": "Optional", "type": "number", "fields": null },
+        {
+          "id": "Reward",
+          "type": "form",
+          "fields": [
+            { "id": "Money", "type": "number", "fields": null },
+            { "id": "Health", "type": "number", "fields": null },
+            { "id": "Mood", "type": "number", "fields": null }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DebtSettings",
+      "type": "list",
+      "fields": [
+        { "id": "Type", "type": "number", "fields": null },
+        { "id": "Time", "type": "list", "fields": [] },
+        { "id": "Amounts", "type": "list", "fields": [] },
+        { "id": "InterestRate", "type": "number", "fields": null },
+        { "id": "FinePercent", "type": "number", "fields": null }
+      ]
+    },
+    {
+      "id": "Cities",
+      "type": "list",
+      "fields": [
+        { "id": "Name", "type": "text", "fields": null },
+        { "id": "Id", "type": "number", "fields": null },
+        { "id": "Price", "type": "number", "fields": null },
+        { "id": "StartPolutionLevel", "type": "number", "fields": null },
+        { "id": "IsUnlocked", "type": "number", "fields": null }
+      ]
+    },
+    {
+      "id": "Businesses",
+      "type": "list",
+      "fields": [
+        { "id": "Id", "type": "guid", "fields": null },
+        {
+          "id": "Ranks",
+          "type": "list",
+          "fields": [
+            { "id": "Name", "type": "text", "fields": null },
+            { "id": "RequiredQualification", "type": "number", "fields": null },
+            { "id": "Price", "type": "number", "fields": null },
+            { "id": "Income", "type": "number", "fields": null },
+            { "id": "UpgradePrice", "type": "number", "fields": null },
+            { "id": "ManagerSalary", "type": "number", "fields": null },
+            { "id": "Position", "type": "number", "fields": null },
+            { "id": "StepsForNextRank", "type": "number", "fields": null },
+            {
+              "id": "QuestionDifficulties",
+              "type": "form",
+              "fields": [{ "id": "easy", "type": "number", "fields": null }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RandomEvents",
+      "type": "list",
+      "fields": [
+        { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Text", "type": "text", "fields": null },
+        {
+          "id": "Effect",
+          "type": "form",
+          "fields": [
+            { "id": "Health", "type": "number", "fields": null },
+            { "id": "Mood", "type": "number", "fields": null },
+            { "id": "Money", "type": "number", "fields": null },
+            { "id": "Time", "type": "number", "fields": null }
+          ]
+        },
+        { "id": "EffectInsurances", "type": "number", "fields": null }
+      ]
+    }
+  ]
 }
