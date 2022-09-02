@@ -106,33 +106,60 @@
       ],
       "type": "list",
       "fields": [
-        { "id": "Name", "type": "text", "fields": null },
-        {
-          "id": "Ranks",
-          "type": "list",
-          "fields": [
-            { "id": "Name", "type": "text", "fields": null },
-            { "id": "RequiredQualification", "type": "number", "fields": null },
-            { "id": "RequiredItemIds", "type": "number", "fields": null },
-            { "id": "Salary", "type": "number", "fields": null },
-            { "id": "Position", "type": "number", "fields": null },
-            { "id": "StepsForNextRank", "type": "number", "fields": null },
-            {
-              "id": "QuestionDifficulties",
-              "type": "form",
-              "fields": [
-                { "id": "easy", "type": "number", "fields": null },
-                { "id": "moderate", "type": "number", "fields": null }
-              ]
-            }
-          ]
-        },
         { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Name", "type": "text", "fields": null },
         {
           "id": "City",
           "type": "selector",
           "selector": "cities",
           "fields": null
+        },
+        {
+          "id": "Ranks",
+          "table": [
+            {
+              "label": "Name",
+              "id": "Name",
+              "function": "text"
+            },
+            {
+              "label": "Salary",
+              "id": "Salary",
+              "function": "price"
+            }
+          ],
+          "type": "list",
+          "fields": [
+            { "id": "Name", "type": "text", "fields": null },
+            { "id": "RequiredQualification", "type": "number", "fields": null },
+            { "id": "StepsForNextRank", "type": "number", "fields": null },
+            { "id": "Salary", "type": "number", "fields": null },
+            { "id": "Position", "type": "number", "fields": null },
+            {
+              "id": "RequiredItemIds",
+              "type": "multi_selector",
+              "fields": null,
+              "selector": "items"
+            },
+            {
+              "id": "QuestionDifficulties",
+              "type": "form",
+              "fields": [
+                {
+                  "id": "easy",
+                  "type": "number",
+                  "fields": null,
+                  "default": 50
+                },
+                {
+                  "id": "moderate",
+                  "type": "number",
+                  "fields": null,
+                  "default": 30
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -153,10 +180,9 @@
       ],
       "fields": [
         { "id": "Id", "type": "guid", "fields": null },
-        { "id": "Tag", "type": "number", "fields": null },
         { "id": "Name", "type": "text", "fields": null },
-        { "id": "Description", "type": "number", "fields": null },
-        { "id": "Price", "type": "number", "fields": null }
+        { "id": "Price", "type": "number", "fields": null },
+        { "id": "Description", "type": "textarea", "fields": null }
       ]
     },
     {
@@ -453,27 +479,36 @@
       "type": "list",
       "fields": [
         { "id": "Id", "type": "guid", "fields": null },
-        { "id": "Theme", "type": "number", "fields": null },
-        { "id": "QuestionText", "type": "text", "fields": null },
+        { "id": "QuestionText", "type": "textarea", "fields": null },
+        {
+          "id": "Difficulty",
+          "type": "selector",
+          "fields": null,
+          "selector": "difficulty"
+        },
         {
           "id": "Answers",
-          "type": "form",
-          "fields": [
-            { "id": "სწორია", "type": "number", "fields": null },
-            { "id": "არასწორია", "type": "number", "fields": null }
-          ]
-        },
-        { "id": "Difficulty", "type": "number", "fields": null },
-        {
-          "id": "CorrectAnswers",
           "type": "list",
+          "table": [
+            {
+              "label": "პასუხი",
+              "id": "Text",
+              "function": "text"
+            },
+            {
+              "label": "სწორია",
+              "id": "IsCorrect",
+              "function": "bool"
+            }
+          ],
           "fields": [
-            { "id": "0", "type": "text", "fields": null },
-            { "id": "1", "type": "text", "fields": null },
-            { "id": "2", "type": "text", "fields": null },
-            { "id": "3", "type": "text", "fields": null },
-            { "id": "4", "type": "text", "fields": null },
-            { "id": "5", "type": "text", "fields": null }
+            { "id": "Text", "type": "textarea", "fields": null },
+            {
+              "id": "IsCorrect",
+              "type": "selector",
+              "fields": null,
+              "selector": "bool"
+            }
           ]
         }
       ]
@@ -493,7 +528,12 @@
         { "id": "Type", "type": "number", "fields": null },
         { "id": "Text", "type": "text", "fields": null },
         { "id": "Count", "type": "number", "fields": null },
-        { "id": "Optional", "type": "number", "fields": null },
+        {
+          "id": "Optional",
+          "type": "selector",
+          "fields": null,
+          "selector": "bool"
+        },
         {
           "id": "Reward",
           "type": "form",

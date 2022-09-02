@@ -1,22 +1,26 @@
+import { v4 as uuidv4 } from "uuid";
+
 const defaultValues = {
-    'text': { En: "", Ge: "" },
-    'number': 0,
-    'multi_selector': [],
-    'list': [],
-    'form': {}
-}
+  text: () => ({ En: "", Ge: "" }),
+  number: () => 0,
+  multi_selector: () => [],
+  selector: () => "0",
+  list: () => [],
+  // form: () => ({}),
+  guid: () => uuidv4(),
+};
 
 function generateDefaultState(scheme) {
-    const res = defaultValues[scheme.type]
+  let res = scheme.default || defaultValues[scheme.type]?.();
 
-    if (scheme.type === 'form') {
-        scheme.fields.forEach(x => {
-            var value = defaultValues?.[x.type]
-            res[x.id] = value === null ? generateDefaultState(x) : value
-        });
-    }
+  if (scheme.type === "form") {
+    res = {};
+    scheme.fields.forEach((x) => {
+      res[x.id] = scheme.default || generateDefaultState(x);
+    });
+  }
 
-    return res
+  return res;
 }
 
-export default generateDefaultState
+export default generateDefaultState;

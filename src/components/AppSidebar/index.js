@@ -6,8 +6,10 @@ function AppSiderbar({ list }) {
   const dispatch = useDispatch();
   const selector = useSelector((o) => o.scheme);
   const language = useSelector((o) => o.language);
+
   useEffect(() => {
-    const id = window.location.pathname.replace("/", "");
+    let id = window.location.pathname.replace("/", "");
+    if (!id) id = list[0].id;
     dispatch({ type: "SET_SCHEME", data: list.find((x) => x.id === id) });
   }, []);
 

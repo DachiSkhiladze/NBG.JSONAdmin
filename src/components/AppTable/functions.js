@@ -12,7 +12,13 @@ function selector(params) {
 
 function text(params) {
   var lang = localStorage.getItem("lang") || "Ge";
-  return params.state[params.id][lang];
+  return params.state[params.id]?.[lang];
+}
+
+function bool(params) {
+  const { state,id } = params;
+  const value = state[id];
+  return value ? "კი" : "არა";
 }
 
 function price(params) {
@@ -26,6 +32,7 @@ const functions = {
   selector,
   text,
   price,
+  bool,
 };
 
 export default functions;

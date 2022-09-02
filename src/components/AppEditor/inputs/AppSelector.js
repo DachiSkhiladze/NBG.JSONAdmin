@@ -7,33 +7,29 @@ import useMultiSelector from "../hooks/useMultiSelector";
 const customStyles = {
   control: (base) => ({
     ...base,
-    // height: 40,
+    height: 40,
     minHeight: 40,
     boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
   }),
 };
 
-function AppMultiSelect({ scheme, path }) {
+function AppSelctor({ scheme, path }) {
   const { setState, state } = useController(path);
   const { options } = useMultiSelector(scheme, path);
 
   function onChange(p) {
-    setState(p.map((x) => x.value));
+    setState(p.value);
   }
 
   React.useEffect(() => {
-    // setState([options[0].value]);
+    // setState(options[0].value);
   }, []);
 
   return (
-    <AppLabelCont label={scheme.id} fullWidth>
+    <AppLabelCont label={scheme.id}>
       <Select
         options={options}
-        isMulti
-        value={state?.map((x) => ({
-          label: options?.find((o) => o.value == x).label,
-          value: x,
-        }))}
+        value={options.find((x) => x.value == state)}
         onChange={onChange}
         styles={customStyles}
       />
@@ -41,4 +37,4 @@ function AppMultiSelect({ scheme, path }) {
   );
 }
 
-export default AppMultiSelect;
+export default AppSelctor;

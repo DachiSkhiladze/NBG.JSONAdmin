@@ -1,29 +1,19 @@
-import AppLabelCont from "../components/AppLabelCont";
+import AppForm from "./AppForm";
+import AppInput from "./AppInput";
 import AppList from "./AppList";
 import AppMultiSelect from "./AppMultiSelector";
 import AppNumberInput from "./AppNumberInput";
+import AppSelctor from "./AppSelector";
+import AppTextArea from "./AppTextArea";
 import AppTextInput from "./AppTextInput";
 
-function AppForm({ scheme, path = "" }) {
-  return (
-    <AppLabelCont label={scheme.id}>
-      {scheme.fields.map((x) => (
-        <div key={x.id}>
-          {inputTypes[x.type]?.({
-            scheme: x,
-            path: path + "." + x.id,
-          })}
-        </div>
-      ))}
-    </AppLabelCont>
-  );
-}
-
-const inputTypes = {
+export const inputTypes = {
   text: (p) => <AppTextInput {...p} />,
+  guid: (p) => <AppInput {...p} />,
+  textarea: (p) => <AppTextArea {...p} />,
   number: (p) => <AppNumberInput {...p} />,
   multi_selector: (p) => <AppMultiSelect {...p} />,
-  selector: (p) => <AppMultiSelect {...p} />,
+  selector: (p) => <AppSelctor {...p} />,
   list: (p) => <AppList {...p} />,
   form: (p) => <AppForm {...p} />,
 };

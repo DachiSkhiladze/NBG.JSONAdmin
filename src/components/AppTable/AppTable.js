@@ -1,14 +1,33 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import "../../App.scss";
 import rootScheme from "../../scheme.json";
+import useController, { useTable } from "../AppEditor/hooks/useController";
 import functions from "./functions";
 
-function AppTable({ onAdd, scheme, path, onSave, state }) {
-  const lang = useSelector((x) => x.language);
-  const [isAddActive, setIsAddActive] = useState(false);
+function AppTable({ scheme, path, disabled, onSave }) {
+  const { state, pushBlock, setState } = useController(path);
+
+  useSelector((x) => x.language);
+
+  const table =
+    scheme.table ||
+    scheme.fields
+      .filter(
+        (x) =>
+          x.type !== "guid" &&
+          x.type !== "selector" &&
+          x.type !== "form" &&
+          x.type !== "multi_selector"
+      )
+      .map((x) => ({
+        label: x.id,
+        id: x.id,
+        function: x.type === "text" || x.type === "textarea" ? "text" : x.type === "list" ? "count" : "",
+      }));
+
   const data = state.map((x, i) =>
-    scheme.table.map((y) =>
+    table.map((y) =>
       y.function
         ? functions[y.function]({
             state: state[i],
@@ -19,41 +38,48 @@ function AppTable({ onAdd, scheme, path, onSave, state }) {
     )
   );
 
-  const titles = scheme.table.map((x) => x.label);
+  function handleSave(item, index) {
+    const newState = [...state];
+    newState[index] = item;
+    setState(newState);
+  }
 
-  function onAddClick() {
-    setIsAddActive(true);
-    
-    onAdd({
-      scheme: {
-        ...scheme,
-        type: "form",
-      },
-      onSave: (x) => {
-        onSave(scheme.id, [...state, x]);
-      },
-      path: path,
+  React.useEffect(() => {
+    onSave(state);
+  }, [state]);
+
+  function onEditPress(index) {
+    pushBlock({
+      scheme: { ...scheme, type: "form" },
+      path: "",
+      state: state[index],
+      onSave: (item) => handleSave(item, index),
     });
   }
 
+  const titles = table.map((x) => x.label);
+
   return (
-    <div className="AppTable table-cont">
-      <button disabled={false} onClick={onAddClick}>Add</button>
+    <div className={"table-cont"}>
       <table>
-        <tr>
-          <th></th>
-          {titles.map((title) => (
-            <th>{title}</th>
-          ))}
-        </tr>
-        {data.map((item, i) => (
+        <thead>
           <tr>
-            <td>{i + 1}</td>
-            {item.map((detail) => (
-              <td>{detail}</td>
+            <th></th>
+            {titles.map((title) => (
+              <th key={title}>{title}</th>
             ))}
           </tr>
-        ))}
+        </thead>
+        <tbody>
+          {data.map((item, i) => (
+            <tr onClick={() => onEditPress(i)} key={i}>
+              <td>{i + 1}</td>
+              {item.map((detail, j) => (
+                <td key={j}>{detail}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );

@@ -6,43 +6,24 @@ function AppList({ scheme, path }) {
   const { state, setState, pushBlock } = useController(path);
 
   function onAdd() {
-    pushBlock({ scheme, onSave });
-  }
-
-  function onSave(item) {
-    setState([...state, item]);
-  }
-
-  function onEdit(index) {
     pushBlock({
       scheme,
-      state: state[index],
-      onSave: (item) => {
-        const newState = [...state];
-        newState[index] = item;
-        setState(newState);
-      },
+      onSave,
+      state: state,
+      path: path,
+      type: "table",
     });
   }
 
-  function onDelete(index) {
-    const newState = [...state].splice(index, 0);
-    setState(newState);
+  function onSave(s) {
+    setState([...s]);
   }
 
   return (
-    <AppLabelCont label={scheme.id} onAdd={onAdd}>
-      {state?.map((x, i) => (
-        <AppObject
-          key={`${x.id}_${i}`}
-          index={i}
-          onEdit={onEdit}
-          onDelete={onDelete}
-          scheme={scheme}
-          path={path + `.${i}`}
-        />
-      ))}
-    </AppLabelCont>
+    <button className="list-button full-width" onClick={onAdd}>
+      <span>{scheme.id}</span>
+      <span>{">"}</span>
+    </button>
   );
 }
 

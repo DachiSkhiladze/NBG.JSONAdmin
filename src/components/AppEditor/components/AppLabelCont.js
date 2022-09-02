@@ -1,13 +1,13 @@
-function AppLabelCont({ children, label, onAdd, onEdit, onDelete }) {
-    return (
-        <div>
-            <span>{label}</span>
-            {onAdd && <button onClick={onAdd}>add</button>}
-            {onEdit && <button onClick={onEdit}>edit</button>}
-            {onDelete && <button onClick={onDelete}>delete</button>}
-            {children}
-        </div>
-    )
+function AppLabelCont({ children, label, onAdd, fullWidth, onEdit, onDelete }) {
+  return (
+    <div className={`label-cont ${fullWidth ? "full-width" : ""}`}>
+      <span className="label">{label}</span>
+      {/* {onAdd && <button onClick={onAdd}>add</button>} */}
+      {onEdit && <button onClick={onEdit}>edit</button>}
+      {onDelete && <button onClick={onDelete}>delete</button>}
+      {children}
+    </div>
+  );
 }
 
-export default AppLabelCont
+export default AppLabelCont;
