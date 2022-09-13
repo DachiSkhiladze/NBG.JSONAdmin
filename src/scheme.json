@@ -1,5 +1,85 @@
 {
   "constants": {
+    "itemDescriptions": {
+      "0": "Flat / House",
+      "1": "Random",
+      "2": "Jobs"
+    },
+    "depositTypes": {
+      "0": "Time",
+      "1": "Demand"
+    },
+    "debt": {
+      "0": "Personal",
+      "1": "Installment",
+      "2": "Property"
+    },
+    "parameters": {
+      "0": "ჯანმრთელობა",
+      "1": "განწყობა",
+      "2": "ფული",
+      "3": "დრო"
+    },
+    "insurances": {
+      "0": "ბიზნესი",
+      "1": "ჯანმრთელობა",
+      "2": "უძრავი ქონება"
+    },
+    "actions": {
+      "0": "BuyHouse",
+      "1": "SellHouse",
+      "2": "RentHouse",
+      "3": "RentOutHouse",
+      "4": "StopRentingHouse",
+      "5": "StopRentingOutHouse",
+      "6": "StartJob",
+      "7": "EndJob",
+      "8": "IncreaseRank",
+      "9": "DoActivity",
+      "10": "MakeDeposit",
+      "11": "MakeDontation",
+      "12": "BuyFurniture",
+      "13": "AnswerQuestion",
+      "14": "UnlockQuestion",
+      "15": "BuyItem",
+      "16": "SellItem",
+      "17": "BuyFood",
+      "18": "UnlockCity",
+      "19": "AddMoneyToDeposit",
+      "20": "WithdrawMoneyFromDeposit",
+      "21": "TakePersonalDebt",
+      "22": "TransfertMoneyToBudget",
+      "23": "InsureLife",
+      "24": "CancelInsurance",
+      "25": "InsureProperty",
+      "26": "HireManager",
+      "27": "BuyBusiness",
+      "28": "UpgradeBusiness",
+      "29": "SellBusiness",
+      "30": "TakePropertyDebt",
+      "31": "TakeInstallmentDebt"
+    },
+    "missionTypes": {
+      "0": "RentOutHouse",
+      "1": "BuyFood",
+      "2": "StartJob",
+      "3": "BuyBusiness",
+      "4": "AnswerQuestions",
+      "5": "AnswerQuestionsaBusiness",
+      "6": "FillEmptySlot",
+      "7": "MakeDonation",
+      "8": "BuyaService",
+      "9": "BuyInsurance",
+      "10": "Reach",
+      "11": "Become",
+      "12": "MakeDeposit",
+      "13": "BuyHouse",
+      "14": "RentHouse",
+      "15": "IncreaseBusinessRank",
+      "16": "ReachQualification",
+      "17": "FillAllSlots",
+      "18": "StartBusinesss"
+    },
     "cities": {
       "0": "Akhaltsikhe",
       "1": "Batumi",
@@ -19,11 +99,16 @@
     },
     "houseTypes": {
       "0": "პატარა ბინა",
-      "1": "საშვალო ბინა",
+      "1": "საშუალო ბინა",
       "2": "დიდი ბინა",
       "3": "პატარა სახლი",
-      "4": "საშვალო სახლი",
+      "4": "საშუალო სახლი",
       "5": "დიდი სახლი"
+    },
+    "difficulty": {
+      "0": "მარტივი",
+      "1": "საშუალო",
+      "2": "რთული"
     }
   },
   "data": [
@@ -31,41 +116,41 @@
       "id": "Houses",
       "table": [
         {
-          "label": "Type",
+          "label": "ტიპი",
           "id": "Type",
           "function": "selector",
           "selector": "houseTypes"
         },
         {
-          "label": "City",
+          "label": "ქალაქი",
           "id": "City",
           "function": "selector",
           "selector": "cities"
         },
         {
-          "label": "Price",
+          "label": "ფასი",
           "id": "Price",
           "function": "price"
         },
         {
-          "label": "SellPrice",
+          "label": "ქირა",
+          "id": "RentInPrice",
+          "function": "price"
+        },
+        {
+          "label": "გაყიდვის ფასი",
           "id": "SellPrice",
           "function": "price"
         },
         {
-          "label": "RentOutPrice",
+          "label": "გაქირავების ფასი",
           "id": "RentOutPrice",
-          "function": "price"
-        },
-        {
-          "label": "RentInPrice",
-          "id": "RentInPrice",
           "function": "price"
         }
       ],
       "type": "list",
       "fields": [
-        { "id": "Price", "type": "number", "fields": null },
+        { "id": "Price", "label": "ფასი", "type": "number", "fields": null },
         { "id": "RentOutPrice", "type": "number", "fields": null },
         { "id": "RentInPrice", "type": "number", "fields": null },
         { "id": "SellPrice", "type": "number", "fields": null },
@@ -81,6 +166,12 @@
           "type": "selector",
           "selector": "cities",
           "fields": null
+        },
+        {
+          "id": "IncludedItems",
+          "type": "multi_selector",
+          "selector": "furnitures",
+          "fields": null
         }
       ]
     },
@@ -88,18 +179,18 @@
       "id": "Jobs",
       "table": [
         {
-          "label": "Name",
+          "label": "სამსახური",
           "id": "Name",
           "function": "text"
         },
         {
-          "label": "City",
+          "label": "ქალაქი",
           "id": "City",
           "function": "selector",
           "selector": "cities"
         },
         {
-          "label": "Ranks",
+          "label": "რენქი",
           "id": "Ranks",
           "function": "count"
         }
@@ -118,12 +209,12 @@
           "id": "Ranks",
           "table": [
             {
-              "label": "Name",
+              "label": "საფეხური",
               "id": "Name",
               "function": "text"
             },
             {
-              "label": "Salary",
+              "label": "ხელფასი",
               "id": "Salary",
               "function": "price"
             }
@@ -168,12 +259,12 @@
       "type": "list",
       "table": [
         {
-          "label": "Name",
+          "label": "ნივთი",
           "id": "Name",
           "function": "text"
         },
         {
-          "label": "Price",
+          "label": "ფასი",
           "id": "Price",
           "function": "price"
         }
@@ -182,7 +273,12 @@
         { "id": "Id", "type": "guid", "fields": null },
         { "id": "Name", "type": "text", "fields": null },
         { "id": "Price", "type": "number", "fields": null },
-        { "id": "Description", "type": "textarea", "fields": null }
+        {
+          "id": "Description",
+          "type": "selector",
+          "selector": "itemDescriptions",
+          "fields": null
+        }
       ]
     },
     {
@@ -190,13 +286,13 @@
       "type": "list",
       "table": [
         {
-          "label": "City",
+          "label": "ქალაქი",
           "id": "City",
           "function": "selector",
           "selector": "cities"
         },
         {
-          "label": "Items",
+          "label": "ნივთები",
           "id": "Storage",
           "function": "count"
         }
@@ -225,6 +321,40 @@
           "type": "number",
           "fields": null
         },
+        { "id": "RandomEventDayRange", "type": "number", "fields": null },
+        { "id": "FoodPrice", "type": "number", "fields": null },
+        { "id": "MaxFoodAmmount", "type": "number", "fields": null },
+        { "id": "MonthlyQuestionCount", "type": "number", "fields": null },
+        { "id": "MinimumCorrectAnswers", "type": "number", "fields": null },
+        {
+          "id": "MinimumDaysWithoutCorrectAnswers",
+          "type": "number",
+          "fields": null
+        },
+        { "id": "MaximumDaysWithoutWork", "type": "number", "fields": null },
+        {
+          "id": "SalaryTax",
+          "label": "საშემოსავლო %",
+          "type": "number",
+          "fields": null
+        },
+        { "id": "ProfitTax", "type": "number", "fields": null },
+        { "id": "PropertyTax", "type": "number", "fields": null },
+        {
+          "id": "RequiredWorkingMonthesForDepbt",
+          "type": "number",
+          "fields": null
+        },
+        { "id": "AverageSalaryDebtFraction", "type": "number", "fields": null },
+        { "id": "PermamentMoodEffect", "type": "number", "fields": null },
+        { "id": "PermamentHealthEffect", "type": "number", "fields": null },
+        { "id": "HealthMoodEffect", "type": "number", "fields": null },
+        { "id": "MoodHealthEffect", "type": "number", "fields": null },
+        { "id": "LifeInsurancePrice", "type": "number", "fields": null },
+        { "id": "PropertyInsuranceRate", "type": "number", "fields": null },
+        { "id": "BusinessInsuranceRate", "type": "number", "fields": null },
+        { "id": "BusinessSellPriceRatio", "type": "number", "fields": null },
+        { "id": "FineRate", "type": "number", "fields": null },
         {
           "id": "MoodRange",
           "type": "form",
@@ -347,28 +477,6 @@
           ]
         },
         {
-          "id": "HouseTemplates",
-          "type": "list",
-          "fields": [
-            { "id": "HouseTypes", "type": "list", "fields": [] },
-            { "id": "ItemId", "type": "guid", "fields": null },
-            { "id": "Max", "type": "number", "fields": null },
-            { "id": "MoodEffect", "type": "number", "fields": null }
-          ]
-        },
-        {
-          "id": "DebtRatingSettings",
-          "type": "list",
-          "fields": [
-            { "id": "Name", "type": "text", "fields": null },
-            { "id": "Current", "type": "number", "fields": null },
-            { "id": "Completed", "type": "number", "fields": null },
-            { "id": "MaxRatio", "type": "number", "fields": null },
-            { "id": "InterestRate", "type": "number", "fields": null }
-          ]
-        },
-        { "id": "ActionTimes", "type": "form", "fields": [] },
-        {
           "id": "MoodScale",
           "type": "form",
           "fields": [
@@ -385,11 +493,11 @@
           "type": "form",
           "fields": [
             { "id": "0", "type": "number", "fields": null },
-            { "id": "10", "type": "number", "fields": null },
-            { "id": "20", "type": "number", "fields": null },
-            { "id": "30", "type": "number", "fields": null },
-            { "id": "40", "type": "number", "fields": null },
-            { "id": "50", "type": "number", "fields": null }
+            { "id": "1", "type": "number", "fields": null },
+            { "id": "2", "type": "number", "fields": null },
+            { "id": "3", "type": "number", "fields": null },
+            { "id": "4", "type": "number", "fields": null },
+            { "id": "5", "type": "number", "fields": null }
           ]
         },
         {
@@ -405,57 +513,155 @@
           ]
         },
         {
+          "id": "HouseTemplates",
+          "type": "list",
+          "table": [
+            {
+              "id": "ItemId",
+              "label": "ნივთი",
+              "function": "item"
+            },
+            {
+              "id": "HouseTypes",
+              "label": "ტიპი",
+              "function": "multi_selector",
+              "selector": "houseTypes"
+            },
+            {
+              "id": "Max",
+              "label": "რაოდენობა"
+            },
+            {
+              "id": "MoodEffect",
+              "label": "განწყობის ეფექტი"
+            }
+          ],
+          "fields": [
+            {
+              "id": "HouseTypes",
+              "type": "multi_selector",
+              "selector": "houseTypes"
+            },
+            {
+              "id": "ItemId",
+              "type": "selector",
+              "selector": "items",
+              "fields": null
+            },
+            { "id": "Max", "type": "number", "fields": null },
+            { "id": "MoodEffect", "type": "number", "fields": null }
+          ]
+        },
+        {
           "id": "MoodFortuneScale",
           "type": "list",
           "fields": [
             { "id": "Min", "type": "number", "fields": null },
             { "id": "Max", "type": "number", "fields": null },
-            { "id": "IncludeAll", "type": "number", "fields": null },
+            {
+              "id": "IncludeAll",
+              "type": "selector",
+              "selector": "bool",
+              "fields": null
+            },
             { "id": "Rate", "type": "number", "fields": null }
           ]
         },
         {
           "id": "DepositSettings",
           "type": "list",
+          "table": [
+            {
+              "id": "Type",
+              "label": "ტიპი",
+              "function": "selector",
+              "selector": "depositTypes"
+            },
+            {
+              "id": "Rate",
+              "label": "პროცენტი"
+            }
+          ],
           "fields": [
-            { "id": "Type", "type": "number", "fields": null },
-            { "id": "Time", "type": "list", "fields": [] },
+            {
+              "id": "Type",
+              "type": "selector",
+              "selector": "depositTypes",
+              "fields": null
+            },
+            { "id": "Time", "type": "creatable_selector" },
             { "id": "Rate", "type": "number", "fields": null }
           ]
         },
-        { "id": "RandomEventDayRange", "type": "number", "fields": null },
-        { "id": "FoodPrice", "type": "number", "fields": null },
-        { "id": "MaxFoodAmmount", "type": "number", "fields": null },
-        { "id": "MonthlyQuestionCount", "type": "number", "fields": null },
-        { "id": "MinimumCorrectAnswers", "type": "number", "fields": null },
         {
-          "id": "MinimumDaysWithoutCorrectAnswers",
-          "type": "number",
-          "fields": null
+          "id": "DebtRatingSettings",
+          "type": "list",
+          "fields": [
+            { "id": "Name", "type": "text", "fields": null },
+            { "id": "Current", "type": "number", "fields": null },
+            { "id": "Completed", "type": "number", "fields": null },
+            { "id": "MaxRatio", "type": "number", "fields": null },
+            { "id": "InterestRate", "type": "number", "fields": null }
+          ]
         },
-        { "id": "MaximumDaysWithoutWork", "type": "number", "fields": null },
-        { "id": "SalaryTax", "type": "number", "fields": null },
-        { "id": "ProfitTax", "type": "number", "fields": null },
-        { "id": "PropertyTax", "type": "number", "fields": null },
         {
-          "id": "RequiredWorkingMonthesForDepbt",
-          "type": "number",
-          "fields": null
-        },
-        { "id": "AverageSalaryDebtFraction", "type": "number", "fields": null },
-        { "id": "PermamentMoodEffect", "type": "number", "fields": null },
-        { "id": "PermamentHealthEffect", "type": "number", "fields": null },
-        { "id": "HealthMoodEffect", "type": "number", "fields": null },
-        { "id": "MoodHealthEffect", "type": "number", "fields": null },
-        { "id": "LifeInsurancePrice", "type": "number", "fields": null },
-        { "id": "PropertyInsuranceRate", "type": "number", "fields": null },
-        { "id": "BusinessInsuranceRate", "type": "number", "fields": null },
-        { "id": "BusinessSellPriceRatio", "type": "number", "fields": null },
-        { "id": "FineRate", "type": "number", "fields": null }
+          "table": [
+            {
+              "id": "Type",
+              "label": "მოქმედება",
+              "function": "selector",
+              "selector": "actions"
+            },
+            {
+              "id": "Days",
+              "label": "დღე"
+            }
+          ],
+          "id": "ActionTimes",
+          "type": "list",
+          "fields": [
+            {
+              "id": "Type",
+              "type": "selector",
+              "selector": "actions",
+              "fields": null
+            },
+            {
+              "id": "Days",
+              "type": "number",
+              "fields": null
+            }
+          ]
+        }
       ]
     },
     {
       "id": "Activities",
+      "table": [
+        {
+          "id": "Title",
+          "label": "სერვისი",
+          "function": "text"
+        },
+        {
+          "id": "Health",
+          "label": "ჯანმრთელობა"
+        },
+        {
+          "id": "Mood",
+          "label": "ჯანმრთელობა"
+        },
+        {
+          "id": "Money",
+          "label": "ჯანმრთელობა"
+        },
+        {
+          "id": "City",
+          "label": "ქალაქი",
+          "function": "selector",
+          "selector": "cities"
+        }
+      ],
       "type": "list",
       "fields": [
         { "id": "Health", "type": "number", "fields": null },
@@ -477,6 +683,24 @@
     {
       "id": "Questions",
       "type": "list",
+      "table": [
+        {
+          "id": "QuestionText",
+          "function": "text",
+          "label": "კითხვა"
+        },
+        {
+          "id": "Difficulty",
+          "function": "selector",
+          "selector": "difficulty",
+          "label": "სირთულე"
+        },
+        {
+          "id": "Answers",
+          "function": "count",
+          "label": "პასუხები"
+        }
+      ],
       "fields": [
         { "id": "Id", "type": "guid", "fields": null },
         { "id": "QuestionText", "type": "textarea", "fields": null },
@@ -525,8 +749,14 @@
           "selector": "cities",
           "fields": null
         },
-        { "id": "Type", "type": "number", "fields": null },
-        { "id": "Text", "type": "text", "fields": null },
+        {
+          "id": "Type",
+          "type": "selector",
+          "selector": "missionTypes",
+          "disabled": true,
+          "fields": null
+        },
+        { "id": "Text", "type": "textarea", "fields": null },
         { "id": "Count", "type": "number", "fields": null },
         {
           "id": "Optional",
@@ -548,12 +778,33 @@
     {
       "id": "DebtSettings",
       "type": "list",
+      "table": [
+        {
+          "id": "Type",
+          "label": "ტიპი",
+          "selector": "debt",
+          "function": "selector"
+        },
+        {
+          "id": "InterestRate",
+          "label": "პროცენტი"
+        },
+        {
+          "id": "FinePercent",
+          "label": "ჯარიმის პროცენტი"
+        }
+      ],
       "fields": [
-        { "id": "Type", "type": "number", "fields": null },
-        { "id": "Time", "type": "list", "fields": [] },
-        { "id": "Amounts", "type": "list", "fields": [] },
+        {
+          "id": "Type",
+          "type": "selector",
+          "selector": "debt",
+          "fields": null
+        },
         { "id": "InterestRate", "type": "number", "fields": null },
-        { "id": "FinePercent", "type": "number", "fields": null }
+        { "id": "FinePercent", "type": "number", "fields": null },
+        { "id": "Time", "type": "creatable_selector", "selector": "number" },
+        { "id": "Amounts", "type": "creatable_selector", "selector": "number" }
       ]
     },
     {
@@ -563,8 +814,7 @@
         { "id": "Name", "type": "text", "fields": null },
         { "id": "Id", "type": "number", "fields": null },
         { "id": "Price", "type": "number", "fields": null },
-        { "id": "StartPolutionLevel", "type": "number", "fields": null },
-        { "id": "IsUnlocked", "type": "number", "fields": null }
+        { "id": "StartPolutionLevel", "type": "number", "fields": null }
       ]
     },
     {
@@ -572,6 +822,7 @@
       "type": "list",
       "fields": [
         { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Title", "type": "text", "fields": null },
         {
           "id": "Ranks",
           "type": "list",
@@ -587,7 +838,20 @@
             {
               "id": "QuestionDifficulties",
               "type": "form",
-              "fields": [{ "id": "easy", "type": "number", "fields": null }]
+              "fields": [
+                {
+                  "id": "easy",
+                  "type": "number",
+                  "fields": null,
+                  "default": 50
+                },
+                {
+                  "id": "moderate",
+                  "type": "number",
+                  "fields": null,
+                  "default": 30
+                }
+              ]
             }
           ]
         }
@@ -598,7 +862,7 @@
       "type": "list",
       "fields": [
         { "id": "Id", "type": "guid", "fields": null },
-        { "id": "Text", "type": "text", "fields": null },
+        { "id": "Text", "type": "textarea", "fields": null },
         {
           "id": "Effect",
           "type": "form",
@@ -609,7 +873,36 @@
             { "id": "Time", "type": "number", "fields": null }
           ]
         },
-        { "id": "EffectInsurances", "type": "number", "fields": null }
+        {
+          "id": "EffectInsurances",
+          "type": "list",
+          "table": [
+            {
+              "id": "Parameter",
+              "label": "პარამეტრი",
+              "function": "selector",
+              "selector": "parameters"
+            },
+            {
+              "id": "Insurance",
+              "label": "დაზღვევა",
+              "function": "selector",
+              "selector": "insurances"
+            }
+          ],
+          "fields": [
+            {
+              "id": "Parameter",
+              "type": "selector",
+              "selector": "parameters"
+            },
+            {
+              "id": "Insurance",
+              "type": "selector",
+              "selector": "insurances"
+            }
+          ]
+        }
       ]
     }
   ]

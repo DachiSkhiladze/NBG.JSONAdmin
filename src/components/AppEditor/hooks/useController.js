@@ -24,10 +24,14 @@ function useController(path) {
     }
 
     if (Array.isArray(ctx.state[0])) {
-      const l = object.length;
+      console.log(object);
+      let l = object.length;
       for (let i = 0; i < l; i++) {
-        object.unshift(newValue[object.length - i - 1]);
         object.pop();
+      }
+      l = newValue.length;
+      for (let i = 0; i < l; i++) {
+        object.push(newValue[i]);
       }
     } else {
       object[stack.shift()] = newValue;

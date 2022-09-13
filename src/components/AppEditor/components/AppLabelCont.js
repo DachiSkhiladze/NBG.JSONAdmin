@@ -1,6 +1,18 @@
-function AppLabelCont({ children, label, onAdd, fullWidth, onEdit, onDelete }) {
+function AppLabelCont({
+  children,
+  label,
+  onAdd,
+  fullWidth,
+  onEdit,
+  disabled,
+  onDelete,
+}) {
   return (
-    <div className={`label-cont ${fullWidth ? "full-width" : ""}`}>
+    <div
+      className={`label-cont ${fullWidth ? "full-width" : ""} ${
+        disabled ? "disabled" : ""
+      }`}
+    >
       <span className="label">{label}</span>
       {/* {onAdd && <button onClick={onAdd}>add</button>} */}
       {onEdit && <button onClick={onEdit}>edit</button>}

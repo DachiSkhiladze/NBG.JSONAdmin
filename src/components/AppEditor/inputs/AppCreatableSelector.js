@@ -1,5 +1,5 @@
 import React from "react";
-import Select from "react-select";
+import Select from "react-select/creatable";
 import AppLabelCont from "../components/AppLabelCont";
 import useController from "../hooks/useController";
 import useMultiSelector from "../hooks/useMultiSelector";
@@ -7,29 +7,27 @@ import useMultiSelector from "../hooks/useMultiSelector";
 const customStyles = {
   control: (base) => ({
     ...base,
-    height: 40,
+    // height: 40,
     minHeight: 40,
     boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
   }),
 };
 
-function AppSelctor({ scheme, path }) {
+function AppCreatableSelector({ scheme, path }) {
   const { setState, state } = useController(path);
-  const { options } = useMultiSelector(scheme, path);
 
   function onChange(p) {
-    setState(p.value);
+    setState(p.map((x) => x.value));
   }
 
-  React.useEffect(() => {
-    // setState(options[0].value);
-  }, []);
-
   return (
-    <AppLabelCont label={scheme.id} {...scheme}>
+    <AppLabelCont label={scheme.id} {...scheme} fullWidth>
       <Select
-        options={options}
-        value={options.find((x) => x.value == state)}
+        isMulti
+        value={state?.map((x) => ({
+          label: x,
+          value: x,
+        }))}
         onChange={onChange}
         styles={customStyles}
       />
@@ -37,4 +35,4 @@ function AppSelctor({ scheme, path }) {
   );
 }
 
-export default AppSelctor;
+export default AppCreatableSelector;

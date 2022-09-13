@@ -14,6 +14,7 @@ export const actionType = {
 function rootReducer(state = initialState, action) {
   switch (action.type) {
     case actionType.SET_CONTENT: {
+      localStorage.setItem("content", JSON.stringify(action.data));
       return { ...state, content: action.data };
     }
     case actionType.SET_SCHEME: {

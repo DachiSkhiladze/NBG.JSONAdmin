@@ -187,6 +187,10 @@ html {
       margin-bottom: 10px;
     }
   }
+  .disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
   .full-width {
     grid-column-end: span 2;
   }

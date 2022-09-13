@@ -26,7 +26,7 @@ function AppMultiSelect({ scheme, path }) {
   }, []);
 
   return (
-    <AppLabelCont label={scheme.id} fullWidth>
+    <AppLabelCont label={scheme.id} {...scheme} fullWidth>
       <Select
         options={options}
         isMulti

@@ -1,3 +1,4 @@
+import AppCreatableSelector from "./AppCreatableSelector";
 import AppForm from "./AppForm";
 import AppInput from "./AppInput";
 import AppList from "./AppList";
@@ -13,6 +14,7 @@ export const inputTypes = {
   textarea: (p) => <AppTextArea {...p} />,
   number: (p) => <AppNumberInput {...p} />,
   multi_selector: (p) => <AppMultiSelect {...p} />,
+  creatable_selector: (p) => <AppCreatableSelector {...p} />,
   selector: (p) => <AppSelctor {...p} />,
   list: (p) => <AppList {...p} />,
   form: (p) => <AppForm {...p} />,

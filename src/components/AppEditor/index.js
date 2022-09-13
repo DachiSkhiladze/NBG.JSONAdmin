@@ -9,7 +9,9 @@ function AppEditor({ scheme, state, onSave }) {
   const block = {
     scheme,
     path: "",
-    onSave: (st) => onSave(scheme.id, st),
+    onSave: (st) => {
+      onSave(scheme.id, st);
+    },
     type: scheme.type === "list" ? "table" : "form",
     state: state[scheme.id],
   };
@@ -42,6 +44,12 @@ function AppEditor({ scheme, state, onSave }) {
       setBlocks([block]);
     }
   }, [blocks]);
+
+  React.useEffect(() => {
+    if (blocks.length === 1) {
+      setBlocks([block, ...blocks.slice(1)]);
+    }
+  }, [state]);
 
   return (
     <blockContext.Provider value={{ pushBlock, popBlock }}>

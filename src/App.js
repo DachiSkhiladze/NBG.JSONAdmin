@@ -6,6 +6,8 @@ import { SET_CONTENT, SET_LANGUAGE } from "./redux/actions";
 import AppEditor from "./components/AppEditor";
 import AppSiderbar from "./components/AppSidebar";
 import { useEffect } from "react";
+import AppPublish from "./components/AppPublish";
+import { AppLoader } from "./hooks/useFiles";
 
 function App() {
   const dispatch = useDispatch();
@@ -13,8 +15,6 @@ function App() {
   const currentScheme = useSelector((x) => x.scheme);
 
   useEffect(() => {
-    dispatch(SET_CONTENT(defaultContent));
-
     const lang = localStorage.getItem("lang");
 
     dispatch(SET_LANGUAGE(lang || "Ge"));
@@ -26,11 +26,19 @@ function App() {
     dispatch(SET_CONTENT(newContent));
   }
 
+  let route = window.location.pathname.replace("/", "");
+
   return (
     <div className="container">
-      <AppSiderbar list={scheme.data} />
-      {content && currentScheme && (
-        <AppEditor scheme={currentScheme} state={content} onSave={onSave} />
+      <AppLoader />
+      <AppSiderbar list={[...scheme.data, { id: "Publish" }]} />
+      {route === "Publish" ? (
+        <AppPublish />
+      ) : (
+        content &&
+        currentScheme && (
+          <AppEditor scheme={currentScheme} state={content} onSave={onSave} />
+        )
       )}
     </div>
   );

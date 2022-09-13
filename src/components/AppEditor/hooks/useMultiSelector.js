@@ -10,9 +10,64 @@ function items({ content }) {
   }));
 }
 
+function furnitures({ content }) {
+  var lang = localStorage.getItem("lang") || "Ge";
+
+  var ids = content.Parameters.HouseTemplates.map((x) => x.ItemId);
+  return content.Items.filter((x) => ids.includes(x.Id)).map((x) => ({
+    value: x.Id,
+    label: x.Name[lang],
+  }));
+}
+
+function actions() {
+  const actions = schemes.constants.actions;
+  return Object.keys(actions).map((x) => ({ value: x, label: actions[x] }));
+}
+
+function depositTypes() {
+  const depositTypes = schemes.constants.depositTypes;
+  return Object.keys(depositTypes).map((x) => ({
+    value: x,
+    label: depositTypes[x],
+  }));
+}
+
 function cities() {
   const cities = schemes.constants.cities;
   return Object.keys(cities).map((x) => ({ value: x, label: cities[x] }));
+}
+
+function itemDescriptions() {
+  const itemDescriptions = schemes.constants.itemDescriptions;
+  return Object.keys(itemDescriptions).map((x) => ({
+    value: x,
+    label: itemDescriptions[x],
+  }));
+}
+function parameters() {
+  const parameters = schemes.constants.parameters;
+  return Object.keys(parameters).map((x) => ({
+    value: x,
+    label: parameters[x],
+  }));
+}
+function insurances() {
+  const insurances = schemes.constants.insurances;
+  return Object.keys(insurances).map((x) => ({
+    value: x,
+    label: insurances[x],
+  }));
+}
+
+function debt() {
+  const debt = schemes.constants.debt;
+  return Object.keys(debt).map((x) => ({ value: x, label: debt[x] }));
+}
+
+function missionTypes() {
+  const types = schemes.constants.missionTypes;
+  return Object.keys(types).map((x) => ({ value: x, label: types[x] }));
 }
 
 function houseTypes() {
@@ -60,7 +115,15 @@ const selectors = {
   cities,
   houseTypes,
   difficulty,
+  missionTypes,
   bool,
+  actions,
+  debt,
+  depositTypes,
+  parameters,
+  insurances,
+  itemDescriptions,
+  furnitures,
 };
 
 function useMultiSelector(scheme, path) {

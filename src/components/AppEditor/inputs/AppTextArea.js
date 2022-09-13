@@ -12,7 +12,7 @@ function AppTextArea({ scheme, path }) {
   }
 
   return (
-    <AppLabelCont label={scheme.id} fullWidth>
+    <AppLabelCont label={scheme.id} fullWidth {...scheme}>
       <div className="keyboard-input auto-height">
         <textarea type={"text"} onChange={onChange} value={state?.[language]} />
         <AppLangauageChooser />

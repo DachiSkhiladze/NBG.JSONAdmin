@@ -9,7 +9,7 @@ function AppNumberInput({ scheme, path }) {
   }
 
   return (
-    <AppLabelCont label={scheme.id}>
+    <AppLabelCont label={scheme.id} {...scheme}>
       <div className="keyboard-input">
         <input type={"number"} onChange={onChange} value={state} />
       </div>

@@ -15,6 +15,7 @@ function AppEditorBlock({
   onAdd,
   disabled,
   showScrollBack,
+  onDelete,
   fref,
 }) {
   const [state, setState] = useState(
@@ -34,17 +35,46 @@ function AppEditorBlock({
     });
   }
 
+  function onDeletePress() {
+    onCancel();
+    onDelete();
+  }
+
   function getControlls() {
     if (type === "table") {
       return [
-        onCancel && <button key={0} onClick={onCancel}>BACK</button>,
-        <button key={1} onClick={onAddPress}>ADD</button>,
+        onCancel && (
+          <button key={0} onClick={onCancel}>
+            BACK
+          </button>
+        ),
+        <button key={1} onClick={onAddPress}>
+          ADD
+        </button>,
       ];
     } else {
       return [
-        onCancel && <button key={0} onClick={onCancel}>CANCEL</button>,
-        <button key={1} onClick={onSaveClick}>SAVE</button>,
-        currentState && onCancel && <button key={2} onClick={onCancel}>DELETE</button>,
+        onCancel && (
+          <button key={0} onClick={onCancel}>
+            CANCEL
+          </button>
+        ),
+        <button
+          key={1}
+          onClick={onSaveClick}
+          className={
+            JSON.stringify(currentState) === JSON.stringify(state)
+              ? "disabled"
+              : ""
+          }
+        >
+          SAVE
+        </button>,
+        currentState && onCancel && (
+          <button key={2} onClick={onDeletePress}>
+            DELETE
+          </button>
+        ),
       ];
     }
   }

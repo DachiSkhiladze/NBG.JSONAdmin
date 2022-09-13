@@ -1660,7 +1660,7 @@
         "InterestRate": 20
       }
     ],
-    "ActionTimes": {},
+    "ActionTimes": [],
     "MoodScale": {
       "0": 0.0,
       "1": 0.5,
@@ -1921,8 +1921,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -1930,10 +1930,22 @@
       "Id": "04ca38fe-7098-4fc9-b259-77312e54b0f5",
       "QuestionText": { "Ge": "უნაღდო ანგარიშსწორებას წარმოადგენს:", "En": "" },
       "Answers": [
-        {"Text":{"Ge":"თანხის გამოტანა ბანკომატიდან", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"თანხის საგადახდო ბარათით გადახდა ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"თანხის ერთი ანგარიშიდან მეორეზე გადარიცხვა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწორია 2 და 3", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "თანხის გამოტანა ბანკომატიდან", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "თანხის საგადახდო ბარათით გადახდა ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "თანხის ერთი ანგარიშიდან მეორეზე გადარიცხვა",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სწორია 2 და 3", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -1944,10 +1956,19 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ნომინალური საპროცენტო განაკვეთი", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"ეფექტური საპროცენტო განაკვეთი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწორია 2 და 3", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ნომინალური საპროცენტო განაკვეთი", "En": "" },
+          "IsCorrect": true
+        },
+        {
+          "Text": { "Ge": "ეფექტური საპროცენტო განაკვეთი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სწორია 2 და 3", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -1955,10 +1976,22 @@
       "Id": "cba89484-2092-4907-8a59-fbac761c5687",
       "QuestionText": { "Ge": "ინტერნეტ ბანკით შესაძლებელია:", "En": "" },
       "Answers": [
-        {"Text":{"Ge":"ანგარიშებზე არსებული ბალანსის ნახვა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"კომუნალური გადასახადების გადახდა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ვალუტის კონვერტაცია", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ანგარიშებზე არსებული ბალანსის ნახვა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "კომუნალური გადასახადების გადახდა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ვალუტის კონვერტაცია", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -1969,10 +2002,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"მიმდინარე ანგარიში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სტანდარტული ვადიანი დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შემნახველი (მოთხოვნამდე) დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "მიმდინარე ანგარიში", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "სტანდარტული ვადიანი დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "შემნახველი (მოთხოვნამდე) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -1983,8 +2028,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -1992,10 +2037,19 @@
       "Id": "f3ec0e1d-83b8-41e4-b264-ce0629ab344f",
       "QuestionText": { "Ge": "იპოთეკური სესხი გამოიყენება", "En": "" },
       "Answers": [
-        {"Text":{"Ge":"სახლის შესაძენად", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სახლის ასაშენებლად", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სახლის გასარემონტებლად", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სახლის შესაძენად", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "სახლის ასაშენებლად", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "სახლის გასარემონტებლად", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2003,10 +2057,25 @@
       "Id": "cf2498ff-15c8-40b7-8f74-6eb2262dda16",
       "QuestionText": { "Ge": "იპოთეკური სესხი გამოიყენება", "En": "" },
       "Answers": [
-        {"Text":{"Ge":"ავტომობილის შესაძენად", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწავლის დასაფინანსებლად", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სახლის შესაძენად, ასაშენებლად ან გასარემონტებლად", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სამოგზაუროდ წასასვლელად", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ავტომობილის შესაძენად", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "სწავლის დასაფინანსებლად", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "სახლის შესაძენად, ასაშენებლად ან გასარემონტებლად",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "სამოგზაუროდ წასასვლელად", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2017,10 +2086,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"შემნახველი (მოთხოვნამდე) დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საბავშვო (ვადიანი) დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სტანდარტული ვადიანი დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ზრდადი (ვადიანი) დეპოზიტი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "შემნახველი (მოთხოვნამდე) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "საბავშვო (ვადიანი) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "სტანდარტული ვადიანი დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ზრდადი (ვადიანი) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2031,10 +2112,19 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ოვერდრაფტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"უფრო მეტი საპროცენტო სარგებელი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"უფრო ნაკლები საპროცენტო სარგებელი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "ოვერდრაფტი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "უფრო მეტი საპროცენტო სარგებელი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "უფრო ნაკლები საპროცენტო სარგებელი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -2045,10 +2135,13 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ვადის ბოლოს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყოველთვიურად", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ვადის დასაწყისში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "ვადის ბოლოს", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ყოველთვიურად", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ვადის დასაწყისში", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -2059,8 +2152,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -2071,10 +2164,10 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ნებისმიერ დროს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ვადის ბოლოს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყოველთვიურად", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სამ თვეში ერთხელ", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "ნებისმიერ დროს", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ვადის ბოლოს", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ყოველთვიურად", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "სამ თვეში ერთხელ", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -2085,10 +2178,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ბავშვის სრულწლოვანებამდე - 18 წლამდე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"განუსაზღვრელი ვადით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბავშვის სკოლის ასაკამდე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ბავშვის სრულწლოვანებამდე - 18 წლამდე", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "განუსაზღვრელი ვადით", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ბავშვის სკოლის ასაკამდე", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2099,10 +2204,13 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სამომხმარებლო სესხი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"განვადება", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"იპოთეკური სესხი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ოვერდრაფტი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "სამომხმარებლო სესხი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "განვადება", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "იპოთეკური სესხი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ოვერდრაფტი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2113,10 +2221,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ბანკის მომსახურების საკომისიო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"დეპოზიტზე საპროცენტო სარგებელი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სესხზე გადასახდელი პროცენტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"თანხის განაღდების საკომისიო", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ბანკის მომსახურების საკომისიო", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "დეპოზიტზე საპროცენტო სარგებელი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "სესხზე გადასახდელი პროცენტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "თანხის განაღდების საკომისიო", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2127,8 +2247,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2139,10 +2259,10 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"განვადება", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ოვერდრაფტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"აკრედიტივი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საკრედიტო ხაზი", "En":""},"IsCorrect": true}
+        { "Text": { "Ge": "განვადება", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ოვერდრაფტი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "აკრედიტივი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "საკრედიტო ხაზი", "En": "" }, "IsCorrect": true }
       ],
       "Difficulty": 1
     },
@@ -2153,10 +2273,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ინდექსირებული საპროცენტო განაკვეთი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მცურავი საპროცენტო განაკვეთი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ცვლადი საპროცენტო განაკვეთი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ფიქსირებული საპროცენტო განაკვეთი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ინდექსირებული საპროცენტო განაკვეთი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "მცურავი საპროცენტო განაკვეთი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ცვლადი საპროცენტო განაკვეთი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ფიქსირებული საპროცენტო განაკვეთი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -2167,10 +2299,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ბავშვის მშობელს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბავშვის მეურვეს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ნებისმიერ მესამე პირს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "ბავშვის მშობელს", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ბავშვის მეურვეს", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ნებისმიერ მესამე პირს", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -2181,10 +2319,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"მხოლოდ ბანკის სამუშაო საათებში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"24 საათის განმავლობაში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მხოლოდ იურიდიული პირებისთვის", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "მხოლოდ ბანკის სამუშაო საათებში", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "24 საათის განმავლობაში", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "მხოლოდ იურიდიული პირებისთვის", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -2192,10 +2342,34 @@
       "Id": "71d14f2b-216d-45c5-b6ab-b75ceba57354",
       "QuestionText": { "Ge": "ნაღდი ანგარიშსწორების მაგალითია:", "En": "" },
       "Answers": [
-        {"Text":{"Ge":"კაფეში პიცის საფასურის ნაღდი ფულით გადახდა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სავაჭრო ცენტრში ველოსიპედის საფასურის საბანკო ბარათით გადახდა  ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ინტერნეტ-ბანკით თანხის ერთი ანგარიშიდან მეორეზე გადარიცხვა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საბანკო ბარათით ინტერნეტით ელექტროენერგიის საფასურის გადახდა", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "კაფეში პიცის საფასურის ნაღდი ფულით გადახდა",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "სავაჭრო ცენტრში ველოსიპედის საფასურის საბანკო ბარათით გადახდა  ",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "ინტერნეტ-ბანკით თანხის ერთი ანგარიშიდან მეორეზე გადარიცხვა",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "საბანკო ბარათით ინტერნეტით ელექტროენერგიის საფასურის გადახდა",
+            "En": ""
+          },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2206,10 +2380,31 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"საკრედიტო ბარათით შეუძლებელია მაღაზიაში ფულის გადახდა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სადებეტო ბარათიდან შეუძლებელია თანხის განაღდება ბანკომატის საშუალებით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საკრედიტო ბარათის შემთხვევაში ბანკი ფულს გვასესხებს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "საკრედიტო ბარათით შეუძლებელია მაღაზიაში ფულის გადახდა",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "სადებეტო ბარათიდან შეუძლებელია თანხის განაღდება ბანკომატის საშუალებით",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "საკრედიტო ბარათის შემთხვევაში ბანკი ფულს გვასესხებს",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2220,10 +2415,10 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"საკრედიტო ისტორია", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საბანკო ამონაწერი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სასესხო ამონაწერი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შემოსავლის ორდერი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "საკრედიტო ისტორია", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "საბანკო ამონაწერი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "სასესხო ამონაწერი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "შემოსავლის ორდერი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2234,10 +2429,13 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"პროცენტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ტარიფი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"პირგასამტეხლო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "პროცენტი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ტარიფი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "პირგასამტეხლო", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2248,8 +2446,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2260,10 +2458,25 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ნაღდი ფულის გამოტანა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"თანხის მეგობრის ანგარიშზე გადარიცხვა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"თანხის კონვერტაცია ერთი ვალუტიდან მეორეში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მობილურის ბალანსის შევსება", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ნაღდი ფულის გამოტანა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "თანხის მეგობრის ანგარიშზე გადარიცხვა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "თანხის კონვერტაცია ერთი ვალუტიდან მეორეში",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "მობილურის ბალანსის შევსება", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -2274,10 +2487,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ანგარიშზე არსებული ნაშთის შესახებ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ანგარიშზე თანხის ჩარიცხვის შესახებ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბარათით შესრულებული ოპერაციების შესახებ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ანგარიშზე არსებული ნაშთის შესახებ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ანგარიშზე თანხის ჩარიცხვის შესახებ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ბარათით შესრულებული ოპერაციების შესახებ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2285,10 +2510,19 @@
       "Id": "9f2bf268-6adc-4fa3-a6f0-07623eaed7a4",
       "QuestionText": { "Ge": "ბანკთან დაკავშირება შესაძლებელია:", "En": "" },
       "Answers": [
-        {"Text":{"Ge":"ცხელი ხაზის/სატელეფონო ცენტრის მეშვეობით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ინტერნეტით ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ფილიალში მისვლით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "ცხელი ხაზის/სატელეფონო ცენტრის მეშვეობით",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "ინტერნეტით ", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ფილიალში მისვლით", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2299,8 +2533,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -2311,10 +2545,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ბარათის მფლობელის სახელი და გვარი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბარათის პინ-კოდი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბარათის ნომერი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბარათის მოქმედების ვადა", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ბარათის მფლობელის სახელი და გვარი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "ბარათის პინ-კოდი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ბარათის ნომერი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ბარათის მოქმედების ვადა", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -2325,10 +2565,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"დაუყოვნებლივ უნდა მიმართოთ ბანკს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"აუცილებლად უნდა  დაბლოკოთ ბარათი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"უნდა დაელოდოთ, სანამ ვინმე არ იპოვის დაკარგულ ბართს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწორია 1 და 2", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "დაუყოვნებლივ უნდა მიმართოთ ბანკს", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "აუცილებლად უნდა  დაბლოკოთ ბარათი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "უნდა დაელოდოთ, სანამ ვინმე არ იპოვის დაკარგულ ბართს",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სწორია 1 და 2", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -2339,10 +2591,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"წყლის ნიშანი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"რელიეფური ნაბეჭდი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ოპტიკურად ცვალებადი საღებავი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "წყლის ნიშანი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "რელიეფური ნაბეჭდი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ოპტიკურად ცვალებადი საღებავი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -2353,10 +2611,13 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ლარი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"დოლარი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ევრო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "ლარი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "დოლარი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ევრო", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2367,10 +2628,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"მხოლოდ სამუშაო საათებში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"24 საათის განმავლობაში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მხოლოდ სამუშაო დღეებში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "მხოლოდ სამუშაო საათებში", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "24 საათის განმავლობაში", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "მხოლოდ სამუშაო დღეებში", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2381,10 +2654,13 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ინფლაცია", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"დევალვაცია", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"კონვერტაცია", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "ინფლაცია", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "დევალვაცია", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "კონვერტაცია", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2392,10 +2668,22 @@
       "Id": "71915112-a681-41de-968b-a4a980dfc505",
       "QuestionText": { "Ge": "საპროცენტო სარგებელი არის:", "En": "" },
       "Answers": [
-        {"Text":{"Ge":"კრედიტზე ან დეპოზიტზე  დარიცხული თანხა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"თანხის გადარიცხვის საკომისიო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბარათიდან განაღდებული თანხა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "კრედიტზე ან დეპოზიტზე  დარიცხული თანხა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "თანხის გადარიცხვის საკომისიო", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ბარათიდან განაღდებული თანხა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2406,10 +2694,10 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სადებეტო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საკრედიტო ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საინვესტიციო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწორია 1 და 2", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სადებეტო", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "საკრედიტო ", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "საინვესტიციო", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "სწორია 1 და 2", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2420,10 +2708,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ნულოვანი მონაკვეთი", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"საშეღავათო პერიოდი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"უმოქმედო პერიოდი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არასაკრედიტო პერიოდი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "ნულოვანი მონაკვეთი", "En": "" }, "IsCorrect": true },
+        {
+          "Text": { "Ge": "საშეღავათო პერიოდი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "უმოქმედო პერიოდი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "არასაკრედიტო პერიოდი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2431,10 +2725,16 @@
       "Id": "4241358a-cbdb-43f1-be3e-17fe17f646ed",
       "QuestionText": { "Ge": "საფინანსო სექტორის წარმომადგენელია:", "En": "" },
       "Answers": [
-        {"Text":{"Ge":"კომერციული ბანკი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მიკროსაფინანსო ორგანიზაცია", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საფონდო ბირჟა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "კომერციული ბანკი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "მიკროსაფინანსო ორგანიზაცია", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "საფონდო ბირჟა", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2445,10 +2745,10 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"გადარიცხვა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"განაღდება", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ემისია", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"გადახდა", "En":""},"IsCorrect": true}
+        { "Text": { "Ge": "გადარიცხვა", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "განაღდება", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ემისია", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "გადახდა", "En": "" }, "IsCorrect": true }
       ],
       "Difficulty": 1
     },
@@ -2459,10 +2759,10 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"კონვერტაცია", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შენატანი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"პირგასამტეხლო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ინვესტიცია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "კონვერტაცია", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "შენატანი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "პირგასამტეხლო", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ინვესტიცია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -2473,10 +2773,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"საპროცენტო ხარჯი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სესხის გაცემის საკომისიო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"უზრუნველყოფის (მაგ. სახლის) რეგისტრაციის ხარჯი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "საპროცენტო ხარჯი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "სესხის გაცემის საკომისიო", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "უზრუნველყოფის (მაგ. სახლის) რეგისტრაციის ხარჯი",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2487,10 +2799,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"შემნახველი  (მოთხოვნამდე) დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მოთხოვნამდე დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ვადიანი დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"უვადო დეპოზიტი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "შემნახველი  (მოთხოვნამდე) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "მოთხოვნამდე დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "ვადიანი დეპოზიტი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "უვადო დეპოზიტი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -2501,10 +2819,10 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"დიჯიპასი", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"პოს ტერმინალი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბანკომატი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ფეიბოქსი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "დიჯიპასი", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "პოს ტერმინალი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ბანკომატი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ფეიბოქსი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -2515,10 +2833,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ნომინალური საპროცენტო განაკვეთი", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"ინდექსირებული საპროცენტო განაკვეთი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ფიქსირებული საპროცენტო განაკვეთი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ეფექტური საპროცენტო განაკვეთი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ნომინალური საპროცენტო განაკვეთი", "En": "" },
+          "IsCorrect": true
+        },
+        {
+          "Text": { "Ge": "ინდექსირებული საპროცენტო განაკვეთი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ფიქსირებული საპროცენტო განაკვეთი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ეფექტური საპროცენტო განაკვეთი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2529,10 +2859,34 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სესხის თანხის გარკვეული პროცენტი, რომელსაც უხდით ბინის გამყიდველს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სესხის თანხის გარკვეული პროცენტი, რომელსაც უხდით ბანკს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბინის ღირებულების გარკვეული პროცენტი, რომელსაც უხდით ბინის გამყიდველს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბინის ღირებულების გარკვეული პროცენტი, რომელსაც უხდით ბანკს", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "სესხის თანხის გარკვეული პროცენტი, რომელსაც უხდით ბინის გამყიდველს",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "სესხის თანხის გარკვეული პროცენტი, რომელსაც უხდით ბანკს",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "ბინის ღირებულების გარკვეული პროცენტი, რომელსაც უხდით ბინის გამყიდველს",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "ბინის ღირებულების გარკვეული პროცენტი, რომელსაც უხდით ბანკს",
+            "En": ""
+          },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2543,10 +2897,28 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ერიცხება ყველაზე მაღალი საპროცენტო სარგებელი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"თანხის შეტანა და გამოტანა შესაძლებელია ნებისმიერ დროს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"იხსნება ბავშვის სრულწლოვანებამდე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არ ერიცხება საპროცენტო სარგებელი", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "ერიცხება ყველაზე მაღალი საპროცენტო სარგებელი",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "თანხის შეტანა და გამოტანა შესაძლებელია ნებისმიერ დროს",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "იხსნება ბავშვის სრულწლოვანებამდე", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არ ერიცხება საპროცენტო სარგებელი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2557,10 +2929,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სტანდარტული ვადიანი დეპოზიტი", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"ზრდადი (ვადიანი) დეპოზიტი ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შემნახველი (მოთხოვნამდე) დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საბავშვო (ვადიანი) დეპოზიტი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "სტანდარტული ვადიანი დეპოზიტი", "En": "" },
+          "IsCorrect": true
+        },
+        {
+          "Text": { "Ge": "ზრდადი (ვადიანი) დეპოზიტი ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "შემნახველი (მოთხოვნამდე) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "საბავშვო (ვადიანი) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2571,10 +2955,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სამომხმარებლო სესხი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ოვერდრაფტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბანკის შეცდომა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ავტომატური გადარიცხვა", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "სამომხმარებლო სესხი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "ოვერდრაფტი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ბანკის შეცდომა", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ავტომატური გადარიცხვა", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2585,10 +2975,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"საბავშვო (ვადიან) დეპოზიტზე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შემნახველ (უვადო) დეპოზიტზე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სტანდარტულ ვადიან დეპოზიტზე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ზრდად (ვადიან) დეპოზიტზე", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "საბავშვო (ვადიან) დეპოზიტზე", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "შემნახველ (უვადო) დეპოზიტზე", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "სტანდარტულ ვადიან დეპოზიტზე", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ზრდად (ვადიან) დეპოზიტზე", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -2599,10 +3001,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"იხსნება გარკვეული ვადით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შესაძლებელია თანხის დამატება და მოკლება", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"თანხის დაგროვების კარგი საშუალებაა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "იხსნება გარკვეული ვადით", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "შესაძლებელია თანხის დამატება და მოკლება", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "თანხის დაგროვების კარგი საშუალებაა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2613,10 +3027,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"საშეღავათო პერიოდი", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"საკრედიტო ლიმიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"წლიური მომსახურების საკომისიო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "საშეღავათო პერიოდი", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "საკრედიტო ლიმიტი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "წლიური მომსახურების საკომისიო", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2627,10 +3047,19 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ზრდადი (ვადიანი) დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სტანდარტული ვადიანი დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შემნახველი (მოთხოვნამდე) დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მიმდინარე ანგარიში", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ზრდადი (ვადიანი) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "სტანდარტული ვადიანი დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "შემნახველი (მოთხოვნამდე) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "მიმდინარე ანგარიში", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2641,10 +3070,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ზრდადი (ვადიანი) დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შემნახველი (მოთხოვნამდე) დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მიმდინარე ანგარიში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საბავშვო (ვადიანი) დეპოზიტი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ზრდადი (ვადიანი) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "შემნახველი (მოთხოვნამდე) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "მიმდინარე ანგარიში", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "საბავშვო (ვადიანი) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -2655,10 +3096,19 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"მხოლოდ პროცენტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"გახარჯული თანხის ნაწილი და პროცენტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მხოლოდ გახარჯული თანხა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "მხოლოდ პროცენტი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "გახარჯული თანხის ნაწილი და პროცენტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "მხოლოდ გახარჯული თანხა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2669,10 +3119,34 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სადებეტო ბარათს არ აქვს მომსახურების საკომისიო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სადებეტო ბარათით ინტერნეტით ვერ იყიდით ნივთებს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სადებეტო ბარათის გამოყენებისას თქვენ სარგებლობთ საკუთარი ფულით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სადებეტო ბარათის გამოყენებისას თქვენ სარგებლობთ სესხით", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "სადებეტო ბარათს არ აქვს მომსახურების საკომისიო",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "სადებეტო ბარათით ინტერნეტით ვერ იყიდით ნივთებს",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "სადებეტო ბარათის გამოყენებისას თქვენ სარგებლობთ საკუთარი ფულით",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "სადებეტო ბარათის გამოყენებისას თქვენ სარგებლობთ სესხით",
+            "En": ""
+          },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2683,10 +3157,13 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"მიმდინარე ანგარიში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საკრედიტო ბარათი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ვადიანი დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ოვერდრაფტი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "მიმდინარე ანგარიში", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "საკრედიტო ბარათი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ვადიანი დეპოზიტი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ოვერდრაფტი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -2697,10 +3174,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ინტერნეტ ბანკში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მობილური ტელეფონის ნომერზე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ელექტრონული ფოსტით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"დიჯიპასით", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "ინტერნეტ ბანკში", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "მობილური ტელეფონის ნომერზე", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ელექტრონული ფოსტით", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "დიჯიპასით", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -2711,8 +3194,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -2723,10 +3206,25 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"გვეხმარება, რომ დავზოგოთ დრო", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"გვთავაზობს შედარებით  მაღალ საკომისიოებს ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"გვაძლევს საშუალებას საბანკო ოპერაციები ბანკში მიუსვლელად შევასრულოთ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწორია 1 და 3", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "გვეხმარება, რომ დავზოგოთ დრო", "En": "" },
+          "IsCorrect": true
+        },
+        {
+          "Text": {
+            "Ge": "გვთავაზობს შედარებით  მაღალ საკომისიოებს ",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "გვაძლევს საშუალებას საბანკო ოპერაციები ბანკში მიუსვლელად შევასრულოთ",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სწორია 1 და 3", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2737,10 +3235,19 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწრაფი ფულადი გზავნილი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"დისტანციური გადახდა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ავტომატური გადარიცხვა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ინკასო", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "სწრაფი ფულადი გზავნილი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "დისტანციური გადახდა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ავტომატური გადარიცხვა", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "ინკასო", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2751,8 +3258,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2763,10 +3270,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სტანდარტული ვადიანი დეპოზიტი", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"შემნახველი (მოთხოვნამდე) დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ზრდადი (ვადიანი) დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მოთხოვნამდე დეპოზიტი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "სტანდარტული ვადიანი დეპოზიტი", "En": "" },
+          "IsCorrect": true
+        },
+        {
+          "Text": { "Ge": "შემნახველი (მოთხოვნამდე) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ზრდადი (ვადიანი) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "მოთხოვნამდე დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2777,10 +3296,13 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"იპოთეკური სესხი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სამომხმარებლო სესხი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ლიზინგი", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"აგრო სესხი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "იპოთეკური სესხი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "სამომხმარებლო სესხი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "ლიზინგი", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "აგრო სესხი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -2791,8 +3313,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -2803,10 +3325,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ბანკომატით და ბანკის ფილიალში თანხის განაღდებისას", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სავაჭრო ობიექტში გადახდისას", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ინტერნეტ შესყიდვებისას", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწორია 2 და 3", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "ბანკომატით და ბანკის ფილიალში თანხის განაღდებისას",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "სავაჭრო ობიექტში გადახდისას", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ინტერნეტ შესყიდვებისას", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სწორია 2 და 3", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -2817,10 +3351,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სესხის გაცემის საკომისიო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ქონების დაზღვევის გადასახადი ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სიცოცხლის დაზღვევის გადასახადი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "სესხის გაცემის საკომისიო", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ქონების დაზღვევის გადასახადი ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "სიცოცხლის დაზღვევის გადასახადი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -2828,10 +3374,22 @@
       "Id": "9edbd8d8-4d68-4c92-a4b9-b7d6c6005f54",
       "QuestionText": { "Ge": "მობაილ ბანკით შესაძლებელია:", "En": "" },
       "Answers": [
-        {"Text":{"Ge":"ანგარიშზე არსებული ბალანსის ნახვა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"კომუნალური გადასახადების გადახდა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ვალუტის კონვერტაცია", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ანგარიშზე არსებული ბალანსის ნახვა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "კომუნალური გადასახადების გადახდა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ვალუტის კონვერტაცია", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -2842,10 +3400,19 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"კორპორაციის ფასიანი ქაღალდები", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შემნახველი (მოთხოვნამდე) დეპოზიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"გრძელვადიანი კრედიტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საცხოვრებელი სახლი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "კორპორაციის ფასიანი ქაღალდები", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "შემნახველი (მოთხოვნამდე) დეპოზიტი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "გრძელვადიანი კრედიტი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "საცხოვრებელი სახლი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -2856,10 +3423,31 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"დროის დაზოგვა, რადგან არ გიწევთ ბანკში რიგში დგომა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ადვილი კონტროლი, რადგან ელექტრონული ოპერაციის ჩანაწერის შემოწმება შეიძლება ნებისმიერ დროს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მოხერხებულობა და კომფორტულობა, რადგან ყველა გადარიცხვა შეიძლება შესრულდეს ნებისმიერ დროს და ადგილას", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "დროის დაზოგვა, რადგან არ გიწევთ ბანკში რიგში დგომა",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "ადვილი კონტროლი, რადგან ელექტრონული ოპერაციის ჩანაწერის შემოწმება შეიძლება ნებისმიერ დროს",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "მოხერხებულობა და კომფორტულობა, რადგან ყველა გადარიცხვა შეიძლება შესრულდეს ნებისმიერ დროს და ადგილას",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -2870,10 +3458,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"დისლოკაციური საბანკო მომსახურება", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"დისტანციური საბანკო მომსახურება", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საპროცესინგო საბანკო მომსახურება", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "დისლოკაციური საბანკო მომსახურება", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "დისტანციური საბანკო მომსახურება", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "საპროცესინგო საბანკო მომსახურება", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2884,10 +3484,31 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწრაფი ფულადი გზავნილით სარგებლობისას აუცილებელია ანგარიშის გახსნა კომერციულ ბანკში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწრაფი ფულადი გზავნილით სარგებლობისას არ არის აუცილებელი ანგარიშის გახსნა კომერციულ ბანკში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მას  მხოლოდ იურიდიული პირები იყენებენ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწრაფი ფულადი გზავნილით სარგებლობისას შეუძლებელია თანხის მიღება საზღვარგარეთიდან", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "სწრაფი ფულადი გზავნილით სარგებლობისას აუცილებელია ანგარიშის გახსნა კომერციულ ბანკში",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "სწრაფი ფულადი გზავნილით სარგებლობისას არ არის აუცილებელი ანგარიშის გახსნა კომერციულ ბანკში",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "მას  მხოლოდ იურიდიული პირები იყენებენ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "სწრაფი ფულადი გზავნილით სარგებლობისას შეუძლებელია თანხის მიღება საზღვარგარეთიდან",
+            "En": ""
+          },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -2898,10 +3519,10 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ფაქტორინგი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"აკრედიტივი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ლიზინგი", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"მონიტორინგი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "ფაქტორინგი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "აკრედიტივი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ლიზინგი", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "მონიტორინგი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -2912,10 +3533,13 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"საპროცენტო განაკვეთი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სავალუტო ფიუჩერსი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ეფექტური კურსი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"გაცვლითი კურსი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "საპროცენტო განაკვეთი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სავალუტო ფიუჩერსი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ეფექტური კურსი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "გაცვლითი კურსი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -2926,10 +3550,10 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"პოს-ტერმინალი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"პინ-კოდი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"პროცესინგი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ფეიბოქსი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "პოს-ტერმინალი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "პინ-კოდი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "პროცესინგი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "ფეიბოქსი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2940,10 +3564,13 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სადებეტო ბარათი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საკრედიტო ბარათი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საიდენტიფიკაციო ბარათი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სასაჩუქრე ბარათი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სადებეტო ბარათი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "საკრედიტო ბარათი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "საიდენტიფიკაციო ბარათი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სასაჩუქრე ბარათი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2954,10 +3581,19 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"საკორესპოდენტო ანგარიში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ერთვალუტიანი საბანკო ანგარიში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მულტისავალუტო საბანკო ანგარიში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ნოსტრო ანგარიში", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "საკორესპოდენტო ანგარიში", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ერთვალუტიანი საბანკო ანგარიში", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "მულტისავალუტო საბანკო ანგარიში", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "ნოსტრო ანგარიში", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -2968,10 +3604,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"დეპოზიტების მოზიდვა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"კრედიტების გაცემა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ფულადი გადარიცხვების განხორციელება", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ფულის ბეჭდვა", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "დეპოზიტების მოზიდვა", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "კრედიტების გაცემა", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ფულადი გადარიცხვების განხორციელება", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "ფულის ბეჭდვა", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2982,8 +3624,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -2994,10 +3636,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"პერსონალურ მონაცემთა დაცვის აპარატი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შემოსავლების სამსახური", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საკრედიტო-საინფორმაციო ბიურო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"აღსრულების ეროვნული ბიურო", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "პერსონალურ მონაცემთა დაცვის აპარატი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "შემოსავლების სამსახური", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "საკრედიტო-საინფორმაციო ბიურო", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "აღსრულების ეროვნული ბიურო", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -3008,10 +3662,19 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"საკრედიტო ამონაწერი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საკრედიტო ანგარიშგება (რეპორტი) ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საგადასახადო რეპორტი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სასესხო ამონაწერი", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "საკრედიტო ამონაწერი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "საკრედიტო ანგარიშგება (რეპორტი) ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "საგადასახადო რეპორტი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სასესხო ამონაწერი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -3022,10 +3685,25 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სახელი და გვარი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სესხებთან დაკავშირებული ინფორმაცია და გადახდების ისტორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"თქვენს საკრედიტო ანგარიშგებაზე (რეპორტზე) განხორციელებული ძიებების რაოდენობა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სახელი და გვარი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": {
+            "Ge": "სესხებთან დაკავშირებული ინფორმაცია და გადახდების ისტორია",
+            "En": ""
+          },
+          "IsCorrect": true
+        },
+        {
+          "Text": {
+            "Ge": "თქვენს საკრედიტო ანგარიშგებაზე (რეპორტზე) განხორციელებული ძიებების რაოდენობა",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -3036,10 +3714,19 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"პირადად თქვენ", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"სესხის გამცემმა ორგანიზაციებმა, რომელსაც მიმართავთ სესხის ასაღებად", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ნებისმიერმა დაინტერესებულმა პირმა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწორია 1 და 2", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "პირადად თქვენ", "En": "" }, "IsCorrect": true },
+        {
+          "Text": {
+            "Ge": "სესხის გამცემმა ორგანიზაციებმა, რომელსაც მიმართავთ სესხის ასაღებად",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ნებისმიერმა დაინტერესებულმა პირმა", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სწორია 1 და 2", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -3050,10 +3737,25 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სესხის დაფარვიდან რამდენიმე წლის განმავლობაში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სამუდამოდ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ნეგატიური ინფორმაცია სესხის დაფარვისთანავე იშლება", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "სესხის დაფარვიდან რამდენიმე წლის განმავლობაში",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სამუდამოდ", "En": "" }, "IsCorrect": false },
+        {
+          "Text": {
+            "Ge": "ნეგატიური ინფორმაცია სესხის დაფარვისთანავე იშლება",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -3064,10 +3766,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"დროულად გადაიხადოთ სესხის შენატანები", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"დროულად დაფაროთ სესხები", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"გააკეთოთ განაცხადი რაც შეიძლება მეტ სესხზე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწორია 1 და 2", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "დროულად გადაიხადოთ სესხის შენატანები", "En": "" },
+          "IsCorrect": true
+        },
+        {
+          "Text": { "Ge": "დროულად დაფაროთ სესხები", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "გააკეთოთ განაცხადი რაც შეიძლება მეტ სესხზე",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სწორია 1 და 2", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -3078,10 +3792,28 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"წარსულში დროულად არ ფარავდით სესხებს და სესხის გამცემმა ორგანიზაციებმა შესაძლოა თავი შეიკავონ თქვენთვის სესხის დამტკიცებისგან", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"წარსულში დროულად  ფარავდით სესხებს, და სესხის გამცემი ორგანიზაციები მარტივად დაგიმტკიცებენ სესხს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არასოდეს აგიღიათ სესხი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "წარსულში დროულად არ ფარავდით სესხებს და სესხის გამცემმა ორგანიზაციებმა შესაძლოა თავი შეიკავონ თქვენთვის სესხის დამტკიცებისგან",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "წარსულში დროულად  ფარავდით სესხებს, და სესხის გამცემი ორგანიზაციები მარტივად დაგიმტკიცებენ სესხს",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არასოდეს აგიღიათ სესხი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -3092,10 +3824,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"გადახდების ისტორია", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ვალდებულებების რაოდენობა", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"საკრედიტო ისტორიის ხანგრძლივობა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "გადახდების ისტორია", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ვალდებულებების რაოდენობა", "En": "" },
+          "IsCorrect": true
+        },
+        {
+          "Text": { "Ge": "საკრედიტო ისტორიის ხანგრძლივობა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -3106,8 +3850,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -3118,8 +3862,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -3130,8 +3874,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -3142,10 +3886,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"შემოსავლის მოცულობას ", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"შემოსავლის წყაროს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"რამდენად ჯეროვნად ფარავთ თქვენს ვალდებულებებს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "შემოსავლის მოცულობას ", "En": "" },
+          "IsCorrect": true
+        },
+        { "Text": { "Ge": "შემოსავლის წყაროს", "En": "" }, "IsCorrect": false },
+        {
+          "Text": {
+            "Ge": "რამდენად ჯეროვნად ფარავთ თქვენს ვალდებულებებს",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -3156,10 +3912,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სესხის აღება", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"თავდებობა სხვის სესხზე", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"თანამსესხებლობა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სესხის აღება", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "თავდებობა სხვის სესხზე", "En": "" },
+          "IsCorrect": true
+        },
+        { "Text": { "Ge": "თანამსესხებლობა", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -3170,10 +3932,25 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"მხოლოდ ბანკებიდან", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მხოლოდ მიკროსაფინანსო ორგანიზაციებიდან", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მხოლოდ ბანკებიდან და მიკროსაფიანანსო ორგანიზაციებიდან", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბანკებიდან, მიკროსაფინანსო და სესხის გამცემი სხვა ორგანიზაციებიდან", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "მხოლოდ ბანკებიდან", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "მხოლოდ მიკროსაფინანსო ორგანიზაციებიდან", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "მხოლოდ ბანკებიდან და მიკროსაფიანანსო ორგანიზაციებიდან",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "ბანკებიდან, მიკროსაფინანსო და სესხის გამცემი სხვა ორგანიზაციებიდან",
+            "En": ""
+          },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -3184,8 +3961,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -3196,8 +3973,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -3205,10 +3982,31 @@
       "Id": "8fb43177-514a-4ef9-a2fd-80de94468200",
       "QuestionText": { "Ge": "საკრედიტო-საინფორმაციო ბიურო:", "En": "" },
       "Answers": [
-        {"Text":{"Ge":"იღებს გადაწყვეტილებას დაგიმტკიცოთ თუ არა სესხი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"გასცემს საკრედიტო ბარათებს ფიზიკურ პირებზე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"აწვდის სესხის გამცემ ორგანიზაციებს ინფორმაციას ფიზიკური და იურიდიული პირების ფინანსური ვალდებულებების შესახებ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "იღებს გადაწყვეტილებას დაგიმტკიცოთ თუ არა სესხი",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "გასცემს საკრედიტო ბარათებს ფიზიკურ პირებზე",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "აწვდის სესხის გამცემ ორგანიზაციებს ინფორმაციას ფიზიკური და იურიდიული პირების ფინანსური ვალდებულებების შესახებ",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -3219,10 +4017,25 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სესხებზე არსებული ვადაგადაცილება", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"აღებული სესხების რაოდენობა ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საკრედიტო ინფორმაციაზე განხორციელებული ძიებების რაოდენობა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "სესხებზე არსებული ვადაგადაცილება", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "აღებული სესხების რაოდენობა ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "საკრედიტო ინფორმაციაზე განხორციელებული ძიებების რაოდენობა",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -3233,8 +4046,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -3245,10 +4058,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"მოსწავლის პირადი ნომერი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ფოტო და ვიდეო მასალა მოსწავლის გამოსახულებით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მოსწავლის ნიშნები", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "მოსწავლის პირადი ნომერი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "ფოტო და ვიდეო მასალა მოსწავლის გამოსახულებით",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "მოსწავლის ნიშნები", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -3259,10 +4084,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"თუ მოქალაქემ განაცხადა თანხმობა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ნებისმიერ შემთხვევაში", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"თუ ინფორმაცია ხელმისაწვდომია საჯარო წყაროებიდან", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწორია 1 და 3", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "თუ მოქალაქემ განაცხადა თანხმობა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ნებისმიერ შემთხვევაში", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "თუ ინფორმაცია ხელმისაწვდომია საჯარო წყაროებიდან",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სწორია 1 და 3", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     },
@@ -3273,10 +4110,28 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სმს - შეტყობინების წაშლით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სმს-შეტყობინებაში მითითებულ ნომერზე დარეკვის ან მიწერის გზით შეტყობინებების გამოგზავნის შეწყვეტის მოთხოვნა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სარეკლამო შეტყობინებაზე უარის თქმა შეუძლებელია", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ტელეფონის ნომრის შეცვლით", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "სმს - შეტყობინების წაშლით", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "სმს-შეტყობინებაში მითითებულ ნომერზე დარეკვის ან მიწერის გზით შეტყობინებების გამოგზავნის შეწყვეტის მოთხოვნა",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "სარეკლამო შეტყობინებაზე უარის თქმა შეუძლებელია",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ტელეფონის ნომრის შეცვლით", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -3287,10 +4142,25 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"აქვს უფლება, თუ თქვენ განაცხადეთ თანხმობა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"აქვს უფლება, თუ თქვენი ტელეფონის ნომერი ხელმისაწვდომია საჯარო წყაროებიდან", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთ შემთხვევაში არ აქვს უფლება", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწორია 1 და 2", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "აქვს უფლება, თუ თქვენ განაცხადეთ თანხმობა",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "აქვს უფლება, თუ თქვენი ტელეფონის ნომერი ხელმისაწვდომია საჯარო წყაროებიდან",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არც ერთ შემთხვევაში არ აქვს უფლება", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სწორია 1 და 2", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -3301,10 +4171,28 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ვერაფერს მოვიმოქმედებთ, რადგან ერთხელ უკვე განცხადებული გვაქვს თახნმობა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მოვითხოვოთ სარეკლამო შეტყობინები გამოგზავნის შეწყვეტა დადგენილი წესით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ვუჩივლოთ რეკლამის გამომგზავნ კომპანიას", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შევცვალოთ მობილური ტელეფონის ნომერი", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "ვერაფერს მოვიმოქმედებთ, რადგან ერთხელ უკვე განცხადებული გვაქვს თახნმობა",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "მოვითხოვოთ სარეკლამო შეტყობინები გამოგზავნის შეწყვეტა დადგენილი წესით",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ვუჩივლოთ რეკლამის გამომგზავნ კომპანიას", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "შევცვალოთ მობილური ტელეფონის ნომერი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -3315,10 +4203,19 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სახელი, გვარი და პირადი ნომერი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ტელეფონის ნომერი ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"საბანკო ანგარიშის ამონაწერი ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "სახელი, გვარი და პირადი ნომერი", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "ტელეფონის ნომერი ", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "საბანკო ანგარიშის ამონაწერი ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -3329,8 +4226,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -3341,10 +4238,31 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"მოქალაქის თანხმობის ან კანონით განსაზღვრული სხვა საფუძვლის გარეშე მონაცემთა მოპოვება", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"ვიდეო და აუდიო ჩაწერა მოქალაქის წინასწარი გაფრთხილებისა და აუცილებლობის გარეშე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"იმაზე მეტი მოცულობით მონაცემთა შეგროვება, ვიდრე ეს კონკრეტულ მომსახურების გაწევისთვისაა საჭირო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "მოქალაქის თანხმობის ან კანონით განსაზღვრული სხვა საფუძვლის გარეშე მონაცემთა მოპოვება",
+            "En": ""
+          },
+          "IsCorrect": true
+        },
+        {
+          "Text": {
+            "Ge": "ვიდეო და აუდიო ჩაწერა მოქალაქის წინასწარი გაფრთხილებისა და აუცილებლობის გარეშე",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "იმაზე მეტი მოცულობით მონაცემთა შეგროვება, ვიდრე ეს კონკრეტულ მომსახურების გაწევისთვისაა საჭირო",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -3355,10 +4273,28 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"მხოლოდ ანგარიშის მფლობელზე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ანგარიშის მფლობელზე და კანონით გათვალისწინებულ შემთხვევებში მესამე პირებზე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ნებისმიერ დაინტერესებულ მესამე პირზე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ანგარიშის მფლობელზე და მის ოჯახის წევრზე", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "მხოლოდ ანგარიშის მფლობელზე", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "ანგარიშის მფლობელზე და კანონით გათვალისწინებულ შემთხვევებში მესამე პირებზე",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ნებისმიერ დაინტერესებულ მესამე პირზე", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "ანგარიშის მფლობელზე და მის ოჯახის წევრზე",
+            "En": ""
+          },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -3369,10 +4305,31 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"საბანკო ამონაწერში ან SMS-შეტყობინებაში შეამჩნევთ ტრანზაქციას, რომელიც თქვენ არ გაგიხორციელებიათ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მოულოდნელად გადაცდებით ოვერდრაფტის ლიმიტს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"თქვენს ანგარიშზე თანხა აღარ არის, თუმცა  ნამდვილად გახსოვთ, რომ გარკვეული თანხა გქონდათ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "საბანკო ამონაწერში ან SMS-შეტყობინებაში შეამჩნევთ ტრანზაქციას, რომელიც თქვენ არ გაგიხორციელებიათ",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "მოულოდნელად გადაცდებით ოვერდრაფტის ლიმიტს",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "თქვენს ანგარიშზე თანხა აღარ არის, თუმცა  ნამდვილად გახსოვთ, რომ გარკვეული თანხა გქონდათ",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -3383,10 +4340,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ბარათის ფიზიკურად მოპარვით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბარათის მონაცემების ჩაწერით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ბარათის მონაცემების დამახსოვრებით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ბარათის ფიზიკურად მოპარვით", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ბარათის მონაცემების ჩაწერით", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ბარათის მონაცემების დამახსოვრებით", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -3397,10 +4366,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ფიშინგი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ფინანსური პირამიდა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სკიმინგი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "ფიშინგი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ფინანსური პირამიდა", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სკიმინგი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 2
     },
@@ -3411,10 +4386,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ფიშინგი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სკიმინგი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ფინანსური პირამიდა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არც ერთი პასუხი არ არის სწორი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "ფიშინგი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "სკიმინგი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "ფინანსური პირამიდა", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "არც ერთი პასუხი არ არის სწორი", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 1
     },
@@ -3425,10 +4406,19 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"ყვითელი ბოქლომის სიმბოლო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"პროცენტის სიმბოლო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"მწვანე ბოქლომის სიმბოლო", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"წითელი ბოქლომის სიმბოლო", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "ყვითელი ბოქლომის სიმბოლო", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "პროცენტის სიმბოლო", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "მწვანე ბოქლომის სიმბოლო", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "წითელი ბოქლომის სიმბოლო", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -3439,10 +4429,16 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"16 წელი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"14 წელი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ნებისმიერი ასაკის ბავშვს შეუძლია მუშაობა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"18 წელი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "16 წელი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "14 წელი", "En": "" }, "IsCorrect": false },
+        {
+          "Text": {
+            "Ge": "ნებისმიერი ასაკის ბავშვს შეუძლია მუშაობა",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "18 წელი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -3453,10 +4449,22 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"შესასრულებელი სამუშაოს შესახებ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შრომის პირობების შესახებ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"შრომის ანაზღაურების შესახებ", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "შესასრულებელი სამუშაოს შესახებ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "შრომის პირობების შესახებ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "შრომის ანაზღაურების შესახებ", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -3467,10 +4475,28 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"მუშაობის დაწყების თარიღი და შრომითი ურთიერთობის ხანგრძლივობა", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სამუშაო ადგილი, სამუშაო დრო, თანამდებობა და შესასრულებელი სამუშაოს სახე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ანაზღაურების მოცულობა და გადახდის წესი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"ყველა პასუხი სწორია", "En":""},"IsCorrect": false}
+        {
+          "Text": {
+            "Ge": "მუშაობის დაწყების თარიღი და შრომითი ურთიერთობის ხანგრძლივობა",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": {
+            "Ge": "სამუშაო ადგილი, სამუშაო დრო, თანამდებობა და შესასრულებელი სამუშაოს სახე",
+            "En": ""
+          },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ანაზღაურების მოცულობა და გადახდის წესი", "En": "" },
+          "IsCorrect": false
+        },
+        {
+          "Text": { "Ge": "ყველა პასუხი სწორია", "En": "" },
+          "IsCorrect": false
+        }
       ],
       "Difficulty": 0
     },
@@ -3481,8 +4507,8 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"სწორია", "En":""},"IsCorrect": true},
-        {"Text":{"Ge":"არასწორია", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "სწორია", "En": "" }, "IsCorrect": true },
+        { "Text": { "Ge": "არასწორია", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 1
     },
@@ -3493,10 +4519,10 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"არაუმეტეს 6 თვე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არაუმეტეს 1 თვე", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არაუმეტეს 1 წელი", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არაუმეტეს 2 წელი", "En":""},"IsCorrect": false}
+        { "Text": { "Ge": "არაუმეტეს 6 თვე", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "არაუმეტეს 1 თვე", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "არაუმეტეს 1 წელი", "En": "" }, "IsCorrect": false },
+        { "Text": { "Ge": "არაუმეტეს 2 წელი", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 0
     },
@@ -3507,17 +4533,23 @@
         "En": ""
       },
       "Answers": [
-        {"Text":{"Ge":"მუშაობს დაქირავებით", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"თვითდასაქმებულია", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"არ მუშაობს, მაგრამ აქვს სურვილი იმუშაოს", "En":""},"IsCorrect": false},
-        {"Text":{"Ge":"სწორია 1 და 2", "En":""},"IsCorrect": false}
+        {
+          "Text": { "Ge": "მუშაობს დაქირავებით", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "თვითდასაქმებულია", "En": "" }, "IsCorrect": false },
+        {
+          "Text": { "Ge": "არ მუშაობს, მაგრამ აქვს სურვილი იმუშაოს", "En": "" },
+          "IsCorrect": false
+        },
+        { "Text": { "Ge": "სწორია 1 და 2", "En": "" }, "IsCorrect": false }
       ],
       "Difficulty": 2
     }
   ],
   "Missions": [
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "4ad086fb-82e4-4288-8dcb-be1c7a968520",
       "Object": "c80429ca-411d-453a-8a4e-1559bae2569f",
       "City": 0,
       "Type": 2,
@@ -3534,7 +4566,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "0a2f886e-4ffd-451d-ad3b-d925c280f4d5",
       "Object": null,
       "City": 0,
       "Type": 4,
@@ -3551,7 +4583,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "215eb712-220f-4562-bdb3-bd6eca5ee355",
       "Object": null,
       "City": 0,
       "Type": 6,
@@ -3568,7 +4600,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "d9529f62-a4b2-4c70-a6a0-4488d5b15682",
       "Object": null,
       "City": 0,
       "Type": 7,
@@ -3585,7 +4617,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "cbf9a7a8-6c73-43f5-9738-5d2fc95e6e7d",
       "Object": "70",
       "City": 0,
       "Type": 16,
@@ -3602,7 +4634,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "c4aa157b-fa8b-42c1-a7cf-681df45fc747",
       "Object": "4df5c792-162f-4eab-97da-278660443d09",
       "City": 0,
       "Type": 8,
@@ -3619,7 +4651,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "8e52382a-13a9-42fc-a91f-d8e7edf13c99",
       "Object": "4df5c792-162f-4eab-97da-278660443d08",
       "City": 0,
       "Type": 8,
@@ -3636,7 +4668,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "4e8bbee4-31ea-4b42-8f13-14fb410a4ec0",
       "Object": "4df5c792-162f-4eab-97da-278660443d07",
       "City": 0,
       "Type": 8,
@@ -3653,7 +4685,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "4fc5a70a-f1e1-4a8a-a574-42b2fcc2d92e",
       "Object": "4df5c792-162f-4eab-97da-278660443d06",
       "City": 0,
       "Type": 8,
@@ -3670,7 +4702,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "ddd0e7d7-8fec-4f94-8e0a-f96eb0aca6b3",
       "Object": "4df5c792-162f-4eab-97da-278660443d04",
       "City": 0,
       "Type": 8,
@@ -3687,7 +4719,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "dcffc0b8-b6eb-4ff7-ad5d-59a010f33107",
       "Object": "4df5c792-162f-4eab-97da-278660443d05",
       "City": 0,
       "Type": 8,
@@ -3704,7 +4736,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "d5bfd3f6-9906-4d85-aa76-ddfc3340d74c",
       "Object": "4df5c792-162f-4eab-97da-278660443d03",
       "City": 0,
       "Type": 8,
@@ -3721,7 +4753,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "0d120d5b-d0dc-400e-9810-0d1835eacac5",
       "Object": "4df5c792-162f-4eab-97da-278660443d02",
       "City": 0,
       "Type": 8,
@@ -3738,7 +4770,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "5f65d54d-08a3-4f41-ac7d-d265c8462c92",
       "Object": "4df5c792-162f-4eab-97da-278660443d01",
       "City": 0,
       "Type": 8,
@@ -3755,7 +4787,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "ff07af7e-cae1-4c72-a72b-719c016ad634",
       "Object": "LargeFlat",
       "City": 0,
       "Type": 0,
@@ -3772,7 +4804,7 @@
       }
     },
     {
-      "Id": "00000000-0000-0000-0000-000000000000",
+      "Id": "ea0b3b45-8768-4455-addb-1429f1f7eba6",
       "Object": "LargeHouse",
       "City": 0,
       "Type": 9,
@@ -3818,7 +4850,7 @@
         "En": "Moneyland",
         "Ge": "ფულაანი"
       },
-      "Id": 14,
+      "Id": 2,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": true
@@ -3828,7 +4860,7 @@
         "En": "Tbilisi",
         "Ge": "Tbilisi"
       },
-      "Id": 0,
+      "Id": 5,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": true
@@ -3848,7 +4880,7 @@
         "En": "Kutaisi",
         "Ge": "Kutaisi"
       },
-      "Id": 2,
+      "Id": 4,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": false
@@ -3858,7 +4890,7 @@
         "En": "Rustavi",
         "Ge": "Rustavi"
       },
-      "Id": 3,
+      "Id": 10,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": false
@@ -3868,7 +4900,7 @@
         "En": "Gori",
         "Ge": "Gori"
       },
-      "Id": 5,
+      "Id": 3,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": false
@@ -3878,7 +4910,7 @@
         "En": "Sokhumi",
         "Ge": "Sokhumi"
       },
-      "Id": 4,
+      "Id": 11,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": false
@@ -3888,7 +4920,7 @@
         "En": "Zugdidi",
         "Ge": "Zugdidi"
       },
-      "Id": 6,
+      "Id": 14,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": false
@@ -3898,7 +4930,7 @@
         "En": "Tskhinvali",
         "Ge": "Tskhinvali"
       },
-      "Id": 7,
+      "Id": 13,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": false
@@ -3908,7 +4940,7 @@
         "En": "Telavi",
         "Ge": "Telavi"
       },
-      "Id": 8,
+      "Id": 12,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": false
@@ -3918,7 +4950,7 @@
         "En": "Akhaltsikhe",
         "Ge": "Akhaltsikhe"
       },
-      "Id": 9,
+      "Id": 0,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": false
@@ -3928,7 +4960,7 @@
         "En": "Ozurgeti",
         "Ge": "Ozurgeti"
       },
-      "Id": 10,
+      "Id": 9,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": false
@@ -3938,7 +4970,7 @@
         "En": "Mestia",
         "Ge": "Mestia"
       },
-      "Id": 11,
+      "Id": 6,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": false
@@ -3948,7 +4980,7 @@
         "En": "Mtskheta",
         "Ge": "Mtskheta"
       },
-      "Id": 13,
+      "Id": 7,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": false
@@ -3958,7 +4990,7 @@
         "En": "Oni",
         "Ge": "Oni"
       },
-      "Id": 12,
+      "Id": 8,
       "Price": 10000,
       "StartPolutionLevel": 1,
       "IsUnlocked": false
@@ -4867,10 +5899,10 @@
         "Money": -150.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Health": 1,
-        "Money": 1
-      }
+      "EffectInsurances": [
+        { "Parameter": 0, "Insurance": 1 },
+        { "Parameter": 2, "Insurance": 1 }
+      ]
     },
     {
       "Id": "7c34f3d5-3e17-4718-9d3a-6817e6e390f3",
@@ -4940,9 +5972,7 @@
         "Money": 0.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Health": 1
-      }
+      "EffectInsurances": [{ "Parameter": 0, "Insurance": 1 }]
     },
     {
       "Id": "9fd1a53a-b73d-4000-8319-09afca8ddb8d",
@@ -4956,10 +5986,10 @@
         "Money": -500.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "c88412c7-abd5-4678-b937-97dce4cee2ad",
@@ -4973,10 +6003,10 @@
         "Money": -1000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 2,
-        "Money": 2
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 2 },
+        { "Parameter": 2, "Insurance": 2 }
+      ]
     },
     {
       "Id": "98894cac-b68f-4e6c-a2a1-29614254f498",
@@ -5060,9 +6090,7 @@
         "Money": 0.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0
-      }
+      "EffectInsurances": [{ "Parameter": 1, "Insurance": 0 }]
     },
     {
       "Id": "2b2d6802-342e-4291-8347-e1a773517585",
@@ -5076,10 +6104,10 @@
         "Money": -5000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "bc1a7a8b-559a-44e0-80b7-49e393a5d0c1",
@@ -5093,10 +6121,10 @@
         "Money": -1000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "712d9133-e06a-43f2-95c6-ba3b3eebf604",
@@ -5110,9 +6138,7 @@
         "Money": 0.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0
-      }
+      "EffectInsurances": [{ "Parameter": 1, "Insurance": 0 }]
     },
     {
       "Id": "06f7ed52-dafe-4be6-83f4-caf58d669c80",
@@ -5126,10 +6152,10 @@
         "Money": -2000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "1c1b83da-765a-4b9b-96a5-0acd5dbe1982",
@@ -5143,10 +6169,10 @@
         "Money": -2000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "8727e7a7-d587-4db0-85ed-8451a1809dbf",
@@ -5160,10 +6186,10 @@
         "Money": -2000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "43aa02e4-ff40-42b0-ad9f-80931a64dccd",
@@ -5177,9 +6203,7 @@
         "Money": 0.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0
-      }
+      "EffectInsurances": [{ "Parameter": 1, "Insurance": 0 }]
     },
     {
       "Id": "f62d6fe0-915c-4a85-aea7-39181fe8cae1",
@@ -5193,10 +6217,10 @@
         "Money": -5000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "8aeb7853-6206-4dbf-b4a6-5e4325e8cf02",
@@ -5210,10 +6234,10 @@
         "Money": -5000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "316d2276-1a87-48db-a4c5-0aae80c4c30d",
@@ -5227,10 +6251,10 @@
         "Money": -2000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "2f35d719-0e71-4c59-b2e5-f212fed87a58",
@@ -5244,10 +6268,10 @@
         "Money": 0.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "a5933c35-a372-4229-b2fb-043b31a608c2",
@@ -5261,10 +6285,10 @@
         "Money": -3000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "8a7445c7-df5e-46d7-a004-e606df31b176",
@@ -5278,10 +6302,10 @@
         "Money": -5000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "63302a7a-6b51-442c-9e7f-46f6f7891d19",
@@ -5295,10 +6319,10 @@
         "Money": -1500.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "3d9db8e8-e6a6-4218-ba56-cf74a749521a",
@@ -5312,10 +6336,10 @@
         "Money": -2000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "f9a43fcc-f1e8-4d51-b8bc-73756f5670d8",
@@ -5329,10 +6353,10 @@
         "Money": -1500.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "63646475-8107-44fa-a1c5-80ba3d1a8f4b",
@@ -5346,10 +6370,10 @@
         "Money": -3000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "5192690b-d5d3-4bd8-9d4e-63108a58aa17",
@@ -5363,10 +6387,10 @@
         "Money": -2000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "c5e3c966-8449-4801-be49-5dd317991db0",
@@ -5380,10 +6404,10 @@
         "Money": -1000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "fa39488d-1553-4234-aea3-f6d585c5d898",
@@ -5397,10 +6421,10 @@
         "Money": -3000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     },
     {
       "Id": "c4479ae7-2e8f-4bd3-b928-d2fa7d168921",
@@ -5414,10 +6438,10 @@
         "Money": -5000.0,
         "Time": 0.0
       },
-      "EffectInsurances": {
-        "Mood": 0,
-        "Money": 0
-      }
+      "EffectInsurances": [
+        { "Parameter": 1, "Insurance": 0 },
+        { "Parameter": 2, "Insurance": 0 }
+      ]
     }
   ]
 }
