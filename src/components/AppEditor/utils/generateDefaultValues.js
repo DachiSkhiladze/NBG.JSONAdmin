@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const defaultValues = {
   text: () => ({ En: "", Ge: "" }),
-  number: () => 0,
+  number: () => '',
   multi_selector: () => [],
   selector: () => "0",
   list: () => [],

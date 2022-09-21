@@ -24,7 +24,7 @@ function text(params) {
 function bool(params) {
   const { state, id } = params;
   const value = state[id];
-  return value ? "კი" : "არა";
+  return value == "1" || value == true ? "კი" : "არა";
 }
 
 function item(params) {
@@ -42,6 +42,11 @@ function price(params) {
   return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + "₾";
 }
 
+function percent(params) {
+  const value = params.state[params.id];
+  return value + "%";
+}
+
 const functions = {
   count,
   selector,
@@ -50,6 +55,7 @@ const functions = {
   bool,
   multi_selector,
   item,
+  percent,
 };
 
 export default functions;

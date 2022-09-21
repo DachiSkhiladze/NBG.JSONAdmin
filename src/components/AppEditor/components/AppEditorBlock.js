@@ -31,7 +31,7 @@ function AppEditorBlock({
     onAdd({
       scheme: { ...scheme, type: "form" },
       path: "",
-      onSave: (item) => setState([...state, item]),
+      onSave: (item) => setState([item, ...state]),
     });
   }
 
@@ -86,9 +86,9 @@ function AppEditorBlock({
       )}
       <editorContext.Provider value={{ state: [state, setState] }}>
         <div className="header">
-          <h1>
-            {onCancel && "Add"} {scheme.id}
-          </h1>
+          <h2>
+            {onCancel && "დაამატე"} {scheme.label || scheme.id}
+          </h2>
           <div className="controls">{getControlls()}</div>
         </div>
         <div className="scroll">

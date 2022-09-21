@@ -44,7 +44,7 @@ function AppSiderbar({ list }) {
           key={data.id}
           className={data.id === selector?.id ? "active" : ""}
         >
-          <span>{data.id}</span>
+          <span>{data.label || data.id}</span>
         </button>
       ))}
     </div>

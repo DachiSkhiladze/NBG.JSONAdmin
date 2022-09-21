@@ -8,6 +8,12 @@ import AppSiderbar from "./components/AppSidebar";
 import { useEffect } from "react";
 import AppPublish from "./components/AppPublish";
 import { AppLoader } from "./hooks/useFiles";
+import AppTranslations from "./components/AppTranslations";
+
+const routes = {
+  publish: AppPublish,
+  translations: AppTranslations,
+};
 
 function App() {
   const dispatch = useDispatch();
@@ -31,15 +37,13 @@ function App() {
   return (
     <div className="container">
       <AppLoader />
-      <AppSiderbar list={[...scheme.data, { id: "Publish" }]} />
-      {route === "Publish" ? (
-        <AppPublish />
-      ) : (
-        content &&
-        currentScheme && (
+      <AppSiderbar
+        list={[...scheme.data, ...Object.keys(routes).map((x) => ({ id: x }))]}
+      />
+      {routes[route]?.() ||
+        (content && currentScheme && (
           <AppEditor scheme={currentScheme} state={content} onSave={onSave} />
-        )
-      )}
+        ))}
     </div>
   );
 }

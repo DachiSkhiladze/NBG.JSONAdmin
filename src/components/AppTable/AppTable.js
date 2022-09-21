@@ -25,7 +25,7 @@ function AppTable({ scheme, path, disabled, onSave }) {
           x.type !== "multi_selector"
       )
       .map((x) => ({
-        label: x.id,
+        label: x.label || x.id,
         id: x.id,
         function:
           x.type === "text" || x.type === "textarea"

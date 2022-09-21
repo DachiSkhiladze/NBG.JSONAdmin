@@ -45,6 +45,7 @@ function useController(path) {
     setState: setState,
     pushBlock,
     popBlock,
+    formState: ctx.state[0],
   };
 }
 

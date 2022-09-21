@@ -14,8 +14,8 @@ const customStyles = {
 };
 
 function AppSelctor({ scheme, path }) {
-  const { setState, state } = useController(path);
-  const { options } = useMultiSelector(scheme, path);
+  const { setState, state, formState } = useController(path);
+  const { options } = useMultiSelector(scheme, path, formState);
 
   function onChange(p) {
     setState(p.value);

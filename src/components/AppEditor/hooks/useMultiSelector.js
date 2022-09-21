@@ -1,4 +1,5 @@
 import schemes from "../../../scheme.json";
+import buildings from "../../../assets/buildings.json";
 import { useSelector } from "react-redux";
 
 function items({ content }) {
@@ -81,11 +82,11 @@ function houseTypes() {
 function difficulty() {
   const options = [
     {
-      label: "საშუალო",
+      label: "მარტივი",
       value: 0,
     },
     {
-      label: "მარტივი",
+      label: "საშუალო",
       value: 1,
     },
     {
@@ -100,14 +101,22 @@ function bool() {
   const options = [
     {
       label: "კი",
-      value: true,
+      value: 1,
     },
     {
       label: "არა",
-      value: false,
+      value: 0,
     },
   ];
   return options;
+}
+
+function building({ state }) {
+  console.log(state.City);
+  if (state.City !== undefined) {
+    return buildings.buildings.filter((x) => x.cityId == state.City);
+  }
+  return buildings.buildings;
 }
 
 const selectors = {
@@ -120,16 +129,17 @@ const selectors = {
   actions,
   debt,
   depositTypes,
+  building,
   parameters,
   insurances,
   itemDescriptions,
   furnitures,
 };
 
-function useMultiSelector(scheme, path) {
+function useMultiSelector(scheme, path, state) {
   const content = useSelector((x) => x.content);
   const lang = useSelector((x) => x.language);
-  const options = selectors[scheme.selector]({ scheme, path, content });
+  const options = selectors[scheme.selector]({ scheme, path, content, state });
   return { options };
 }
 

@@ -21,7 +21,7 @@ function AppList({ scheme, path }) {
 
   return (
     <button className="list-button full-width" onClick={onAdd}>
-      <span>{scheme.id}</span>
+      <span>{scheme.label ||scheme.id}</span>
       <span>{">"}</span>
     </button>
   );

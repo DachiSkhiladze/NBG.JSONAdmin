@@ -1,4 +1,4 @@
-$sidebar-width: 250px;
+$sidebar-width: 300px;
 $input-height: 40px;
 
 html,
@@ -32,6 +32,7 @@ html {
 
 .sidebar {
   min-width: $sidebar-width;
+  width: $sidebar-width;
   border-right: solid 1px lightgray;
   padding: 30px 15px;
   display: flex;
@@ -140,7 +141,7 @@ html {
 }
 
 .editor-block:nth-of-type(1) {
-  min-width: calc(100vw - 250px);
+  min-width: calc(100vw - $sidebar-width);
 }
 
 .disabled {
@@ -150,15 +151,16 @@ html {
 
 .editor-block {
   // padding: 0px 50px 50px 50px;
-  min-width: calc(70vw - 250px);
+  min-width: calc(70vw - $sidebar-width);
   // overflow-y: scroll;
   // overflow-x: hidden;
   position: relative;
+  padding-bottom: 45px;
 
   .scroll {
     overflow-y: scroll;
     height: calc(100% - 50px);
-    padding: 0px 50px 50px 50px;
+    padding: 0px 50px 150px 50px;
   }
 
   .form-cont {
@@ -199,8 +201,8 @@ html {
     input {
       width: 100%;
       height: $input-height;
-      margin: 0px;
-      padding: 0px 10px;
+      margin: 0px 0px 0px 0px;
+      padding: 0px 70px 0px 10px;
       background-color: white;
       // border: solid 0.1px lightgray;
       border-radius: 5px;
@@ -225,7 +227,7 @@ html {
 }
 
 .editor-spacer {
-  min-width: calc(((100vw - 250px) - (70vw - 250px)) / 2);
+  min-width: calc(((100vw - $sidebar-width) - (70vw - $sidebar-width)) / 2);
 }
 
 .header {
@@ -322,5 +324,23 @@ html {
   button:hover {
     opacity: 1;
     font-weight: bold;
+  }
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.image-option {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+
+  img {
+    width: 80px;
+    height: 80px;
   }
 }
