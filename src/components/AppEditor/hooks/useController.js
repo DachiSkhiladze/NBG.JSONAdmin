@@ -13,9 +13,7 @@ function useController(path) {
   function setState(newValue) {
     var stack = path.split(".");
 
-    var state = Array.isArray(ctx.state[0])
-      ? [...ctx.state[0]]
-      : { ...ctx.state[0] };
+    var state = JSON.parse(JSON.stringify(ctx.state[0]));
 
     var object = state;
 

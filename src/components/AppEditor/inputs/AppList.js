@@ -9,7 +9,7 @@ function AppList({ scheme, path }) {
     pushBlock({
       scheme,
       onSave,
-      state: state,
+      state: JSON.parse(JSON.stringify(state)),
       path: path,
       type: "table",
     });
@@ -21,7 +21,7 @@ function AppList({ scheme, path }) {
 
   return (
     <button className="list-button full-width" onClick={onAdd}>
-      <span>{scheme.label ||scheme.id}</span>
+      <span>{scheme.label || scheme.id}</span>
       <span>{">"}</span>
     </button>
   );

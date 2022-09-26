@@ -13,7 +13,7 @@ function AppTextInput({ scheme, path }) {
 
   return (
     <AppLabelCont label={scheme.id} {...scheme}>
-      <div className="keyboard-input">
+      <div className="keyboard-input text">
         <input type={"text"} onChange={onChange} value={state?.[language]} />
         <AppLangauageChooser />
       </div>

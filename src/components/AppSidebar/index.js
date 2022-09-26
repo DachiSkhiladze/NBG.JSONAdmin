@@ -22,8 +22,16 @@ function AppSiderbar({ list }) {
     dispatch(SET_LANGUAGE(lang));
   }
 
+  function onSyncPress() {
+    localStorage.clear();
+    window.location.reload();
+  }
+
   return (
     <div className="sidebar">
+      <button className="sync-button" onClick={onSyncPress}>
+        sync
+      </button>
       <div className="language-chooser-cont">
         <button
           onClick={() => onLanguageClick("En")}

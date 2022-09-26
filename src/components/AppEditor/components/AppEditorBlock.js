@@ -40,6 +40,8 @@ function AppEditorBlock({
     onDelete();
   }
 
+  console.log(currentState)
+
   function getControlls() {
     if (type === "table") {
       return [

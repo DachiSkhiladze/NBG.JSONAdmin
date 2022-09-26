@@ -67,11 +67,13 @@ function AppTable({ scheme, path, disabled, onSave }) {
     pushBlock({
       scheme: { ...scheme, type: "form" },
       path: "",
-      state: state[index],
+      state: JSON.parse(JSON.stringify(state[index])),
       onDelete: () => {
         setState([...state.filter((_, i) => index !== i)]);
       },
-      onSave: (item) => handleSave(item, index),
+      onSave: (item) => {
+        handleSave(item, index);
+      },
     });
   };
 

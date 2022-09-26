@@ -202,7 +202,6 @@ html {
       width: 100%;
       height: $input-height;
       margin: 0px 0px 0px 0px;
-      padding: 0px 70px 0px 10px;
       background-color: white;
       // border: solid 0.1px lightgray;
       border-radius: 5px;
@@ -223,6 +222,12 @@ html {
     .language-chooser {
       height: 40px;
     }
+  }
+}
+
+.text {
+  input {
+    padding: 0px 70px 0px 10px;
   }
 }
 
@@ -343,4 +348,9 @@ html {
     width: 80px;
     height: 80px;
   }
+}
+
+.sync-button {
+  font-size: 10px;
+  text-transform: uppercase;
 }
