@@ -26,7 +26,7 @@ function AppSelctor({ scheme, path }) {
   }, []);
 
   return (
-    <AppLabelCont label={scheme.id} {...scheme}>
+    <AppLabelCont label={scheme.id} {...scheme} fullWidth={scheme.fullWidth}>
       <Select
         options={options}
         value={options.find((x) => x.value == state)}

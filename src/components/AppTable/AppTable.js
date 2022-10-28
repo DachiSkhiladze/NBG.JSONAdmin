@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaClone } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import "../../App.scss";
 import rootScheme from "../../scheme.json";
@@ -48,34 +49,41 @@ function AppTable({ scheme, path, disabled, onSave }) {
     )
   );
 
-  function handleSave(item, index) {
+  function handleSave(item, index, callback) {
     const newState = [...state];
     newState[index] = item;
     setState(newState);
+    onSave(newState, callback);
   }
-
-  React.useEffect(() => {
-    onSave(state);
-  }, [state]);
 
   React.useEffect(() => {
     setSortIndex(-1);
   }, [scheme]);
+ 
 
-  const onEditPress = (index) => {
-    // alert(index);
+  const onEditPress = (s, index) => {
+    if (s.target.tagName.toLowerCase() !== "td") {
+      return;
+    }
     pushBlock({
       scheme: { ...scheme, type: "form" },
       path: "",
       state: JSON.parse(JSON.stringify(state[index])),
       onDelete: () => {
-        setState([...state.filter((_, i) => index !== i)]);
+        const data = [...state.filter((_, i) => index !== i)];
+        setState(data);
+        onSave(data);
       },
-      onSave: (item) => {
-        handleSave(item, index);
+      onSave: (item, callback) => {
+        handleSave(item, index, callback);
       },
     });
   };
+
+  function onClone(e, index) {
+    e.preventDefault();
+    setState([JSON.parse(JSON.stringify(state[index])), ...state]);
+  }
 
   function onSortPress(i) {
     return;
@@ -124,15 +132,21 @@ function AppTable({ scheme, path, disabled, onSave }) {
                 {title}
               </th>
             ))}
+            <th></th>
           </tr>
         </thead>
         <tbody>
           {sortedData.map((item, i) => (
-            <tr onClick={() => onEditPress(i)} key={`${i}_${lang}`}>
+            <tr onClick={(s) => onEditPress(s, i)} key={`${i}_${lang}`}>
               <td>{i + 1}</td>
               {item.map((detail, j) => (
                 <td key={j}>{detail}</td>
               ))}
+              <td>
+                <button className="clone-icon" onClick={(e) => onClone(e, i)}>
+                  <FaClone />
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>

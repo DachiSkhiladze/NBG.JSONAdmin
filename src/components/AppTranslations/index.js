@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { SET_CONTENT } from "../../redux/actions";
 import AppEditor from "../AppEditor";
 
 const scheme = {
@@ -24,16 +25,23 @@ const scheme = {
   ],
 };
 
-export default function AppTranslations() {
-  const state = useSelector((x) => x.translations);
+export default function AppTranslations({ onSave, loading }) {
+  const content = useSelector((x) => x.content);
+  const state = content?.translations || {};
+  console.log(state);
+
   const dispatch = useDispatch();
 
-  function onSave(id, value) {
+  function onSavePress(id, value, callback) {
     const translations = {
       en: value.reduce((a, c) => ({ ...a, [c.Key]: c.En }), {}),
       ge: value.reduce((a, c) => ({ ...a, [c.Key]: c.Ge }), {}),
     };
-    dispatch({ type: "SET_TRANSLATIONS", data: translations });
+    onSave("translations", translations, callback);
+  }
+
+  if (!content) {
+    return null;
   }
 
   const stateValue = !state
@@ -47,9 +55,10 @@ export default function AppTranslations() {
   return (
     stateValue && (
       <AppEditor
+        loading={loading}
         scheme={scheme}
         state={{ Translations: stateValue }}
-        onSave={onSave}
+        onSave={onSavePress}
       />
     )
   );

@@ -22,7 +22,6 @@ function useController(path) {
     }
 
     if (Array.isArray(ctx.state[0])) {
-      console.log(object);
       let l = object.length;
       for (let i = 0; i < l; i++) {
         object.pop();
@@ -33,6 +32,8 @@ function useController(path) {
       }
     } else {
       object[stack.shift()] = newValue;
+      console.log(object);
+      console.log(state)
     }
 
     ctx.state[1](state);

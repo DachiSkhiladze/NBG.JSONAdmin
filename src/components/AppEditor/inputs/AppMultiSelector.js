@@ -14,8 +14,8 @@ const customStyles = {
 };
 
 function AppMultiSelect({ scheme, path }) {
-  const { setState, state } = useController(path);
-  const { options } = useMultiSelector(scheme, path);
+  const { setState, state, formState } = useController(path);
+  const { options } = useMultiSelector(scheme, path, formState);
 
   function onChange(p) {
     setState(p.map((x) => x.value));
@@ -34,6 +34,11 @@ function AppMultiSelect({ scheme, path }) {
           label: options?.find((o) => o.value == x).label,
           value: x,
         }))}
+        isOptionSelected={
+          scheme.sameId
+            ? (option, selectValue) => selectValue.some((i) => i === option)
+            : undefined
+        }
         onChange={onChange}
         styles={customStyles}
       />

@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import AppEditorBlock from "./components/AppEditorBlock";
 import { blockContext } from "../AppEditor/config/contexts";
 
-function AppEditor({ scheme, state, onSave }) {
+function AppEditor({ scheme, state, onSave, loading }) {
   const scrollEndRef = React.useRef();
   const fref = React.useRef();
 
   const block = {
     scheme,
     path: "",
-    onSave: (st) => {
-      onSave(scheme.id, st);
+    onSave: (st, callback) => {
+      onSave(scheme.id, st, callback);
     },
     type: scheme.type === "list" ? "table" : "form",
     state: state[scheme.id],
@@ -54,13 +54,12 @@ function AppEditor({ scheme, state, onSave }) {
   return (
     <blockContext.Provider value={{ pushBlock, popBlock }}>
       <div className="editor">
-        {/* <div className="editor-spacer" /> */}
-
         {blocks.map((x, i) => (
           <AppEditorBlock
             disabled={blocks.length - 1 !== i}
             key={i}
             {...x}
+            loading={i === blocks.length - 1 ? loading : false}
             fref={fref}
             onAdd={pushBlock}
             showScrollBack={i === blocks.length - 2}

@@ -11,10 +11,13 @@ function items({ content }) {
   }));
 }
 
-function furnitures({ content }) {
+function furnitures({ scheme, path, content, state }) {
   var lang = localStorage.getItem("lang") || "Ge";
 
-  var ids = content.Parameters.HouseTemplates.map((x) => x.ItemId);
+  var ids = content.Parameters.HouseTemplates.filter((x) =>
+    x.HouseTypes.includes(state.Type?.toString())
+  ).map((x) => x.ItemId);
+
   return content.Items.filter((x) => ids.includes(x.Id)).map((x) => ({
     value: x.Id,
     label: x.Name[lang],
@@ -71,6 +74,55 @@ function missionTypes() {
   return Object.keys(types).map((x) => ({ value: x, label: types[x] }));
 }
 
+function jobs({ content, state }) {
+  console.log(state.City);
+  var lang = localStorage.getItem("lang") || "Ge";
+
+  console.log(content.Jobs.filter((x) => x.City == state.City));
+  return content.Jobs.filter((x) => x.City == state.City).map((x) => ({
+    value: x.Id,
+    label: x.Name?.[lang],
+  }));
+}
+
+function jobRanks({ content, state }) {
+  var lang = localStorage.getItem("lang") || "Ge";
+
+  var data = content.Jobs.filter((x) => x.City == state.City).reduce(
+    (a, c) => [
+      ...c.Ranks.map((x) => ({
+        City: c.City,
+        value: c.Id + '_' +  x.RequiredQualification,
+        label: c.Name?.[lang] + " - " + x.Name?.[lang],
+      })),
+      ...a,
+    ],
+    []
+  );
+
+  console.log(data, "asdasd");
+
+  return data;
+}
+
+function businesses({ content, state }) {
+  var lang = localStorage.getItem("lang") || "Ge";
+
+  return content.Businesses.filter((x) => x.City == state.City).map((x) => ({
+    value: x.Id,
+    label: x.Title?.[lang],
+  }));
+}
+
+function activities({ content, state }) {
+  var lang = localStorage.getItem("lang") || "Ge";
+
+  return content.Activities.filter((x) => x.City == state.City).map((x) => ({
+    value: x.Id,
+    label: x.Title?.[lang],
+  }));
+}
+
 function houseTypes() {
   const houseTypes = schemes.constants.houseTypes;
   return Object.keys(houseTypes).map((x) => ({
@@ -112,7 +164,6 @@ function bool() {
 }
 
 function building({ state }) {
-  console.log(state.City);
   if (state.City !== undefined) {
     return buildings.buildings.filter((x) => x.cityId == state.City);
   }
@@ -134,6 +185,10 @@ const selectors = {
   insurances,
   itemDescriptions,
   furnitures,
+  jobs,
+  jobRanks,
+  businesses,
+  activities,
 };
 
 function useMultiSelector(scheme, path, state) {

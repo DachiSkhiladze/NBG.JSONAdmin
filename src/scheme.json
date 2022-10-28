@@ -60,25 +60,25 @@
       "31": "TakeInstallmentDebt"
     },
     "missionTypes": {
-      "0": "RentOutHouse",
-      "1": "BuyFood",
-      "2": "StartJob",
-      "3": "BuyBusiness",
-      "4": "AnswerQuestions",
-      "5": "AnswerQuestionsaBusiness",
-      "6": "FillEmptySlot",
-      "7": "MakeDonation",
-      "8": "BuyaService",
-      "9": "BuyInsurance",
-      "10": "Reach",
-      "11": "Become",
-      "12": "MakeDeposit",
-      "13": "BuyHouse",
-      "14": "RentHouse",
-      "15": "IncreaseBusinessRank",
-      "16": "ReachQualification",
-      "17": "FillAllSlots",
-      "18": "StartBusinesss"
+      "0": "გააქირავე სახლი (სახლის ტიპი)",
+      "1": "იყიდე საჭმელი (რაოდენობა)",
+      "2": "დაიწყე სამსახური (სამსახურის იდ.)",
+      "3": "უპასუხე კითხვებს (რაოდენობა)",
+      "4": "უპასუხე კითხვებს ბიზნესში (რაოდენობა)",
+      "5": "შეავსე ცარიელი სლოტი",
+      "6": "გააკეთე დონაცია",
+      "7": "იყიდე სერვისი (სერვისის იდ.)",
+      "8": "იყიდე დაზღვევა (დაზღვევის ტიპი)",
+      "9": "გააკეთე დეპოზიტი (დეპოზიტის ტიპი)",
+      "10": "იყიდე სახლი (სახლის ტიპი)",
+      "11": "იქირავე სახლი (სახლის ტიპი)",
+      "12": "დააწინაურე ბიზნესი (დონე)",
+      "13": "მიაღწიე კვალიფიკაციას (კვალიფიკაცია)",
+      "14": "შეავსე ყველა სლოტი",
+      "15": "იყიდე ბიზნესი (ბიზნესის იდ.)",
+      "16": "დაიწყე სამსახური (პოზიცია)",
+      "17": "InsureBusiness",
+      "18": "InsureHouseType"
     },
     "cities": {
       "0": "ახალციხე",
@@ -182,7 +182,7 @@
           "selector": "houseTypes",
           "fields": null
         },
-        { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Id", "fullWidth": true, "type": "guid", "fields": null },
         {
           "id": "City",
           "label": "ქალაქი",
@@ -202,6 +202,7 @@
           "label": "არსებული ნივთები",
           "type": "multi_selector",
           "selector": "furnitures",
+          "sameId": true,
           "fields": null
         }
       ]
@@ -229,7 +230,7 @@
       ],
       "type": "list",
       "fields": [
-        { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Id", "fullWidth": true, "type": "guid", "fields": null },
         { "id": "Name", "label": "დასახელება", "type": "text", "fields": null },
         {
           "id": "City",
@@ -335,7 +336,7 @@
         }
       ],
       "fields": [
-        { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Id", "fullWidth": true, "type": "guid", "fields": null },
         {
           "id": "Name",
           "label": "ნივთის დასახელება",
@@ -359,6 +360,12 @@
           "id": "ImageId",
           "label": "აიქონი",
           "type": "image_picker",
+          "fields": null
+        },
+        {
+          "id": "MoodEffect",
+          "label": "განწყობის ეფექტი",
+          "type": "number",
           "fields": null
         }
       ]
@@ -401,7 +408,7 @@
           "selector": "building",
           "fields": null
         },
-        { "id": "Id", "type": "guid", "fields": null }
+        { "id": "Id", "fullWidth": true, "type": "guid", "fields": null }
       ]
     },
     {
@@ -418,6 +425,31 @@
         {
           "id": "RandomEventDayRange",
           "label": "შემთხვევითი მოვლენების სიხშირე (დღე)",
+          "type": "number",
+          "fields": null
+        },
+        {
+          "id": "LoginPopupRange",
+          "label": "ავტორიზაციის პოპაპის სიხშირე (დღე)",
+          "type": "form",
+          "fields": [
+            {
+              "id": "Min",
+              "label": "მინიმუმი",
+              "type": "number",
+              "fields": null
+            },
+            {
+              "id": "Max",
+              "label": "მაქსიმუმი",
+              "type": "number",
+              "fields": null
+            }
+          ]
+        },
+        {
+          "id": "VitalEventDayRange",
+          "label": "ცხოვრებისეული სიტუაციების სიხშირე (დღე)",
           "type": "number",
           "fields": null
         },
@@ -1205,7 +1237,7 @@
           "selector": "building",
           "fields": null
         },
-        { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Id", "fullWidth": true, "type": "guid", "fields": null },
         {
           "id": "City",
           "label": "ქალაქი",
@@ -1238,7 +1270,7 @@
         }
       ],
       "fields": [
-        { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Id", "fullWidth": true, "type": "guid", "fields": null },
         {
           "id": "QuestionText",
           "label": "შეკითხვა",
@@ -1298,7 +1330,7 @@
         }
       ],
       "fields": [
-        { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Id", "fullWidth": true, "type": "guid", "fields": null },
         {
           "id": "QuestionText",
           "label": "შეკითხვა",
@@ -1322,6 +1354,31 @@
               "type": "selector",
               "fields": null,
               "selector": "bool"
+            },
+            {
+              "id": "Reward",
+              "label": "ჯილდო",
+              "type": "form",
+              "fields": [
+                {
+                  "id": "Money",
+                  "label": "თანხა",
+                  "type": "number",
+                  "fields": null
+                },
+                {
+                  "id": "Health",
+                  "label": "ჯანმრთელობა",
+                  "type": "number",
+                  "fields": null
+                },
+                {
+                  "id": "Mood",
+                  "label": "განწყობა",
+                  "type": "number",
+                  "fields": null
+                }
+              ]
             }
           ]
         },
@@ -1342,31 +1399,31 @@
               "type": "selector",
               "fields": null,
               "selector": "bool"
-            }
-          ]
-        },
-        {
-          "id": "Reward",
-          "label": "ჯილდო",
-          "type": "form",
-          "fields": [
-            {
-              "id": "Money",
-              "label": "თანხა",
-              "type": "number",
-              "fields": null
             },
             {
-              "id": "Health",
-              "label": "ჯანმრთელობა",
-              "type": "number",
-              "fields": null
-            },
-            {
-              "id": "Mood",
-              "label": "განწყობა",
-              "type": "number",
-              "fields": null
+              "id": "Reward",
+              "label": "ჯილდო",
+              "type": "form",
+              "fields": [
+                {
+                  "id": "Money",
+                  "label": "თანხა",
+                  "type": "number",
+                  "fields": null
+                },
+                {
+                  "id": "Health",
+                  "label": "ჯანმრთელობა",
+                  "type": "number",
+                  "fields": null
+                },
+                {
+                  "id": "Mood",
+                  "label": "განწყობა",
+                  "type": "number",
+                  "fields": null
+                }
+              ]
             }
           ]
         }
@@ -1385,6 +1442,12 @@
         {
           "label": "რაოდენობა",
           "id": "Count"
+        },
+        {
+          "label": "ქალაქი",
+          "id": "City",
+          "function": "selector",
+          "selector": "cities"
         }
       ],
       "fields": [
@@ -1437,13 +1500,95 @@
         },
         {
           "id": "Type",
+          "label": "ტიპი",
           "type": "selector",
+          "fullWidth": true,
           "selector": "missionTypes",
-          "disabled": true,
           "fields": null
         },
-        { "id": "Id", "type": "guid", "fields": null },
-        { "id": "Object", "type": "guid", "fields": null }
+        {
+          "id": "Object",
+          "type": "number",
+          "label": "რაოდენობა",
+          "visible": [
+            ["Type", "1"],
+            ["Type", "12"],
+            ["Type", "13"]
+          ],
+          "fields": null
+        },
+        {
+          "id": "Object",
+          "type": "selector",
+          "selector": "houseTypes",
+          "fullWidth": true,
+          "label": "შენობის ტიპი",
+          "visible": [
+            ["Type", "0"],
+            ["Type", "10"],
+            ["Type", "11"],
+            ["Type", "18"]
+          ],
+          "fields": null
+        },
+        {
+          "id": "Object",
+          "type": "selector",
+          "selector": "jobs",
+          "fullWidth": true,
+          "label": "სამსახური",
+          "visible": [["Type", "2"]],
+          "fields": null
+        },
+        {
+          "id": "Object",
+          "type": "selector",
+          "selector": "jobRanks",
+          "fullWidth": true,
+          "label": "სამსახური - პოზიცია",
+          "visible": [["Type", "16"]],
+          "fields": null
+        },
+        {
+          "id": "Object",
+          "type": "selector",
+          "selector": "businesses",
+          "fullWidth": true,
+          "label": "ბიზნესი",
+          "visible": [
+            ["Type", "15"],
+            ["Type", "17"]
+          ],
+          "fields": null
+        },
+        {
+          "id": "Object",
+          "type": "selector",
+          "selector": "activities",
+          "fullWidth": true,
+          "label": "სერვისი",
+          "visible": [["Type", "7"]],
+          "fields": null
+        },
+        {
+          "id": "Object",
+          "type": "selector",
+          "selector": "insurances",
+          "fullWidth": true,
+          "label": "დაზღვევა",
+          "visible": [["Type", "8"]],
+          "fields": null
+        },
+        {
+          "id": "Object",
+          "type": "selector",
+          "selector": "depositTypes",
+          "fullWidth": true,
+          "label": "დეპოზიტი",
+          "visible": [["Type", "9"]],
+          "fields": null
+        },
+        { "id": "Id", "fullWidth": true, "type": "guid", "fields": null }
       ]
     },
     {
@@ -1497,6 +1642,7 @@
         },
         {
           "id": "Id",
+          "fullWidth": true,
           "label": "ID"
         }
       ],
@@ -1519,7 +1665,7 @@
           "type": "number",
           "fields": null
         },
-        { "id": "Id", "type": "number", "fields": null }
+        { "id": "Id", "fullWidth": true, "type": "number", "fields": null }
       ]
     },
     {
@@ -1536,14 +1682,34 @@
           "id": "Ranks",
           "label": "განვითარების დონეების რაოდენობა",
           "function": "count"
+        },
+        {
+          "label": "ქალაქი",
+          "id": "City",
+          "function": "selector",
+          "selector": "cities"
         }
       ],
       "fields": [
-        { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Id", "fullWidth": true, "type": "guid", "fields": null },
         {
           "id": "Title",
           "label": "დასახელება",
           "type": "text",
+          "fields": null
+        },
+        {
+          "id": "City",
+          "label": "ქალაქი",
+          "type": "selector",
+          "selector": "cities",
+          "fields": null
+        },
+        {
+          "id": "BuildingId",
+          "label": "შენობა",
+          "type": "selector",
+          "selector": "building",
           "fields": null
         },
         {
@@ -1652,7 +1818,7 @@
       ],
       "type": "list",
       "fields": [
-        { "id": "Id", "type": "guid", "fields": null },
+        { "id": "Id", "fullWidth": true, "type": "guid", "fields": null },
         {
           "id": "Text",
           "label": "შემთხვევით მოვლენის აღწერა",

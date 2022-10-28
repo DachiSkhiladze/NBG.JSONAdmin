@@ -10,6 +10,7 @@ function AppEditorBlock({
   state: currentState,
   type,
   path,
+  loading,
   onSave,
   onCancel,
   onAdd,
@@ -22,16 +23,25 @@ function AppEditorBlock({
     currentState || generateDefaultState(scheme)
   );
 
+  React.useEffect(() => {
+    setState(currentState);
+  }, [currentState]);
+
   function onSaveClick() {
-    onSave(state);
-    onCancel?.();
+    onSave(state, () => {
+      onCancel?.();
+    });
   }
 
   function onAddPress() {
     onAdd({
       scheme: { ...scheme, type: "form" },
       path: "",
-      onSave: (item) => setState([item, ...state]),
+      onSave: (item, callback) => {
+        const data = [item, ...state];
+        setState(data);
+        onSave(data, callback);
+      },
     });
   }
 
@@ -39,8 +49,6 @@ function AppEditorBlock({
     onCancel();
     onDelete();
   }
-
-  console.log(currentState)
 
   function getControlls() {
     if (type === "table") {
@@ -57,12 +65,13 @@ function AppEditorBlock({
     } else {
       return [
         onCancel && (
-          <button key={0} onClick={onCancel}>
+          <button disabled={loading} key={0} onClick={onCancel}>
             CANCEL
           </button>
         ),
         <button
           key={1}
+          disabled={loading}
           onClick={onSaveClick}
           className={
             JSON.stringify(currentState) === JSON.stringify(state)
@@ -70,10 +79,10 @@ function AppEditorBlock({
               : ""
           }
         >
-          SAVE
+          {loading ? "LOADING" : "SAVE"}
         </button>,
         currentState && onCancel && (
-          <button key={2} onClick={onDeletePress}>
+          <button disabled={loading} key={2} onClick={onDeletePress}>
             DELETE
           </button>
         ),
@@ -98,15 +107,29 @@ function AppEditorBlock({
             <AppTable scheme={scheme} path={""} onSave={onSave} />
           ) : (
             <div className="form">
-              {scheme.fields.map((x) =>
-                inputTypes[x.type]?.({ scheme: x, path: x.id, key: x.id })
-              )}
+              {scheme.fields
+                .filter((x) => isVisible({ scheme: x, state }))
+                .map((x) =>
+                  inputTypes[x.type]?.({
+                    scheme: x,
+                    path: x.id,
+                    key: x.id + x.type,
+                  })
+                )}
             </div>
           )}
         </div>
       </editorContext.Provider>
     </div>
   );
+}
+
+function isVisible({ scheme, state }) {
+  if (!scheme.visible) {
+    return true;
+  }
+
+  return scheme.visible.some((x) => state[x[0]] == x[1]);
 }
 
 export default AppEditorBlock;

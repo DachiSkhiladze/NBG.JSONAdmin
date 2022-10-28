@@ -15,8 +15,9 @@ function AppList({ scheme, path }) {
     });
   }
 
-  function onSave(s) {
+  function onSave(s,callback) {
     setState([...s]);
+    callback?.()
   }
 
   return (

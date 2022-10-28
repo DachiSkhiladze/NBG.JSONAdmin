@@ -5,20 +5,26 @@ import defaultContent from "./assets/content.json";
 import { SET_CONTENT, SET_LANGUAGE } from "./redux/actions";
 import AppEditor from "./components/AppEditor";
 import AppSiderbar from "./components/AppSidebar";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import AppPublish from "./components/AppPublish";
 import { AppLoader } from "./hooks/useFiles";
 import AppTranslations from "./components/AppTranslations";
+import useConfig from "./hooks/useConfig";
 
-const routes = {
-  publish: AppPublish,
-  translations: AppTranslations,
-};
+const routes = [
+  { id: "translations", label: "თარგმნა", component: AppTranslations },
+  { id: "publish", label: "გამოქვეყნება", component: AppPublish },
+];
 
 function App() {
+  const { upload, loading } = useConfig();
   const dispatch = useDispatch();
-  const content = useSelector((x) => x.content);
-  const currentScheme = useSelector((x) => x.scheme);
+
+  const {
+    content,
+    language,
+    scheme: currentScheme,
+  } = useSelector((x) => x || {});
 
   useEffect(() => {
     const lang = localStorage.getItem("lang");
@@ -26,24 +32,37 @@ function App() {
     dispatch(SET_LANGUAGE(lang || "Ge"));
   }, []);
 
-  function onSave(id, value) {
+  function onSave(id, value, callback) {
     const newContent = { ...content, [id]: value };
 
     dispatch(SET_CONTENT(newContent));
+    upload(callback);
+  }
+
+  function render() {
+    const item = routes.find((x) => x.id === route);
+    if (item) {
+      return React.createElement(item.component, { onSave, loading });
+    } else if (content && currentScheme && language) {
+      return (
+        <AppEditor
+          loading={loading}
+          scheme={currentScheme}
+          state={content}
+          onSave={onSave}
+        />
+      );
+    } else {
+      return null;
+    }
   }
 
   let route = window.location.pathname.replace("/", "");
 
   return (
     <div className="container">
-      <AppLoader />
-      <AppSiderbar
-        list={[...scheme.data, ...Object.keys(routes).map((x) => ({ id: x }))]}
-      />
-      {routes[route]?.() ||
-        (content && currentScheme && (
-          <AppEditor scheme={currentScheme} state={content} onSave={onSave} />
-        ))}
+      <AppSiderbar list={[...scheme.data, ...routes]} />
+      {render()}
     </div>
   );
 }

@@ -1,1400 +1,1449 @@
 {
-    "buildings": [
-      {
-        "id": "bc69b3ab-706b-4004-93dd-a7aa9b4e1197",
-        "cityId": "5",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1198",
-        "cityId": "5",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1199",
-        "cityId": "5",
-        "label": "საშუალო ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1200",
-        "cityId": "5",
-        "label": "დიდი ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1201",
-        "cityId": "5",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1202",
-        "cityId": "5",
-        "label": "საშუალო ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1203",
-        "cityId": "5",
-        "label": "დიდი ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1204",
-        "cityId": "5",
-        "label": "სატელეკომუნიკაციო კომპანია- სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1205",
-        "cityId": "5",
-        "label": "ბანკი- სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1206",
-        "cityId": "5",
-        "label": "ფოსტა - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1207",
-        "cityId": "5",
-        "label": "მულტიფუნქციური კლინიკა - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1208",
-        "cityId": "5",
-        "label": "ბავშვთა გასართობი ცენტრი - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1209",
-        "cityId": "5",
-        "label": "ხმის ჩამწერი სტუდია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1210",
-        "cityId": "5",
-        "label": "დეკორატიული მცენარეების მაღაზია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1211",
-        "cityId": "5",
-        "label": "სამშენებლო კომპანია -  ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1212",
-        "cityId": "5",
-        "label": "ტექნიკის მაღაზია - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1213",
-        "cityId": "5",
-        "label": "მანქანის პროფილაქტიკა - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1214",
-        "cityId": "5",
-        "label": "საკონდიტრი - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1215",
-        "cityId": "5",
-        "label": "ფოტო სტუდია -  ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1216",
-        "cityId": "5",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1217",
-        "cityId": "5",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1218",
-        "cityId": "5",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1219",
-        "cityId": "5",
-        "label": "ჰოსპიტალი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1220",
-        "cityId": "5",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1221",
-        "cityId": "5",
-        "label": "კაფე"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1222",
-        "cityId": "5",
-        "label": "რესტორანი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1223",
-        "cityId": "5",
-        "label": "კინო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1224",
-        "cityId": "5",
-        "label": "ღამის კლუბი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1225",
-        "cityId": "5",
-        "label": "სასტუმრო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1226",
-        "cityId": "5",
-        "label": "სპორტ დარბაზი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1227",
-        "cityId": "5",
-        "label": "თეატრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1228",
-        "cityId": "1",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1229",
-        "cityId": "1",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1230",
-        "cityId": "1",
-        "label": "საშუალო ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1231",
-        "cityId": "1",
-        "label": "დიდი ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1232",
-        "cityId": "1",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1233",
-        "cityId": "1",
-        "label": "საშუალო ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1234",
-        "cityId": "1",
-        "label": "დიდი ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1235",
-        "cityId": "1",
-        "label": "სარეკლამო კომპანია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1236",
-        "cityId": "1",
-        "label": "სადაზღვეო კომპანია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1237",
-        "cityId": "1",
-        "label": "საკონდიტრო საცხობი - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1238",
-        "cityId": "1",
-        "label": "სადისტრიბუციო კომპანია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1239",
-        "cityId": "1",
-        "label": "კაფე-ბარი - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1240",
-        "cityId": "1",
-        "label": "სასტუმროების ქსელი - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1241",
-        "cityId": "1",
-        "label": "სავაჭრო ცენტრი- ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1242",
-        "cityId": "1",
-        "label": "რესტორანი- ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1243",
-        "cityId": "1",
-        "label": "დასუფთავების კომპანია - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1244",
-        "cityId": "1",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1245",
-        "cityId": "1",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1246",
-        "cityId": "1",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1247",
-        "cityId": "1",
-        "label": "ჰოსპიტალი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1248",
-        "cityId": "1",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1249",
-        "cityId": "1",
-        "label": "კაფე"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1250",
-        "cityId": "1",
-        "label": "რესტორანი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1251",
-        "cityId": "1",
-        "label": "კინო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1252",
-        "cityId": "1",
-        "label": "ღამის კლუბი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1253",
-        "cityId": "1",
-        "label": "სასტუმრო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1254",
-        "cityId": "1",
-        "label": "სპორტ დარბაზი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1255",
-        "cityId": "1",
-        "label": "თეატრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1256",
-        "cityId": "4",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1257",
-        "cityId": "4",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1258",
-        "cityId": "4",
-        "label": "საშუალო ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1259",
-        "cityId": "4",
-        "label": "დიდი ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1260",
-        "cityId": "4",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1261",
-        "cityId": "4",
-        "label": "საშუალო ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1262",
-        "cityId": "4",
-        "label": "დიდი ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1263",
-        "cityId": "4",
-        "label": "დასაქმების სააგენტო - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1264",
-        "cityId": "4",
-        "label": "აუდიტორული კოპანია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1265",
-        "cityId": "4",
-        "label": "უნივერსიტეტი - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1266",
-        "cityId": "4",
-        "label": "სტამბა - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1267",
-        "cityId": "4",
-        "label": "სახაჭაპურე - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1268",
-        "cityId": "4",
-        "label": "სუპერმარკეტების ქსელი - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1269",
-        "cityId": "4",
-        "label": "გადაზიდვის სერვისი - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1270",
-        "cityId": "4",
-        "label": "სილამაზის სალონი - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1271",
-        "cityId": "4",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1272",
-        "cityId": "4",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1273",
-        "cityId": "4",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1274",
-        "cityId": "4",
-        "label": "ჰოსპიტალი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1275",
-        "cityId": "4",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1276",
-        "cityId": "4",
-        "label": "კაფე"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1277",
-        "cityId": "4",
-        "label": "რესტორანი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1278",
-        "cityId": "4",
-        "label": "კინო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1279",
-        "cityId": "4",
-        "label": "ღამის კლუბი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1280",
-        "cityId": "4",
-        "label": "სასტუმრო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1281",
-        "cityId": "4",
-        "label": "სპორტ დარბაზი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1282",
-        "cityId": "4",
-        "label": "თეატრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1283",
-        "cityId": "10",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1284",
-        "cityId": "10",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1285",
-        "cityId": "10",
-        "label": "საშუალო ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1286",
-        "cityId": "10",
-        "label": "დიდი ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1287",
-        "cityId": "10",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1288",
-        "cityId": "10",
-        "label": "საშუალო ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1289",
-        "cityId": "10",
-        "label": "მეტალურგიული ქარხანა - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1290",
-        "cityId": "10",
-        "label": "საკურიერი კომპანია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1291",
-        "cityId": "10",
-        "label": "სკოლა - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1292",
-        "cityId": "10",
-        "label": "ტანსაცმლის მაღაზია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1293",
-        "cityId": "10",
-        "label": "ავტო სადილერო კომპანია - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1294",
-        "cityId": "10",
-        "label": "მანქანის სამრეცხაო - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1295",
-        "cityId": "10",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1296",
-        "cityId": "10",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1297",
-        "cityId": "10",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1298",
-        "cityId": "10",
-        "label": "ჰოსპიტალი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1299",
-        "cityId": "10",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1300",
-        "cityId": "10",
-        "label": "კაფე"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1301",
-        "cityId": "10",
-        "label": "რესტორანი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1302",
-        "cityId": "10",
-        "label": "კინო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1303",
-        "cityId": "10",
-        "label": "სპორტ დარბაზი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1304",
-        "cityId": "11",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1305",
-        "cityId": "11",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1306",
-        "cityId": "11",
-        "label": "საშუალო ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1307",
-        "cityId": "11",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1308",
-        "cityId": "11",
-        "label": "საშუალო ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1309",
-        "cityId": "11",
-        "label": "დიდი ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1310",
-        "cityId": "11",
-        "label": "სადაზღვეო კომპანია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1311",
-        "cityId": "11",
-        "label": "ხილის გადამამუშავებელი საწარმო - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1312",
-        "cityId": "11",
-        "label": "ვეტაფთიაქი - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1313",
-        "cityId": "11",
-        "label": "საკონდიტრო - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1314",
-        "cityId": "11",
-        "label": "თონე- ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1315",
-        "cityId": "11",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1316",
-        "cityId": "11",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1317",
-        "cityId": "11",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1318",
-        "cityId": "11",
-        "label": "კლინიკა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1319",
-        "cityId": "11",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1320",
-        "cityId": "11",
-        "label": "კაფე"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1321",
-        "cityId": "11",
-        "label": "რესტორანი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1322",
-        "cityId": "11",
-        "label": "კინო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1323",
-        "cityId": "11",
-        "label": "ღამის კლუბი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1324",
-        "cityId": "11",
-        "label": "სასტუმრო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1325",
-        "cityId": "11",
-        "label": "თეატრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1326",
-        "cityId": "3",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1327",
-        "cityId": "3",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1328",
-        "cityId": "3",
-        "label": "საშუალო ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1329",
-        "cityId": "3",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1330",
-        "cityId": "3",
-        "label": "დიდი ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1331",
-        "cityId": "3",
-        "label": "მულტიფუნქციური კლინიკა - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1332",
-        "cityId": "3",
-        "label": "სამაცივრე მეურნეობა - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1333",
-        "cityId": "3",
-        "label": "სილამაზის სალონი- სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1334",
-        "cityId": "3",
-        "label": "ხილის გადამამუშავებელი საწარმო - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1335",
-        "cityId": "3",
-        "label": "სწრაფი კვების ობიექტი - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1336",
-        "cityId": "3",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1337",
-        "cityId": "3",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1338",
-        "cityId": "3",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1339",
-        "cityId": "3",
-        "label": "ჰოსპიტალი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1340",
-        "cityId": "3",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1341",
-        "cityId": "3",
-        "label": "კაფე"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1342",
-        "cityId": "3",
-        "label": "რესტორანი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1343",
-        "cityId": "14",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1344",
-        "cityId": "14",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1345",
-        "cityId": "14",
-        "label": "საშუალო ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1346",
-        "cityId": "14",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1347",
-        "cityId": "14",
-        "label": "საშუალო ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1348",
-        "cityId": "14",
-        "label": "დიდი ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1349",
-        "cityId": "14",
-        "label": "რძის პროდუქტების საწარმო - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1350",
-        "cityId": "14",
-        "label": "სასათბურე მეურნეობა - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1351",
-        "cityId": "14",
-        "label": "ონლაინ მაღაზია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1352",
-        "cityId": "14",
-        "label": "ავეჯის საწარმო - ბინზესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1353",
-        "cityId": "14",
-        "label": "რესტორანი - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1354",
-        "cityId": "14",
-        "label": "თხილის საწარმო - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1355",
-        "cityId": "14",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1356",
-        "cityId": "14",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1357",
-        "cityId": "14",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1358",
-        "cityId": "14",
-        "label": "კლინიკა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1359",
-        "cityId": "14",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1360",
-        "cityId": "14",
-        "label": "კაფე "
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1361",
-        "cityId": "14",
-        "label": "რესტორანი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1362",
-        "cityId": "14",
-        "label": "სასტუმრო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1363",
-        "cityId": "13",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1364",
-        "cityId": "13",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1365",
-        "cityId": "13",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1366",
-        "cityId": "13",
-        "label": "საშუალო ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1367",
-        "cityId": "13",
-        "label": "ენის შემსწავლელი ცენტრი - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1368",
-        "cityId": "13",
-        "label": "სკოლა - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1369",
-        "cityId": "13",
-        "label": "სასურსათო მაღაზია - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1370",
-        "cityId": "13",
-        "label": "ფერმა - ბინზესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1371",
-        "cityId": "13",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1372",
-        "cityId": "13",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1373",
-        "cityId": "13",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1374",
-        "cityId": "13",
-        "label": "პირველადი დახმარების ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1375",
-        "cityId": "13",
-        "label": "კაფე"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1376",
-        "cityId": "13",
-        "label": "ღამის კლუბი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1377",
-        "cityId": "13",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1378",
-        "cityId": "12",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1379",
-        "cityId": "12",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1380",
-        "cityId": "12",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1381",
-        "cityId": "12",
-        "label": "საშუალო ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1382",
-        "cityId": "12",
-        "label": "დიდი ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1383",
-        "cityId": "12",
-        "label": "სარეკლამო კომპანია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1384",
-        "cityId": "12",
-        "label": "ღვინის წარმოება - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1385",
-        "cityId": "12",
-        "label": "სწრაფი კვების ობიექტი - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1386",
-        "cityId": "12",
-        "label": "ღვინის საწარმო - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1387",
-        "cityId": "12",
-        "label": "ქიმწმენდა - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1388",
-        "cityId": "12",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1389",
-        "cityId": "12",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1390",
-        "cityId": "12",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1391",
-        "cityId": "12",
-        "label": "რესტორანი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1392",
-        "cityId": "12",
-        "label": "კაფე"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1393",
-        "cityId": "12",
-        "label": "სასტუმრო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1394",
-        "cityId": "12",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1395",
-        "cityId": "12",
-        "label": "თეატრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1396",
-        "cityId": "12",
-        "label": "კლინიკა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1397",
-        "cityId": "0",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1398",
-        "cityId": "0",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1399",
-        "cityId": "0",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1400",
-        "cityId": "0",
-        "label": "საშუალო ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1401",
-        "cityId": "0",
-        "label": "ავეჯის გადაზიდვის სერვისი - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1402",
-        "cityId": "0",
-        "label": "ფეხსაცმლის სამკერვალო - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1403",
-        "cityId": "0",
-        "label": "სასტუმროების ქსელი - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1404",
-        "cityId": "0",
-        "label": "სახელოსნო სტუდია- ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1405",
-        "cityId": "0",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1406",
-        "cityId": "0",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1407",
-        "cityId": "0",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1408",
-        "cityId": "0",
-        "label": "კაფე"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1409",
-        "cityId": "0",
-        "label": "სასტუმრო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1410",
-        "cityId": "0",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1411",
-        "cityId": "0",
-        "label": "პირველადი დახმარების ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1412",
-        "cityId": "9",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1413",
-        "cityId": "9",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1414",
-        "cityId": "9",
-        "label": "საშუალო ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1415",
-        "cityId": "9",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1416",
-        "cityId": "9",
-        "label": "საშუალო ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1417",
-        "cityId": "9",
-        "label": "ხილის გადამამუშავებელი საწარმო - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1418",
-        "cityId": "9",
-        "label": "სურსათის მაღაზია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1419",
-        "cityId": "9",
-        "label": "საკონდიტრო- ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1420",
-        "cityId": "9",
-        "label": "თხილის საწარმო - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1421",
-        "cityId": "9",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1422",
-        "cityId": "9",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1423",
-        "cityId": "9",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1424",
-        "cityId": "9",
-        "label": "რესტორანი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1425",
-        "cityId": "9",
-        "label": "კაფე "
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1426",
-        "cityId": "9",
-        "label": "სასტუმრო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1427",
-        "cityId": "9",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1428",
-        "cityId": "9",
-        "label": "პირველადი დახმარების ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1429",
-        "cityId": "6",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1430",
-        "cityId": "6",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1431",
-        "cityId": "6",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1432",
-        "cityId": "6",
-        "label": "საშუალო ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1433",
-        "cityId": "6",
-        "label": "დიდი ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1434",
-        "cityId": "6",
-        "label": "სამაცივრე მეურნეობა - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1435",
-        "cityId": "6",
-        "label": "სამკერვალო - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1436",
-        "cityId": "6",
-        "label": "რესტორანი - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1437",
-        "cityId": "6",
-        "label": "სასურსათო მაღაზია - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1438",
-        "cityId": "6",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1439",
-        "cityId": "6",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1440",
-        "cityId": "6",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1441",
-        "cityId": "6",
-        "label": "რესტორანი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1442",
-        "cityId": "6",
-        "label": "კაფე"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1443",
-        "cityId": "6",
-        "label": "სასტუმრო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1444",
-        "cityId": "6",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1445",
-        "cityId": "6",
-        "label": "კლინიკა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1446",
-        "cityId": "7",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1447",
-        "cityId": "7",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1448",
-        "cityId": "7",
-        "label": "საშუალო ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1449",
-        "cityId": "7",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1450",
-        "cityId": "7",
-        "label": "საშუალო ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1451",
-        "cityId": "7",
-        "label": "სტამბა - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1452",
-        "cityId": "7",
-        "label": "სამშენებლო მასალის მაღაზია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1453",
-        "cityId": "7",
-        "label": "გადაზიდვის სერვისი - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1454",
-        "cityId": "7",
-        "label": "სახელოსნო სტუდია- ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1455",
-        "cityId": "7",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1456",
-        "cityId": "7",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1457",
-        "cityId": "7",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1458",
-        "cityId": "7",
-        "label": "რესტორანი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1459",
-        "cityId": "7",
-        "label": "კაფე"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1460",
-        "cityId": "7",
-        "label": "სასტუმრო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1461",
-        "cityId": "7",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1462",
-        "cityId": "7",
-        "label": "კლინიკა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1463",
-        "cityId": "8",
-        "label": "მერია"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1464",
-        "cityId": "8",
-        "label": "მცირე ზომის ბინა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1465",
-        "cityId": "8",
-        "label": "მცირე ზომის სახლი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1466",
-        "cityId": "8",
-        "label": "საკონდიტრო საცხობი - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1467",
-        "cityId": "8",
-        "label": "ღვინის მაღაზია - სამსახური"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1468",
-        "cityId": "8",
-        "label": "მანქანის პროფილაქტიკა - ბიზნესი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1469",
-        "cityId": "8",
-        "label": "მარკეტი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1470",
-        "cityId": "8",
-        "label": "ბანკი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1471",
-        "cityId": "8",
-        "label": "დაზღვევა"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1472",
-        "cityId": "8",
-        "label": "კაფე"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1473",
-        "cityId": "8",
-        "label": "სასტუმრო"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1474",
-        "cityId": "8",
-        "label": "ესთეტიკ ცენტრი"
-      },
-      {
-        "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1475",
-        "cityId": "8",
-        "label": "პირველადი დახმარების ცენტრი"
-      }
-    ]
-  }
-  
+  "buildings": [
+    {
+      "id": "bc69b3ab-706b-4004-93dd-a7aa9b4e1197",
+      "cityId": "5",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1198",
+      "cityId": "5",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1199",
+      "cityId": "5",
+      "label": "საშუალო ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1200",
+      "cityId": "5",
+      "label": "დიდი ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1201",
+      "cityId": "5",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1202",
+      "cityId": "5",
+      "label": "საშუალო ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1203",
+      "cityId": "5",
+      "label": "დიდი ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1204",
+      "cityId": "5",
+      "label": "სატელეკომუნიკაციო კომპანია- სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1205",
+      "cityId": "5",
+      "label": "ბანკი- სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1206",
+      "cityId": "5",
+      "label": "ფოსტა - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1207",
+      "cityId": "5",
+      "label": "მულტიფუნქციური კლინიკა - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1208",
+      "cityId": "5",
+      "label": "ბავშვთა გასართობი ცენტრი - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1209",
+      "cityId": "5",
+      "label": "ხმის ჩამწერი სტუდია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1210",
+      "cityId": "5",
+      "label": "დეკორატიული მცენარეების მაღაზია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1211",
+      "cityId": "5",
+      "label": "სამშენებლო კომპანია -  ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1212",
+      "cityId": "5",
+      "label": "ტექნიკის მაღაზია - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1213",
+      "cityId": "5",
+      "label": "მანქანის პროფილაქტიკა - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1214",
+      "cityId": "5",
+      "label": "საკონდიტრი - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1215",
+      "cityId": "5",
+      "label": "ფოტო სტუდია -  ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1216",
+      "cityId": "5",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1217",
+      "cityId": "5",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1218",
+      "cityId": "5",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1219",
+      "cityId": "5",
+      "label": "ჰოსპიტალი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1220",
+      "cityId": "5",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1221",
+      "cityId": "5",
+      "label": "კაფე"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1222",
+      "cityId": "5",
+      "label": "რესტორანი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1223",
+      "cityId": "5",
+      "label": "კინო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1224",
+      "cityId": "5",
+      "label": "ღამის კლუბი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1225",
+      "cityId": "5",
+      "label": "სასტუმრო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1226",
+      "cityId": "5",
+      "label": "სპორტ დარბაზი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1227",
+      "cityId": "5",
+      "label": "თეატრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1228",
+      "cityId": "1",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1229",
+      "cityId": "1",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1230",
+      "cityId": "1",
+      "label": "საშუალო ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1231",
+      "cityId": "1",
+      "label": "დიდი ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1232",
+      "cityId": "1",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1233",
+      "cityId": "1",
+      "label": "საშუალო ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1234",
+      "cityId": "1",
+      "label": "დიდი ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1235",
+      "cityId": "1",
+      "label": "სარეკლამო კომპანია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1236",
+      "cityId": "1",
+      "label": "სადაზღვეო კომპანია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1237",
+      "cityId": "1",
+      "label": "საკონდიტრო საცხობი - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1238",
+      "cityId": "1",
+      "label": "სადისტრიბუციო კომპანია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1239",
+      "cityId": "1",
+      "label": "კაფე-ბარი - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1240",
+      "cityId": "1",
+      "label": "სასტუმროების ქსელი - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1241",
+      "cityId": "1",
+      "label": "სავაჭრო ცენტრი- ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1242",
+      "cityId": "1",
+      "label": "რესტორანი- ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1243",
+      "cityId": "1",
+      "label": "დასუფთავების კომპანია - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1244",
+      "cityId": "1",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1245",
+      "cityId": "1",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1246",
+      "cityId": "1",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1247",
+      "cityId": "1",
+      "label": "ჰოსპიტალი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1248",
+      "cityId": "1",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1249",
+      "cityId": "1",
+      "label": "კაფე"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1250",
+      "cityId": "1",
+      "label": "რესტორანი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1251",
+      "cityId": "1",
+      "label": "კინო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1252",
+      "cityId": "1",
+      "label": "ღამის კლუბი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1253",
+      "cityId": "1",
+      "label": "სასტუმრო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1254",
+      "cityId": "1",
+      "label": "სპორტ დარბაზი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1255",
+      "cityId": "1",
+      "label": "თეატრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1256",
+      "cityId": "4",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1257",
+      "cityId": "4",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1258",
+      "cityId": "4",
+      "label": "საშუალო ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1259",
+      "cityId": "4",
+      "label": "დიდი ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1260",
+      "cityId": "4",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1261",
+      "cityId": "4",
+      "label": "საშუალო ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1262",
+      "cityId": "4",
+      "label": "დიდი ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1263",
+      "cityId": "4",
+      "label": "დასაქმების სააგენტო - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1264",
+      "cityId": "4",
+      "label": "აუდიტორული კოპანია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1265",
+      "cityId": "4",
+      "label": "უნივერსიტეტი - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1266",
+      "cityId": "4",
+      "label": "სტამბა - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1267",
+      "cityId": "4",
+      "label": "სახაჭაპურე - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1268",
+      "cityId": "4",
+      "label": "სუპერმარკეტების ქსელი - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1269",
+      "cityId": "4",
+      "label": "გადაზიდვის სერვისი - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1270",
+      "cityId": "4",
+      "label": "სილამაზის სალონი - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1271",
+      "cityId": "4",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1272",
+      "cityId": "4",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1273",
+      "cityId": "4",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1274",
+      "cityId": "4",
+      "label": "ჰოსპიტალი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1275",
+      "cityId": "4",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1276",
+      "cityId": "4",
+      "label": "კაფე"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1277",
+      "cityId": "4",
+      "label": "რესტორანი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1278",
+      "cityId": "4",
+      "label": "კინო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1279",
+      "cityId": "4",
+      "label": "ღამის კლუბი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1280",
+      "cityId": "4",
+      "label": "სასტუმრო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1281",
+      "cityId": "4",
+      "label": "სპორტ დარბაზი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1282",
+      "cityId": "4",
+      "label": "თეატრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1283",
+      "cityId": "10",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1284",
+      "cityId": "10",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1285",
+      "cityId": "10",
+      "label": "საშუალო ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1286",
+      "cityId": "10",
+      "label": "დიდი ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1287",
+      "cityId": "10",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1288",
+      "cityId": "10",
+      "label": "საშუალო ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1289",
+      "cityId": "10",
+      "label": "მეტალურგიული ქარხანა - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1290",
+      "cityId": "10",
+      "label": "საკურიერი კომპანია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1291",
+      "cityId": "10",
+      "label": "სკოლა - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1292",
+      "cityId": "10",
+      "label": "ტანსაცმლის მაღაზია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1293",
+      "cityId": "10",
+      "label": "ავტო სადილერო კომპანია - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1294",
+      "cityId": "10",
+      "label": "მანქანის სამრეცხაო - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1295",
+      "cityId": "10",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1296",
+      "cityId": "10",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1297",
+      "cityId": "10",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1298",
+      "cityId": "10",
+      "label": "ჰოსპიტალი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1299",
+      "cityId": "10",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1300",
+      "cityId": "10",
+      "label": "კაფე"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1301",
+      "cityId": "10",
+      "label": "რესტორანი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1302",
+      "cityId": "10",
+      "label": "კინო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1303",
+      "cityId": "10",
+      "label": "სპორტ დარბაზი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1304",
+      "cityId": "11",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1305",
+      "cityId": "11",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1306",
+      "cityId": "11",
+      "label": "საშუალო ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1307",
+      "cityId": "11",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1308",
+      "cityId": "11",
+      "label": "საშუალო ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1309",
+      "cityId": "11",
+      "label": "დიდი ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1310",
+      "cityId": "11",
+      "label": "სადაზღვეო კომპანია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1311",
+      "cityId": "11",
+      "label": "ხილის გადამამუშავებელი საწარმო - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1312",
+      "cityId": "11",
+      "label": "ვეტაფთიაქი - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1313",
+      "cityId": "11",
+      "label": "საკონდიტრო - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1314",
+      "cityId": "11",
+      "label": "თონე- ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1315",
+      "cityId": "11",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1316",
+      "cityId": "11",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1317",
+      "cityId": "11",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1318",
+      "cityId": "11",
+      "label": "კლინიკა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1319",
+      "cityId": "11",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1320",
+      "cityId": "11",
+      "label": "კაფე"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1321",
+      "cityId": "11",
+      "label": "რესტორანი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1322",
+      "cityId": "11",
+      "label": "კინო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1323",
+      "cityId": "11",
+      "label": "ღამის კლუბი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1324",
+      "cityId": "11",
+      "label": "სასტუმრო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1325",
+      "cityId": "11",
+      "label": "თეატრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1326",
+      "cityId": "3",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1327",
+      "cityId": "3",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1328",
+      "cityId": "3",
+      "label": "საშუალო ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1329",
+      "cityId": "3",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1330",
+      "cityId": "3",
+      "label": "დიდი ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1331",
+      "cityId": "3",
+      "label": "მულტიფუნქციური კლინიკა - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1332",
+      "cityId": "3",
+      "label": "სამაცივრე მეურნეობა - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1333",
+      "cityId": "3",
+      "label": "სილამაზის სალონი- სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1334",
+      "cityId": "3",
+      "label": "ხილის გადამამუშავებელი საწარმო - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1335",
+      "cityId": "3",
+      "label": "სწრაფი კვების ობიექტი - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1336",
+      "cityId": "3",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1337",
+      "cityId": "3",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1338",
+      "cityId": "3",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1339",
+      "cityId": "3",
+      "label": "ჰოსპიტალი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1340",
+      "cityId": "3",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1341",
+      "cityId": "3",
+      "label": "კაფე"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1342",
+      "cityId": "3",
+      "label": "რესტორანი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1343",
+      "cityId": "14",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1344",
+      "cityId": "14",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1345",
+      "cityId": "14",
+      "label": "საშუალო ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1346",
+      "cityId": "14",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1347",
+      "cityId": "14",
+      "label": "საშუალო ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1348",
+      "cityId": "14",
+      "label": "დიდი ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1349",
+      "cityId": "14",
+      "label": "რძის პროდუქტების საწარმო - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1350",
+      "cityId": "14",
+      "label": "სასათბურე მეურნეობა - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1351",
+      "cityId": "14",
+      "label": "ონლაინ მაღაზია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1352",
+      "cityId": "14",
+      "label": "ავეჯის საწარმო - ბინზესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1353",
+      "cityId": "14",
+      "label": "რესტორანი - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1354",
+      "cityId": "14",
+      "label": "თხილის საწარმო - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1355",
+      "cityId": "14",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1356",
+      "cityId": "14",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1357",
+      "cityId": "14",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1358",
+      "cityId": "14",
+      "label": "კლინიკა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1359",
+      "cityId": "14",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1360",
+      "cityId": "14",
+      "label": "კაფე "
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1361",
+      "cityId": "14",
+      "label": "რესტორანი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1362",
+      "cityId": "14",
+      "label": "სასტუმრო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1363",
+      "cityId": "13",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1364",
+      "cityId": "13",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1365",
+      "cityId": "13",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1366",
+      "cityId": "13",
+      "label": "საშუალო ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1367",
+      "cityId": "13",
+      "label": "ენის შემსწავლელი ცენტრი - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1368",
+      "cityId": "13",
+      "label": "სკოლა - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1369",
+      "cityId": "13",
+      "label": "სასურსათო მაღაზია - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1370",
+      "cityId": "13",
+      "label": "ფერმა - ბინზესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1371",
+      "cityId": "13",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1372",
+      "cityId": "13",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1373",
+      "cityId": "13",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1374",
+      "cityId": "13",
+      "label": "პირველადი დახმარების ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1375",
+      "cityId": "13",
+      "label": "კაფე"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1376",
+      "cityId": "13",
+      "label": "ღამის კლუბი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1377",
+      "cityId": "13",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1378",
+      "cityId": "12",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1379",
+      "cityId": "12",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1380",
+      "cityId": "12",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1381",
+      "cityId": "12",
+      "label": "საშუალო ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1382",
+      "cityId": "12",
+      "label": "დიდი ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1383",
+      "cityId": "12",
+      "label": "სარეკლამო კომპანია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1384",
+      "cityId": "12",
+      "label": "ღვინის წარმოება - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1385",
+      "cityId": "12",
+      "label": "სწრაფი კვების ობიექტი - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1386",
+      "cityId": "12",
+      "label": "ღვინის საწარმო - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1387",
+      "cityId": "12",
+      "label": "ქიმწმენდა - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1388",
+      "cityId": "12",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1389",
+      "cityId": "12",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1390",
+      "cityId": "12",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1391",
+      "cityId": "12",
+      "label": "რესტორანი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1392",
+      "cityId": "12",
+      "label": "კაფე"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1393",
+      "cityId": "12",
+      "label": "სასტუმრო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1394",
+      "cityId": "12",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1395",
+      "cityId": "12",
+      "label": "თეატრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1396",
+      "cityId": "12",
+      "label": "კლინიკა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1397",
+      "cityId": "0",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1398",
+      "cityId": "0",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1399",
+      "cityId": "0",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1400",
+      "cityId": "0",
+      "label": "საშუალო ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1401",
+      "cityId": "0",
+      "label": "ავეჯის გადაზიდვის სერვისი - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1402",
+      "cityId": "0",
+      "label": "ფეხსაცმლის სამკერვალო - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1403",
+      "cityId": "0",
+      "label": "სასტუმროების ქსელი - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1404",
+      "cityId": "0",
+      "label": "სახელოსნო სტუდია- ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1405",
+      "cityId": "0",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1406",
+      "cityId": "0",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1407",
+      "cityId": "0",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1408",
+      "cityId": "0",
+      "label": "კაფე"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1409",
+      "cityId": "0",
+      "label": "სასტუმრო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1410",
+      "cityId": "0",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1411",
+      "cityId": "0",
+      "label": "პირველადი დახმარების ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1412",
+      "cityId": "9",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1413",
+      "cityId": "9",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1414",
+      "cityId": "9",
+      "label": "საშუალო ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1415",
+      "cityId": "9",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1416",
+      "cityId": "9",
+      "label": "საშუალო ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1417",
+      "cityId": "9",
+      "label": "ხილის გადამამუშავებელი საწარმო - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1418",
+      "cityId": "9",
+      "label": "სურსათის მაღაზია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1419",
+      "cityId": "9",
+      "label": "საკონდიტრო- ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1420",
+      "cityId": "9",
+      "label": "თხილის საწარმო - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1421",
+      "cityId": "9",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1422",
+      "cityId": "9",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1423",
+      "cityId": "9",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1424",
+      "cityId": "9",
+      "label": "რესტორანი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1425",
+      "cityId": "9",
+      "label": "კაფე "
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1426",
+      "cityId": "9",
+      "label": "სასტუმრო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1427",
+      "cityId": "9",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1428",
+      "cityId": "9",
+      "label": "პირველადი დახმარების ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1429",
+      "cityId": "6",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1430",
+      "cityId": "6",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1431",
+      "cityId": "6",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1432",
+      "cityId": "6",
+      "label": "საშუალო ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1433",
+      "cityId": "6",
+      "label": "დიდი ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1434",
+      "cityId": "6",
+      "label": "სამაცივრე მეურნეობა - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1435",
+      "cityId": "6",
+      "label": "სამკერვალო - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1436",
+      "cityId": "6",
+      "label": "რესტორანი - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1437",
+      "cityId": "6",
+      "label": "სასურსათო მაღაზია - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1438",
+      "cityId": "6",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1439",
+      "cityId": "6",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1440",
+      "cityId": "6",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1441",
+      "cityId": "6",
+      "label": "რესტორანი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1442",
+      "cityId": "6",
+      "label": "კაფე"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1443",
+      "cityId": "6",
+      "label": "სასტუმრო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1444",
+      "cityId": "6",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1445",
+      "cityId": "6",
+      "label": "კლინიკა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1446",
+      "cityId": "7",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1447",
+      "cityId": "7",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1448",
+      "cityId": "7",
+      "label": "საშუალო ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1449",
+      "cityId": "7",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1450",
+      "cityId": "7",
+      "label": "საშუალო ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1451",
+      "cityId": "7",
+      "label": "სტამბა - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1452",
+      "cityId": "7",
+      "label": "სამშენებლო მასალის მაღაზია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1453",
+      "cityId": "7",
+      "label": "გადაზიდვის სერვისი - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1454",
+      "cityId": "7",
+      "label": "სახელოსნო სტუდია- ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1455",
+      "cityId": "7",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1456",
+      "cityId": "7",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1457",
+      "cityId": "7",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1458",
+      "cityId": "7",
+      "label": "რესტორანი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1459",
+      "cityId": "7",
+      "label": "კაფე"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1460",
+      "cityId": "7",
+      "label": "სასტუმრო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1461",
+      "cityId": "7",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1462",
+      "cityId": "7",
+      "label": "კლინიკა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1463",
+      "cityId": "8",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1464",
+      "cityId": "8",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1465",
+      "cityId": "8",
+      "label": "მცირე ზომის სახლი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1466",
+      "cityId": "8",
+      "label": "საკონდიტრო საცხობი - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1467",
+      "cityId": "8",
+      "label": "ღვინის მაღაზია - სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1468",
+      "cityId": "8",
+      "label": "მანქანის პროფილაქტიკა - ბიზნესი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1469",
+      "cityId": "8",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1470",
+      "cityId": "8",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1471",
+      "cityId": "8",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1472",
+      "cityId": "8",
+      "label": "კაფე"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1473",
+      "cityId": "8",
+      "label": "სასტუმრო"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1474",
+      "cityId": "8",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1475",
+      "cityId": "8",
+      "label": "პირველადი დახმარების ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1476",
+      "cityId": "2",
+      "label": "მერია"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1477",
+      "cityId": "2",
+      "label": "მცირე ზომის ბინა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1478",
+      "cityId": "2",
+      "label": "თონე- სამსახური"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1479",
+      "cityId": "2",
+      "label": "მარკეტი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1480",
+      "cityId": "2",
+      "label": "ბანკი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1481",
+      "cityId": "2",
+      "label": "დაზღვევა"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1482",
+      "cityId": "2",
+      "label": "რესტორანი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1483",
+      "cityId": "2",
+      "label": "ესთეტიკ ცენტრი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1484",
+      "cityId": "2",
+      "label": "ჰოსპიტალი"
+    },
+    {
+      "value": "bc69b3ab-706b-4004-93dd-a7aa9b4e1485",
+      "cityId": "2",
+      "label": "კლუბი"
+    }
+  ]
+}
