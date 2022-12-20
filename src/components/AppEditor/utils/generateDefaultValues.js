@@ -6,6 +6,8 @@ const defaultValues = {
   multi_selector: () => [],
   selector: () => "0",
   list: () => [],
+  bool: () => false,
+  creatable_selector: () => [],
   // form: () => ({}),
   guid: () => uuidv4(),
 };

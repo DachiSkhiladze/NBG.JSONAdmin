@@ -20,6 +20,12 @@ function AppCreatableSelector({ scheme, path }) {
     setState(p.map((x) => x.value));
   }
 
+  React.useEffect(() => {
+    setState([]);
+  }, []);
+
+  console.log(state);
+
   return (
     <AppLabelCont label={scheme.id} {...scheme} fullWidth>
       <Select

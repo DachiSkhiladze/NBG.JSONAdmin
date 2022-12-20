@@ -75,10 +75,8 @@ function missionTypes() {
 }
 
 function jobs({ content, state }) {
-  console.log(state.City);
   var lang = localStorage.getItem("lang") || "Ge";
 
-  console.log(content.Jobs.filter((x) => x.City == state.City));
   return content.Jobs.filter((x) => x.City == state.City).map((x) => ({
     value: x.Id,
     label: x.Name?.[lang],
@@ -92,7 +90,7 @@ function jobRanks({ content, state }) {
     (a, c) => [
       ...c.Ranks.map((x) => ({
         City: c.City,
-        value: c.Id + '_' +  x.RequiredQualification,
+        value: c.Id + "_" + x.RequiredQualification,
         label: c.Name?.[lang] + " - " + x.Name?.[lang],
       })),
       ...a,

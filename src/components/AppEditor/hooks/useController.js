@@ -9,11 +9,10 @@ function useController(path) {
 
   const segments = path.split(".");
   const value = segments.reduce((a, c) => (c ? a?.[c] : a), ctx.state[0]);
-
   function setState(newValue) {
     var stack = path.split(".");
 
-    var state = JSON.parse(JSON.stringify(ctx.state[0]));
+    var state = JSON.parse(JSON.stringify(ctx.state[0] || {}));
 
     var object = state;
 
@@ -32,8 +31,6 @@ function useController(path) {
       }
     } else {
       object[stack.shift()] = newValue;
-      console.log(object);
-      console.log(state)
     }
 
     ctx.state[1](state);

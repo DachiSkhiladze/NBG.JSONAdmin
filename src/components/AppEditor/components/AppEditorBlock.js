@@ -24,7 +24,9 @@ function AppEditorBlock({
   );
 
   React.useEffect(() => {
-    setState(currentState);
+    if (currentState) {
+      setState(currentState);
+    }
   }, [currentState]);
 
   function onSaveClick() {

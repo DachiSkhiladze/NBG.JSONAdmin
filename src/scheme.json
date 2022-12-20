@@ -12,7 +12,8 @@
     "debt": {
       "0": "სამომხმარებლო",
       "1": "ბიზნეს სესხი",
-      "2": "იფოთეკური"
+      "2": "იფოთეკური",
+      "3": "განვადება"
     },
     "parameters": {
       "0": "ჯანმრთელობა",
@@ -564,6 +565,12 @@
         {
           "id": "BusinessSellPriceRatio",
           "label": "ბიზნესის გაყიდვის ღირებულება = ყიდვის ღირებულებას - %",
+          "type": "number",
+          "fields": null
+        },
+        {
+          "id": "ItemSellPriceRatio",
+          "label": "ნივთის გაყიდვის ღირებულება = ყიდვის ღირებულებას - %",
           "type": "number",
           "fields": null
         },
@@ -1222,6 +1229,13 @@
           "id": "Description",
           "label": "სერვისის აღწერა",
           "type": "text",
+          "fields": null
+        },
+        {
+          "id": "CoveredByHealthInsurance",
+          "label": "ჯანმრთელობის დაზღვევის გავლენა",
+          "type":"selector",
+          "selector": "bool",
           "fields": null
         },
         {
